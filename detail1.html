@@ -398,6 +398,120 @@
 		<button type="button" class="popClose">닫기</button>
 	</div>
 	<!-- // 로그인 후 팝업 -->
+
+	<!-- 내 주소 팝업 -->
+	<div id="popQR" class="popBasic type--qr">
+		<div class="inner">
+			<h5>내 주소</h5>
+			<div class="boxImgQR">
+				<img src="./images/content/imgPopQR.png" alt="" />
+			</div>
+			<div class="boxBasic type--key">
+				<div class="key">0x4da93e3c3efc2a879fb047e5195f239ffb19a9e5</div>	
+				<a href="#" class="keyLink">key</a>
+			</div>
+			<div class="boxBasic">
+				<ul class="line">
+					<li>klip에서 지원하는 코인과 NFT만 보내고 받을 수 있습니다.</li>
+					<li>Klaytn 블록체인 기반이 아니거나 (예:ORC) klip에서 지원하지 않는 자산을 입금한 경우, 회사의 고의나 과실이 있지 않는 한 회사는 그 손해에 대하여 어떠한 책임을 지지 않습니다.</li>
+				</ul>
+				<a href="#" class="btnKlip">Klip 지원불가 코인 확인하기</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 내 주소 팝업 -->
+
+	<!-- 참여완료 팝업 -->
+	<div id="popComplete" class="popBasic type--complete btn--fixed">
+		<div class="inner">
+			<div class="boxFixed">
+				<div class="txtArea">
+					<h5>참여완료</h5>
+					<p>참여가 완료되었습니다.</p>
+				</div>
+				<div class="boxBasic">
+					<ul>
+						<li>이름 : 홍길동</li>
+						<li>전화번호 : 010-0000-0000</li>
+						<li>이메일 : abc@gmail.com</li>
+						<li>카카오클립 지갑주소 : </li>
+						<li>0x4da93e3c3efc2a879fb047e5195f239ffb19a9e5</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn">
+				<a href="#">메인으로 돌아가기</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 참여완료 팝업 -->
+
+	<!-- 결제하기 팝업 -->
+	<div id="popSign" class="popBasic type--complete btn--fixed">
+		<div class="inner">
+			<div class="boxFixed">
+				<div class="txtArea">
+					<h5>결제하기</h5>
+					<p>
+						참여정보를 입력 후 카카오클립을 연결해 주세요!<br />
+						당첨자분들께 카카오클립을 이용해 NFT를 전송해 드립니다.
+					</p>
+				</div>
+				<div class="boxBasic sizeA">
+					<ul>
+						<li>결제정보 : 송가인 신규앨범 NFT</li>
+						<li>결제금액 : 0.00034eth</li>
+					</ul>
+				</div>
+				<div class="inputBasic">
+					<input type="checkbox" id="chk_agree" />
+					<label for="chk_agree">결제동의</label>
+				</div>
+			</div>
+			<div class="btn">
+				<a href="#" class="klip">카카오톡 클립(Klip)으로 결제</a>
+				<a href="#" class="metamask">Metamask 결제</a>
+				<a href="#">계좌이체</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 결제하기 팝업 -->
+
+	<!-- 결제완료 팝업 -->
+	<div id="popFinish" class="popBasic type--complete">
+		<div class="inner">
+			<div class="txtArea">
+				<h5>결제완료</h5>
+				<p>결제가 완료되었습니다.</p>
+			</div>
+			<div class="boxBasic bgYellow">
+				<ul>
+					<li>이름 : 홍길동</li>
+					<li>전화번호 : 010-0000-0000</li>
+					<li>이메일 : abc@gmail.com</li>
+					<li><strong>카카오클립 지갑주소 : </strong></li>
+					<li>0x4da93e3c3efc2a879fb047e5195f239ffb19a9e5</li>
+					<li>결제일시 : 0000년 00월 00일 00시 00분</li>
+					<li>상품명 : 송가인 2022년 신곡 한정판 NFT</li>
+				</ul>
+			</div>
+			<div class="boxBasic">
+				<ul>
+					<li>이름 : 홍길동</li>
+					<li>전화번호 : 010-0000-0000</li>
+					<li>이메일 : abc@gmail.com</li>
+					<li>가상계좌 주소 : 00은행 000-000-0000</li>
+					<li>결제일시 : 0000년 00월 00일 00시 00분</li>
+					<li>상품명 : 송가인 2022년 신곡 한정판 NFT</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 결제완료 팝업 -->
 </body>
 <script type="text/javascript">
 	$(function(){
