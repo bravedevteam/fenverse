@@ -122,9 +122,8 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .boxList { }
 .boxList .category { margin-bottom:23px; }
 .boxList .category .titCate { padding:0 16px; margin-bottom:6px; font-size:17px; font-weight:700; }
-.boxList .category .listCate { overflow-x:auto; }
-.boxList .category .listCate ul { padding:10px 16px; overflow:hidden; }
-.boxList .category .listCate li { height:35px; float:left; padding:0 18px; border:1px solid #eaeef2; background:#fff; border-radius:35px; line-height:33px; overflow:hidden; }
+.boxList .category .listCate ul { padding:10px 16px; display:flex; overflow:auto; flex-wrap: nowrap; }
+.boxList .category .listCate li { min-width:80px; height:35px; padding:0 18px; border:1px solid #eaeef2; background:#fff; border-radius:35px; line-height:33px; overflow:hidden; }
 .boxList .category .listCate li+li { margin-left:5px; }
 .boxList .category .listCate li.active { background:#000000; color:#fff; }
 .boxList .category .listCate li a { display:block; }

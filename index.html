@@ -528,15 +528,6 @@
 
 	$(function(){
 		/* 카테고리 */
-		var cate_w = 0;
-		var cate_len = $(".listCate li").length;
-		
-		for(i=0; i<cate_len; i++){
-			var item = $(".listCate li:eq("+i+")").outerWidth();
-			cate_w = cate_w + item;
-		}
-		
-		$(".listCate ul").css("width", cate_w+((cate_len-1)*2)+32);
 		$(".listCate li a").click(function(e){
 			e.preventDefault();
 			$(this).parent().addClass("active");
