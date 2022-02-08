@@ -261,70 +261,80 @@
 	<!-- 로그인 후 팝업 -->
 	<div id="popUser" class="popBasic type--user">
 		<div class="inner">
-			<div class="boxUserLogin">
-				<p>홍길동 님<br />안녕하세요!</p>
-				<a href="#" class="btnKey">0x1effsa…a67e</a>
+			<div id="loginStep1" class="boxUserLogin">
+				<div class="top">
+					<a href="#" class="user">홍길동</a>
+				</div>
+				<div class="keyArea">
+					<a href="#" class="wallet">지갑 등록하기</a>
+				</div>
 			</div>
+
+			
+			<div id="loginStep2" class="boxUserLogin" style="display:none;">
+				<div class="top">
+					<a href="#" class="user">홍길동</a>
+					<a href="#" class="history">결제 내역</a>
+				</div>
+				<div class="keyArea">
+					<dl>
+						<dt class="type--klay">3,123 KLAY</dt>
+						<dd><a href="#" class="btnKey">0x1effsa…a67e</a></dd>
+					</dl>
+					
+					<!-- 지갑 이더리움 추가시 아래 코드 추가
+					<dl>
+						<dt class="type--eth">0.00367 ETH</dt>
+						<dd><a href="#" class="btnKey">0x1effsa…a67e</a></dd>
+					</dl>
+					-->
+				</div>
+			</div>
+
 			<div class="tabArea is--action">
 				<a href="#" class="active" data-tab="myTab1">참여한 에어드랍</a>
 				<a href="#" data-tab="myTab2">보유 NFT</a>
 			</div>
 			<div id="myTab1" class="tabCont active">
-				<div class="boxList type--user">
+				<div class="boxList">
 					<ul class="list">
 						<li>
-							<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
-							<div class="title">송가인NFT</div>
-							<div class="user">
-								<div class="userThumb"><img src="./images/content/imgUser_nft.png" alt="" /></div>
-								<div class="account">@포켓돌스</div>
+							<div class="thumb">
+								<img src="./images/main/imgFanCont1.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
 							</div>
-							<div class="btn">
-								<a href="#">거래하기</a>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"><img src="./images/content/imgThumb_nft2.png" alt="" /></div>
-							<div class="title">송가인NFT</div>
-							<div class="user">
-								<div class="userThumb"><img src="./images/content/imgUser_nft.png" alt="" /></div>
-								<div class="account">@포켓돌스</div>
-							</div>
-							<div class="btn">
-								<a href="#">거래하기</a>
+							<div class="cont">
+								<div class="title">엘리스 신규앨범 발매 포토카드 NFT</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<div class="btn">
+									<button type="button">에어드롭 참여하기</button>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="thumb"><img src="./images/content/imgThumb_nft3.png" alt="" /></div>
-							<div class="title">송가인NFT</div>
-							<div class="user">
-								<div class="userThumb"><img src="./images/content/imgUser_nft.png" alt="" /></div>
-								<div class="account">@포켓돌스</div>
+							<div class="thumb">
+								<img src="./images/main/imgFanCont4.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
 							</div>
-							<div class="btn">
-								<a href="#">거래하기</a>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
-							<div class="title">송가인NFT</div>
-							<div class="user">
-								<div class="userThumb"><img src="./images/content/imgUser_nft.png" alt="" /></div>
-								<div class="account">@포켓돌스</div>
-							</div>
-							<div class="btn">
-								<a href="#">거래하기</a>
+							<div class="cont">
+								<div class="title">엘리스 신규앨범 발매 포토카드 NFT</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<div class="btn">
+									<button type="button" class="is--end">에어드롭 종료</button>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
-							<div class="title">송가인NFT</div>
-							<div class="user">
-								<div class="userThumb"><img src="./images/content/imgUser_nft.png" alt="" /></div>
-								<div class="account">@포켓돌스</div>
+							<div class="thumb">
+								<img src="./images/main/imgFanCont3.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
 							</div>
-							<div class="btn">
-								<a href="#">거래하기</a>
+							<div class="cont">
+								<div class="title">방과후 설렘</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<div class="btn">
+									<button type="button">에어드롭 당첨</button>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -341,7 +351,7 @@
 								<div class="account">@포켓돌스</div>
 							</div>
 							<div class="btn">
-								<a href="#">거래하기</a>
+								<a href="#" class="open--popup" data-pop="popNotice">거래하기</a>
 							</div>
 						</li>
 						<li>
@@ -352,7 +362,7 @@
 								<div class="account">@포켓돌스</div>
 							</div>
 							<div class="btn">
-								<a href="#">거래하기</a>
+								<a href="#" class="open--popup" data-pop="popNotice">거래하기</a>
 							</div>
 						</li>
 						<li>
@@ -363,7 +373,7 @@
 								<div class="account">@포켓돌스</div>
 							</div>
 							<div class="btn">
-								<a href="#">거래하기</a>
+								<a href="#" class="open--popup" data-pop="popNotice">거래하기</a>
 							</div>
 						</li>
 						<li>
@@ -374,7 +384,7 @@
 								<div class="account">@포켓돌스</div>
 							</div>
 							<div class="btn">
-								<a href="#">거래하기</a>
+								<a href="#" class="open--popup" data-pop="popNotice">거래하기</a>
 							</div>
 						</li>
 						<li>
@@ -385,7 +395,7 @@
 								<div class="account">@포켓돌스</div>
 							</div>
 							<div class="btn">
-								<a href="#">거래하기</a>
+								<a href="#" class="open--popup" data-pop="popNotice">거래하기</a>
 							</div>
 						</li>
 					</ul>
@@ -396,6 +406,23 @@
 		<button type="button" class="popClose">닫기</button>
 	</div>
 	<!-- // 로그인 후 팝업 -->
+
+	<!-- 유의사항 팝업 -->
+	<div id="popNotice" class="popBasic type--notice">
+		<div class="inner">
+			<div class="boxNotice">
+				<h5>유의사항</h5>
+				<ul>
+					<li>FANVERSE에 보유하고 계신 NFT는 PENTASQUARE에서 판매하실 수 있습니다.</li>
+					<li class="imp">PENTASQUARE를 이용하실 때에는 FANVERSE에 등록하신 구글 계정, 지갑주소(클립, 메타마스크)는 동일하게 사용하셔야 합니다.</li>
+				</ul>
+				<div class="btn">
+					<a href="#" class="popClose">취소</a>
+					<a href="#">PENTASQUARE 이동하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- 내 주소 팝업 -->
 	<div id="popQR" class="popBasic type--qr">
