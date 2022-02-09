@@ -64,7 +64,7 @@ input[type="number"],
 input[type="password"] { width:100%; height:46px; padding:0 20px; border:1px solid #c0c9d4; border-radius:4px; color:#000; font-size:13px; }
 input[type="text"]:disabled,
 input[type="number"]:disabled,
-input[type="password"]:disabled { background:#eff0fd; }
+input[type="password"]:disabled { background:#f4f4f4; }
 input[type="text"]::placeholder,
 input[type="number"]::placeholder,
 input[type="password"]::placeholder { color:rgba(0,0,0,0.5); }
@@ -169,11 +169,15 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 
 
 /* Form */
-.formJoin .row { display:flex; }
+.formJoin .row { position:relative; display:flex; }
 .formJoin .row+.row { margin-top:6px; }
-.formJoin .row+.row button { min-width:100px; height:46px; margin-left:4px; padding:0 12px; background:#728495; border-radius:4px; color:#fff; font-size:13px; }
+.formJoin .row+.row button { min-width:100px; height:46px; margin-left:4px; padding:0 12px; background:#000; border-radius:4px; color:#fff; font-size:13px; }
 .formJoin .row .btn { margin-top:40px; }
-.formJoin .btn button { width:100%; height:62px; background:#000; color:#fff; font-size:14px; font-weight:700; }
+.formJoin .row .btnSign { width:154px; height:37px; position:absolute; right:3px; top:4px; background:url('../images/common/btnSign_google.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+
+.btnJoin { margin-top:35px; }
+.btnJoin button { width:100%; height:62px; background:#bebebe; color:#fff; font-size:14px; font-weight:700; }
+.btnJoin button.active { background:#000; }
 
 
 /* Detail */
@@ -301,11 +305,15 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .popBasic .btn a.btnJoin { height:60px; margin-top:10px; font-size:14px; line-height:60px; color:#959595; text-indent:0; }
 
 .popBasic.type--login .inner { padding:83px 34px; }
-.popBasic.type--login .tabArea { margin-top:54px; margin-bottom:24px; overflow:hidden; }
-.popBasic.type--login .tabArea>a { height:34px; float:left; position:relative; padding:0 10px; line-height:30px; font-size:13px; color:#000; }
-.popBasic.type--login .tabArea>a.active { border-bottom:2px solid #000; }
-.popBasic.type--login .tabArea>a+a { margin-left:28px; }
-.popBasic.type--login .tabArea>a+a:before { content:''; width:1px; height:14px; position:absolute; left:-14px; top:50%; background:rgba(0,0,0,0.1); transform:translateY(-50%); }
+
+.popBasic.type--join .inner { padding:83px 16px 40px; }
+.popBasic.type--join .inner+.inner { padding:26px 16px 50px; border-top:5px solid #f4f6f9; }
+.popBasic.type--join .txtArea { padding:0 10px; }
+.popBasic.type--join .tabArea { margin-top:54px; margin-bottom:24px; padding:0 10px; overflow:hidden; }
+.popBasic.type--join .tabArea>a { height:34px; float:left; position:relative; padding:0 10px; line-height:30px; font-size:13px; color:#000; }
+.popBasic.type--join .tabArea>a.active { border-bottom:2px solid #000; }
+.popBasic.type--join .tabArea>a+a { margin-left:28px; }
+.popBasic.type--join .tabArea>a+a:before { content:''; width:1px; height:14px; position:absolute; left:-14px; top:50%; background:rgba(0,0,0,0.1); transform:translateY(-50%); }
 
 .popBasic.type--user .inner { padding-top:74px; }
 .popBasic.type--user .tabArea { display:flex; margin-top:22px; position:relative; border-radius:8px; background:#f4f6f9; overflow:hidden; }
@@ -360,3 +368,15 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .boxUserLogin .keyArea a.btnKey { position:relative; padding-left:18px; font-size:13px; color:#000; font-weight:300; }
 .boxUserLogin .keyArea a.btnKey:after { content:''; width:10px; height:11px; position:absolute; left:0; top:50%; background:url('../images/common/iconUserKey.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 
+.boxWalletConnect .top { padding:0 10px; }
+.boxWalletConnect .top h6 { font-size:16px; font-weight:700; }
+.boxWalletConnect .top p { margin-top:3px; font-size:13px; }
+.boxWalletConnect .wallet { width:284px; margin:23px auto 0; }
+.boxWalletConnect .wallet .wallet_row { word-break:break-all; }
+.boxWalletConnect .wallet .wallet_row p { display:block; margin-top:5px; color:#000; font-size:13px; opacity:.5; }
+.boxWalletConnect .wallet .wallet_row+.wallet_row { margin-top:10px; }
+.boxWalletConnect .check { padding:0 10px; margin-top:35px; position:relative; }
+.boxWalletConnect .check input[type="checkbox"] { position:absolute; left:-99999px; top:0; opacity:0; }
+.boxWalletConnect .check input[type="checkbox"]+label { display:block; padding-left:35px; position:relative; line-height:25px; font-size:13px; }
+.boxWalletConnect .check input[type="checkbox"]+label:before { content:''; width:25px; height:25px; position:absolute; left:0; top:0; border:1px solid #585858; }
+.boxWalletConnect .check input[type="checkbox"]:checked+label:before { background:url('../images/common/iconCheck.png') center center no-repeat #000; background-size:14px auto; }

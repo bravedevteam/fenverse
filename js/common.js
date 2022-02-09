@@ -48,13 +48,10 @@ $(function(){
   // 참여하기 팝업 끝
   
   // 결제하기 팝업 시작
-  /*
-  $("#myTab2 .btn a").click(function(e){
+  $("#btnBooking").click(function(e){
     e.preventDefault();
-    $("#popUser").fadeOut(300);
     $("#popSign").fadeIn(300);
   });
-  */
   // 결제하기 팝업 끝
 
   // 결제완료 팝업 시작

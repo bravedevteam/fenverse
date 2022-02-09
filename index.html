@@ -193,13 +193,11 @@
 	<!-- // 로그인 팝업 -->
 
 	<!-- 회원가입 팝업 -->
-	<div id="popJoin" class="popBasic type--login">
+	<div id="popJoin" class="popBasic type--join">
 		<div class="inner">
 			<div class="txtArea">
-				<h5>Sign up</h5>
-				<p>
-					회원가입을 해주세요.
-				</p>
+				<h5>FANVERSE 회원가입</h5>
+				<p>회원가입을 해주세요.</p>
 			</div>
 			<div class="tabArea">
 				<a href="#" class="active" data-tab="join1">내국인</a>
@@ -208,7 +206,11 @@
 			<div id="join1" class="tabCont active">
 				<div class="formJoin">
 					<div class="row">
-						<input type="text" placeholder="이름" disabled="disabled" />
+						<input type="text" placeholder="구글 메일 인증" disabled="disabled" />
+						<button type="button" class="btnSign">Sign in with Google</button>
+					</div>
+					<div class="row">
+						<input type="text" placeholder="이름" />
 					</div>
 					<div class="row">
 						<input type="text" placeholder="전화번호" />
@@ -223,35 +225,60 @@
 					<div class="row">
 						<input type="text" placeholder="상세주소 입력" />
 					</div>
-					<div class="btn">
-						<button type="button">가입하기</button>
-					</div>
 				</div>
 			</div>
 			<div id="join2" class="tabCont">
 				<div class="formJoin">
-					<div class="formJoin">
-						<div class="row">
-							<input type="text" placeholder="이름" />
-						</div>
-						<div class="row">
-							<input type="text" placeholder="전화번호" />
-						</div>
-						<div class="row">
-							<input type="text" placeholder="우편번호" />
-							<button type="button">우편번호 찾기</button>
-						</div>
-						<div class="row">
-							<input type="text" placeholder="주소" />
-						</div>
-						<div class="row">
-							<input type="text" placeholder="상세주소 입력" />
-						</div>
-						<div class="btn">
-							<button type="button">가입하기</button>
-						</div>
+					<div class="row">
+						<input type="text" value="ejiwejf@google.com" placeholder="구글 메일 인증" disabled="disabled" />
+						<button type="button" class="btnSign">Sign in with Google</button>
+					</div>
+					<div class="row">
+						<input type="text" placeholder="이름" value="홍길동" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="전화번호" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="우편번호" />
+						<button type="button">우편번호 찾기</button>
+					</div>
+					<div class="row">
+						<input type="text" placeholder="주소" />
+					</div>
+					<div class="row">
+						<input type="text" placeholder="상세주소 입력" />
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="inner">
+			<div class="boxWalletConnect">
+				<div class="top">
+					<h6>지갑 연결</h6>
+					<p>회원가입 시 최소 하나의 지갑을 연결하셔야 합니다.</p>
+				</div>
+				<div class="wallet">
+					<div class="wallet_row">
+						<img src="./images/common/btnLogin_klip.png" alt="" />
+						<!-- 지갑이 연결되어 있는 경우 -->
+						<p>0x3qoekvn99281clslei92727xkxosiuw937dhxjszkwdwd</p>
+					</div>
+					<div class="wallet_row">
+						<img src="./images/common/btnLogin_meta.png" alt="" />
+						<!-- 지갑이 연결되어 있는 경우 -->
+						<!--
+						<p>0x3qoekvn99281clslei92727xkxosiuw937dhxjszkwdwd</p>
+						-->
+					</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" id="chk_join" />
+					<label for="chk_join">PENTASQUARE 통합회원 가입에 동의합니다.</label>
+				</div>
+			</div>
+			<div class="btnJoin">
+				<button type="button">가입하기</button><!-- 활성화 클래스 active 추가 -->
 			</div>
 		</div>
 		<button type="button" class="popClose">닫기</button>
@@ -519,6 +546,7 @@
 					<li>이메일 : abc@gmail.com</li>
 					<li><strong>카카오클립 지갑주소 : </strong></li>
 					<li>0x4da93e3c3efc2a879fb047e5195f239ffb19a9e5</li>
+					<li><strong>결제금액 : 3.33 KLAY</strong></li>
 					<li>결제일시 : 0000년 00월 00일 00시 00분</li>
 					<li>상품명 : 송가인 2022년 신곡 한정판 NFT</li>
 				</ul>
@@ -528,7 +556,8 @@
 					<li>이름 : 홍길동</li>
 					<li>전화번호 : 010-0000-0000</li>
 					<li>이메일 : abc@gmail.com</li>
-					<li>가상계좌 주소 : 00은행 000-000-0000</li>
+					<li><strong>가상계좌 주소 : 00은행 000-000-0000</strong></li>
+					<li><strong>결제금액 :</strong></li>
 					<li>결제일시 : 0000년 00월 00일 00시 00분</li>
 					<li>상품명 : 송가인 2022년 신곡 한정판 NFT</li>
 				</ul>
