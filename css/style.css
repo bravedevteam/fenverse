@@ -172,6 +172,7 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .formJoin .row { position:relative; display:flex; }
 .formJoin .row+.row { margin-top:6px; }
 .formJoin .row+.row button { min-width:100px; height:46px; margin-left:4px; padding:0 12px; background:#000; border-radius:4px; color:#fff; font-size:13px; }
+.formJoin .row+.row button.c1 { background:#728495; font-weight:400; }
 .formJoin .row .btn { margin-top:40px; }
 .formJoin .row .btnSign { width:154px; height:37px; position:absolute; right:3px; top:4px; background:url('../images/common/btnSign_google.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 
@@ -292,10 +293,13 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 /* Popup */
 .popBasic { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:#fff; overflow:auto; z-index:99; }
 .popBasic .inner { padding:0 16px; }
+.popBasic h5.posTop { width:100%; height:80px; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; }
 .popBasic .txtArea { padding:0 2px; }
 .popBasic .txtArea h5 { margin-bottom:5px; font-size:23px; font-weight:600; color:#000; }
 .popBasic .txtArea p { font-size:13px; letter-spacing:-.033em; color:#000; }
+.popBasic .boxYear { height:30px; padding:0 26px; background:#f4f6f9; line-height:30px; font-size:13px; }
 .popBasic .popLogout { padding-left:18px; position:absolute; left:20px; top:26px; background:url('../images/common/iconLogout.png') left center no-repeat; background-size:13px auto; font-size:13px; color:#000; }
+.popBasic .popPrev { width:12px; height:19px; position:absolute; left:16px; top:28px; background:url('../images/common/popPrev.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .popBasic .popClose { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/popClose.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .popBasic .btn { margin-top:40px; }
 .popBasic .btn a { display:block; background-size:auto 100%; background-repeat:no-repeat; background-position:center center; font-size:0; text-indent:-99999px; text-align:center; }
@@ -308,7 +312,7 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 
 .popBasic.type--join .inner { padding:83px 16px 40px; }
 .popBasic.type--join .inner+.inner { padding:26px 16px 50px; border-top:5px solid #f4f6f9; }
-.popBasic.type--join .txtArea { padding:0 10px; }
+.popBasic.type--join .txtArea { margin-bottom:32px; padding:0 10px; }
 .popBasic.type--join .tabArea { margin-top:54px; margin-bottom:24px; padding:0 10px; overflow:hidden; }
 .popBasic.type--join .tabArea>a { height:34px; float:left; position:relative; padding:0 10px; line-height:30px; font-size:13px; color:#000; }
 .popBasic.type--join .tabArea>a.active { border-bottom:2px solid #000; }
@@ -354,6 +358,9 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .popBasic.type--notice .btn a+a { margin-top:0; margin-left:5px; }
 .popBasic.type--notice .btn a.popClose { width:96px; flex:none; position:relative; right:0; top:0; background:#fff; color:#000; }
 
+.popBasic.type--history .inner { padding:0; }
+.popBasic.type--history .row+.row { margin-top:30px; }
+
 .boxUserLogin { border-radius:8px; background:#fde500; overflow:hidden; }
 .boxUserLogin .top { height:48px; padding:0 22px; display:flex; justify-content:space-between; align-items:center; background:#fff169; }
 .boxUserLogin .top a.user { padding-right:18px; background:url('../images/common/iconUserLink.png') right center no-repeat; background-size:10px auto; font-size:16px; color:#000; }
@@ -373,6 +380,7 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .boxWalletConnect .top p { margin-top:3px; font-size:13px; }
 .boxWalletConnect .wallet { width:284px; margin:23px auto 0; }
 .boxWalletConnect .wallet .wallet_row { word-break:break-all; }
+.boxWalletConnect .wallet .wallet_row .title { margin-bottom:20px; font-size:13px; font-weight:700; text-align:center; }
 .boxWalletConnect .wallet .wallet_row p { display:block; margin-top:5px; color:#000; font-size:13px; opacity:.5; }
 .boxWalletConnect .wallet .wallet_row+.wallet_row { margin-top:10px; }
 .boxWalletConnect .check { padding:0 10px; margin-top:35px; position:relative; }
@@ -380,3 +388,23 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 .boxWalletConnect .check input[type="checkbox"]+label { display:block; padding-left:35px; position:relative; line-height:25px; font-size:13px; }
 .boxWalletConnect .check input[type="checkbox"]+label:before { content:''; width:25px; height:25px; position:absolute; left:0; top:0; border:1px solid #585858; }
 .boxWalletConnect .check input[type="checkbox"]:checked+label:before { background:url('../images/common/iconCheck.png') center center no-repeat #000; background-size:14px auto; }
+
+.boxWalletConnect.is--info {  }
+.boxWalletConnect.is--info .wallet { width:251px; }
+.boxWalletConnect.is--info .wallet .wallet_row p { margin-top:15px; }
+.boxWalletConnect.is--info .wallet .wallet_row+.wallet_row { margin-top:50px; }
+.boxWalletConnect.is--info+.btnJoin { margin-top:70px; }
+
+.listHistory {  }
+.listHistory li { padding-bottom:8px; border-bottom:1px solid #eaeaea; }
+.listHistory li a { display:block; padding:24px 26px 15px; position:relative; }
+.listHistory li a:after { content:''; width:11px; height:7px; position:absolute; right:26px; top:34px; background:url('../images/common/iconArrowDown.png') center center no-repeat; background-size:100% auto; transition:all .3s; }
+.listHistory li a .title { font-size:16px; }
+.listHistory li a .date { margin-top:5px; color:rgba(0,0,0,.3); font-size:13px; font-family:'SpoqaHanSansNeo'; }
+.listHistory li a .price { text-align:right; font-size:16px; font-weight:700; font-family:'SpoqaHanSansNeo'; }
+.listHistory li .detail { padding:0 16px 16px; display:flex; }
+.listHistory li .detail .thumb { width:51px; margin-right:13px; border-radius:10px; overflow:hidden; }
+.listHistory li .detail .cont { flex:1; font-size:13px; line-height:26px; font-family:'SpoqaHanSansNeo'; }
+.listHistory li .detail .cont span.imp { padding-left:14px; position:relative; display:block; margin-top:14px; color:#f00; font-family:'SpoqaHanSansNeo'; font-size:11px; }
+.listHistory li .detail .cont span.imp:before { content:'※'; position:absolute; left:0; top:0; }
+.listHistory li.active a:after { transform:rotate(180deg); }

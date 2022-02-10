@@ -23,6 +23,20 @@ $(function(){
   });
   // 로그인 후 팝업 끝
 
+  // 유저 정보 팝업 시작
+  $(".btnUserInfo").click(function(e){
+    e.preventDefault();
+    $(".popBasic").fadeOut(300);
+    $("#popMyinfo").fadeIn(300);
+  });
+  // 유저 정보 팝업 끝
+
+  $(".btnUserHistory").click(function(e){
+    e.preventDefault();
+    $(".popBasic").fadeOut(300);
+    $("#popHistory").fadeIn(300);
+  });
+
   // 지갑 등록하기 액션 시작
   $(".boxUserLogin a.wallet").click(function(){
     $("#loginStep1").hide();
@@ -61,6 +75,26 @@ $(function(){
     $("#popFinish").fadeIn(300);
   });
   // 결제완료 팝업 끝
+
+  // 결제내역 리스트 액션 시작
+  $(".listHistory li .detail").slideUp(0);
+  $(".listHistory li a").click(function(e){
+    e.preventDefault();
+    var _this = $(this);
+    var _parent = _this.parent();
+    if(_parent.hasClass("active")){
+      _parent
+      .removeClass("active")
+      .children(".detail").slideUp(300);
+    }else{
+      _parent
+        .addClass("active")
+        .siblings().removeClass("active")
+        .children(".detail").slideUp(300);
+      _parent.children(".detail").slideDown(300);
+    }
+  });
+  // 결제내역 리스트 액션 끝
 
   // 팝업 오픈 시작
   $(".open--popup").click(function(e){

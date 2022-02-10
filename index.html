@@ -47,7 +47,7 @@
 							<div class="inBox">
 								<div class="topArea">
 									<div class="day">D-100</div>
-									<img src="./images/main/imgTopSlide.png" alt="" />
+									<img src="./images/main/imgTopSlide1.png" alt="" />
 									<div class="info">
 										<div class="thumb"><img src="./images/main/imgTopInfo.png" alt="" /></div>
 										<div class="name">
@@ -290,7 +290,7 @@
 		<div class="inner">
 			<div id="loginStep1" class="boxUserLogin">
 				<div class="top">
-					<a href="#" class="user">홍길동</a>
+					<a href="#" class="user btnUserInfo">홍길동</a>
 				</div>
 				<div class="keyArea">
 					<a href="#" class="wallet">지갑 등록하기</a>
@@ -300,8 +300,8 @@
 			
 			<div id="loginStep2" class="boxUserLogin" style="display:none;">
 				<div class="top">
-					<a href="#" class="user">홍길동</a>
-					<a href="#" class="history">결제 내역</a>
+					<a href="#" class="user btnUserInfo">홍길동</a>
+					<a href="#" class="history btnUserHistory">결제 내역</a>
 				</div>
 				<div class="keyArea">
 					<dl>
@@ -450,6 +450,59 @@
 			</div>
 		</div>
 	</div>
+	<!-- // 유의사항 팝업 -->
+
+	<!-- 내정보 팝업 -->
+	<div id="popMyinfo" class="popBasic type--join">
+		<div class="inner">
+			<div class="txtArea">
+				<h5>My info</h5>
+			</div>
+			<div class="formJoin">
+				<div class="row">
+					<input type="text" placeholder="이메일" value="abc123@google.com" disabled="disabled" />
+				</div>
+				<div class="row">
+					<input type="text" placeholder="이름" value="홍길동" />
+				</div>
+				<div class="row">
+					<input type="text" placeholder="전화번호" value="010-1234-1234" />
+				</div>
+				<div class="row">
+					<input type="text" placeholder="우편번호" value="129120" />
+					<button type="button" class="c1">우편번호 찾기</button>
+				</div>
+				<div class="row">
+					<input type="text" placeholder="주소" value="서울특별시 강남구 테헤란로 110" />
+				</div>
+				<div class="row">
+					<input type="text" placeholder="상세주소 입력" value="빌딩 393" />
+				</div>
+			</div>
+		</div>
+		<div class="inner">
+			<div class="boxWalletConnect is--info">
+				<div class="wallet">
+					<div class="wallet_row">
+						<div class="title">카카오톡 클립 지갑 연결하기</div>
+						<img src="./images/common/btnLogin_klip_s.png" alt="" />
+						<p>Connect your wallet</p>
+					</div>
+					<div class="wallet_row">
+						<div class="title">메타마스크 지갑 연결하기</div>
+						<img src="./images/common/btnLogin_meta_s.png" alt="" />
+						<p>0x3qoekvn99281clslei92727xkxosiuw937dhxjszkwdwd</p>
+					</div>
+				</div>
+			</div>
+			<div class="btnJoin">
+				<button type="button" class="active">등록</button><!-- 활성화 클래스 active 추가 -->
+			</div>
+		</div>
+		<button type="button" class="popPrev">이전</button>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 내정보 팝업 -->
 
 	<!-- 내 주소 팝업 -->
 	<div id="popQR" class="popBasic type--qr">
@@ -566,6 +619,78 @@
 		<button type="button" class="popClose">닫기</button>
 	</div>
 	<!-- // 결제완료 팝업 -->
+
+	<!-- 결제내역 팝업 -->
+	<div id="popHistory" class="popBasic type--history">
+		<div class="inner">
+			<h5 class="posTop">결제내역</h5>
+			<div class="row">
+				<div class="boxYear">2022년</div>
+				<ul class="listHistory">
+					<li>
+						<a href="#">
+							<div class="title">송가인 2022년 신곡 한정판 NFT</div>
+							<div class="date">2022.01.04 | 11:20</div>
+							<div class="price">100,000원</div>
+						</a>
+						<div class="detail">
+							<div class="thumb"><img src="./images/content/imgHistory.png" alt="" /></div>
+							<div class="cont">
+								결제 수단 : 가상계좌<br />
+								가상계좌 번호 :<br />
+								하나은행 / 123-4567-002457 / ㈜펜타스퀘어<br />
+								결제 금액 : 100,000원<br />
+								결제 상태 : 입금대기 중<br />
+								결제 기한 : 2022.01.15 11:20 
+								<span class="imp">입금 기한 내에 입금이 되지 않으면 자동 취소됩니다.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div class="title">엘리스 신규앨범 발매 포토카드 NFT</div>
+							<div class="date">2022.01.04 | 11:20</div>
+							<div class="price">0.0005 ETH</div>
+						</a>
+						<div class="detail">
+							<div class="thumb"><img src="./images/content/imgHistory.png" alt="" /></div>
+							<div class="cont">
+								결제 수단 : 가상계좌<br />
+								가상계좌 번호 :<br />
+								하나은행 / 123-4567-002457 / ㈜펜타스퀘어<br />
+								결제 금액 : 100,000원<br />
+								결제 상태 : 입금대기 중<br />
+								결제 기한 : 2022.01.15 11:20 
+								<span class="imp">입금 기한 내에 입금이 되지 않으면 자동 취소됩니다.</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div class="title">엘리스 신규앨범 발매 포토카드 NFT</div>
+							<div class="date">2022.01.04 | 11:20</div>
+							<div class="price">1 KLAY</div>
+						</a>
+						<div class="detail">
+							<div class="thumb"><img src="./images/content/imgHistory.png" alt="" /></div>
+							<div class="cont">
+								결제 수단 : 가상계좌<br />
+								가상계좌 번호 :<br />
+								하나은행 / 123-4567-002457 / ㈜펜타스퀘어<br />
+								결제 금액 : 100,000원<br />
+								결제 상태 : 입금대기 중<br />
+								결제 기한 : 2022.01.15 11:20 
+								<span class="imp">입금 기한 내에 입금이 되지 않으면 자동 취소됩니다.</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="popPrev">이전</button>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 결제내역 팝업 -->
 </body>
 <script type="text/javascript">
 	/* 메인 상단 슬라이드 */
