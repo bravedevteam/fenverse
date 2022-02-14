@@ -279,9 +279,15 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 #footer .agreement { display:flex; margin-left:-26px; margin-bottom:60px; }
 #footer .agreement a { height:30px; padding:0 26px; display:flex; align-items:center; position:relative; font-size:16px; color:rgba(255,255,255,.8); font-size:13px; }
 #footer .agreement a+a:before { content:''; width:1px; height:12px; position:absolute; left:0; top:50%; margin-top:-6px; background:rgba(255,255,255,0.5); }
-#footer h2 { width:87px; height:27px; margin-bottom:8px; display:block; background:url('../images/common/logo_f.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#footer h2 { width:87px; height:27px; margin-left:8px; margin-bottom:8px; display:block; background:url('../images/common/logo_f.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #footer .copyright { font-size:12px; color:rgba(255,255,255,.5); line-height:1.5; }
-#footer .copyright span { display:block; margin-bottom:16px; font-weight:700; }
+#footer .copyright .row+.row { padding-top:24px; margin-top:15px; border-top:1px solid rgba(255,255,255,.1); }
+#footer .copyright .row .title { position:relative; margin-bottom:10px; padding-left:8px; font-size:12px; font-weight:700; color:rgba(255, 255, 255, .7); }
+#footer .copyright .row .title:before { content:''; width:2px; height:10px; position:absolute; left:0; top:50%; background:rgba(255, 255, 255, .5); transform:translateY(-50%); }
+#footer .copyright .row p { padding:0 8px; }
+#footer .copyright .row:nth-child(1) p { color:rgba(255,255,255,.5); }
+#footer .copyright .row:nth-child(1) span { display:block; margin-top:6px; text-align:center; font-size:12px; color:rgba(255,255,255,.5); font-weight:700; }
+
 #footer .sns { margin-left:-6px; margin-bottom:50px; overflow:hidden; }
 #footer .sns a { width:40px; height:30px; float:left; background-repeat:no-repeat; background-position:center center; font-size:0; text-indent:-99999px; }
 #footer .sns a+a { margin-left:10px; }
