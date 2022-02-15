@@ -75,7 +75,7 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 /* Header */
 #header { width:100%; height:68px; padding:22px 16px; position:fixed; left:0; top:0; background:rgba(255,255,255,0); overflow:hidden; z-index:20; transition:all .3s; }
 #header.fixed { background:rgba(255,255,255,1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06); }
-#header h1 { width:125px; height:26px; float:left; background:url('../images/common/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#header h1 { width:104px; height:23px; float:left; background:url('../images/common/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #header .btnMenu { width:18px; height:26px; float:right; background:url('../images/common/btnMenu.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 
 #container { padding-top:68px; }
