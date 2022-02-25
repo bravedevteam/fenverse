@@ -337,8 +337,9 @@ body.bg--white { background:#fff; }
 .popBasic.type--detail .inner { height:100%; display:flex; align-items:center; }
 .popBasic.type--detail .popClose { width:48px; height:48px; right:12px; top:12px; background-color:#fff; background-size:16px auto; border-radius:50%; }
 
-.popBasic.type--text { height:100%; display:flex; align-items:center; background:rgba(0,0,0,.5) }
-.popBasic.type--text .inner { width:100%; min-height:216px; position:relative; margin:0 16px; display:flex; align-items:center; justify-content:center; background:#fff; border-radius:14px; }
+.popBasic.type--text { background:rgba(0,0,0,.5) }
+.popBasic.type--text .inner { height:100%; display:flex; align-items:center; }
+.popBasic.type--text .boxText { width:100%; min-height:216px; position:relative; margin:0 16px; display:flex; align-items:center; justify-content:center; background:#fff; border-radius:14px; }
 .popBasic.type--text .inner p { font-size:16px; line-height:1.8; }
 .popBasic.type--text .popClose { right:22px; top:22px; }
 
