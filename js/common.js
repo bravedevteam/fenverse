@@ -133,8 +133,14 @@ $(function(){
     var _top = $(this).scrollTop();
     if(0 < _top){
       $("#header").addClass("fixed");
+      if($("#container").hasClass("main")){
+        $("#header h1").removeClass("is--white");
+      }
     }else{
       $("#header").removeClass("fixed");
+      if($("#container").hasClass("main")){
+        $("#header h1").addClass("is--white");
+      }
     }
   });
   // 헤더 액션 끝
