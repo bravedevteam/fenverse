@@ -82,7 +82,7 @@ body.bg--white { background:#fff; }
 #header .btnMenu { width:18px; height:26px; float:right; background:url('../images/common/btnMenu.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 
 #container { padding-top:68px; }
-#container.main { padding-top:0; padding-bottom:68px; }
+#container.main { padding-top:0; padding-bottom:25px; }
 
 /* Main Top */
 .mainTop { margin-bottom:33px; }
@@ -123,6 +123,7 @@ body.bg--white { background:#fff; }
 .mainSection .titleArea { margin-bottom:13px; padding:0 16px; }
 .mainSection .titleArea .title { font-size:17px; font-weight:700; color:#000; }
 .mainSection.boxYoutube { margin-top:17px; }
+.mainSection.bn { padding:0 16px; }
 
 .section { position:relative; }
 .section.section--detail { background:#fff; z-index:10; }
