@@ -420,7 +420,7 @@ body.bg--white { background:#fff; }
 .boxUserLogin .keyArea dt.type--klay { background-image:url('../images/common/iconCoin_klay.png'); }
 .boxUserLogin .keyArea dt.type--eth { background-image:url('../images/common/iconCoin_eth.png'); }
 .boxUserLogin .keyArea dd { padding-left:32px; }
-.boxUserLogin .keyArea a.btnKey { position:relative; padding-right:40px; display:flex; align-items:center; justify-content:space-between; font-size:13px; color:#000; font-weight:300; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.boxUserLogin .keyArea a.btnKey { position:relative; padding-right:40px; display:block; font-size:13px; color:#000; font-weight:300; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .boxUserLogin .keyArea a.btnKey:before { content:''; width:1px; height:10px; position:absolute; right:33px; top:50%; background:rgba(0,0,0,.4); transform:translateY(-50%); }
 .boxUserLogin .keyArea a.btnKey:after { content:''; width:12px; height:14px; position:absolute; right:4px; top:50%; background:url('../images/common/iconUserKey.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 
