@@ -85,6 +85,8 @@ body.bg--white { background:#fff; }
 #container.main { padding-top:0; padding-bottom:25px; }
 
 /* Main Top */
+.topVisual { height:417px; padding:0 30px; display:flex; align-items:center; background:url('../images/main/imgMainTop.png') center center no-repeat #fff; background-size:466px auto; font-size:17px; color:#000; }
+
 .mainTop { margin-bottom:33px; }
 .mainTop .swiper-slide { padding:0 16px; }
 .mainTop .inBox { background:#fff; border-radius:10px; box-shadow: 0 3px 10px 0 rgba(210, 215, 224, 0.84); }
