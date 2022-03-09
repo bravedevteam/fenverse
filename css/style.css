@@ -327,6 +327,14 @@ body.bg--white { background:#fff; }
 .popBasic .txtArea { padding:0 2px; }
 .popBasic .txtArea h5 { margin-bottom:5px; font-size:23px; font-weight:600; color:#000; }
 .popBasic .txtArea p { font-size:13px; letter-spacing:-.033em; color:#000; }
+.popBasic .row { margin-top:18px; }
+.popBasic .row h6 { padding:0 10px; margin-bottom:10px; font-size:13px; font-weight:400; }
+.popBasic .radioGroup { padding:0 4px; overflow:hidden; }
+.popBasic .radioGroup>div { float:left; position:relative; }
+.popBasic .radioGroup>div+div { margin-left:6px; }
+.popBasic .radioGroup input { position:absolute; left:6px; top:6px; }
+.popBasic .radioGroup label { width:104px; height:58px; display:block; border:1px solid #c0c9d4; border-radius:4px; text-align:center; line-height:56px; font-size:14px; }
+.popBasic .radioGroup input:checked+label { border-color:#3127ff; }
 .popBasic .boxYear { height:30px; padding:0 26px; background:#f4f6f9; line-height:30px; font-size:13px; }
 .popBasic .btnUserInfo { position:absolute; left:16px; top:21px; padding:0 8px; font-size:18px; }
 .popBasic .btnUserInfo:after { content:''; width:10px; height:10px; margin-left:8px; display:inline-block; background:url('../images/common/iconUserLink.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
