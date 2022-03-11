@@ -158,6 +158,12 @@ body.bg--white { background:#fff; }
 
 .boxList .list li.no-item { height:233px; display:flex; align-items:center; justify-content:center; background:#f4f6f9; font-size:14px; color:#000; }
 
+.boxList ul.info { margin-top:10px; }
+.boxList ul.info li { font-size:13px; }
+.boxList ul.info li+li { margin-top:0; }
+.boxList ul.info li.address { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.boxList ul.info li span { color:#3127ff; }
+
 .boxList.type--user { }
 .boxList.type--user .list { display:flex; flex-wrap:wrap; padding:0; }
 .boxList.type--user .list li { width:calc(50% - 5px); }
