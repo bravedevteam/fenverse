@@ -1,4 +1,18 @@
 $(function(){
+  // 메인 리스트
+  $(".listType a").click(function(e){
+    e.preventDefault();
+    var type = $(this).attr("data-type");
+
+    $(this).addClass("on").siblings().removeClass("on");
+
+    if(type == "thumb"){
+      $(this).parents(".boxList").find(".list").addClass("is--thumb");
+    }else if(type == "list"){
+      $(this).parents(".boxList").find(".list").removeClass("is--thumb");
+    }
+  });
+
   // 로그인 팝업 시작
   $(".btnMenu").click(function(e){
     e.preventDefault();
@@ -107,7 +121,8 @@ $(function(){
   // 팝업 오픈 끝
 
   // 팝업 닫기 시작
-  $(".popBasic .popClose").click(function(){
+  $(".popBasic .popClose, .close--popup").click(function(e){
+    e.preventDefault();
     $("html, body").css("overflow", "auto");
     $(this).parents(".popBasic").fadeOut(300);
   });
