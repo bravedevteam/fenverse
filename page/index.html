@@ -15,17 +15,17 @@
 	<section id="wrap">
 		<header id="header" class="is--white"><!-- header 배경이 흰색인 경우 -->
 			<h1 style="width:108px; height:30px; background-image:url('../images/common/logo_crypto.png');">CRYPTO PAINTERS</h1>
-			<a href="#" class="btnMenu">메뉴</a>
+			<a href="#" class="btnMenu open--popup" data-pop="popUser">메뉴</a>
 		</header>
 		<div id="container" class="main">
 			<div class="mainSection topVisual">
 				<!-- crypto painters -->
-				<!--
 				<img src="../images/main/imgMainTop_crypto.png" alt="" />
 				<p>challenge<br />your creativity,<br />We lead the NFT market</p>
-				-->
+				
 
 				<!-- hotelsalad -->
+				<!--
 				<img src="../images/main/imgMainTop_hotel.png" alt="" />
 				<div class="txt_pos">
 					<h4>NFT로 즐기는 호캉스</h4>
@@ -34,6 +34,7 @@
 						호텔예약의 미래, 루넥스가 함께 합니다.
 					</p>
 				</div>
+				-->
 			</div>
 			<div class="mainSection">
 				<div class="category">
@@ -360,6 +361,211 @@
 			</div>
 		</footer>
 	</section>
+
+	<!-- 로그인 후 팝업 -->
+	<div id="popUser" class="popBasic type--user"">
+		<div class="inner">
+			<div id="loginStep1" class="boxUserLogin is--before">
+				<div class="top">
+					<a href="#" class="history btnUserHistory">결제 내역</a>
+				</div>
+				<div class="keyArea">
+					<a href="#" class="wallet">카카오톡으로 Klip 지갑 연결</a>
+					<p>지갑을 연결하시고 서비스를 이용해 주세요!</p>
+					<a href="#" class="wallet type--meta">메타마스크 연결하기</a>
+					<p>지갑을 연결하시고 서비스를 이용해 주세요!</p>
+				</div>
+			</div>
+
+			
+			<div id="loginStep2" class="boxUserLogin" style="display:none;">
+				<div class="top">
+					<div class="title">My wallet</div>
+					<a href="#" class="history btnUserHistory">결제 내역</a>
+				</div>
+				<div class="keyArea v2">
+					<div class="row">
+						<a href="#" class="wallet">카카오톡으로 Klip 지갑 연결</a>
+						<p>지갑을 연결하시고 서비스를 이용해 주세요!</p>
+					</div>
+					<div class="row">
+						<dl>
+							<dt>
+								<div class="name">METAMASK</div>
+								<div class="key"><a href="#" class="btnKey">0xfb33F79915991….7991E70f3</a></div>
+							</dt>
+							<dd class="type--eth">2.3545 ETH</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div id="loginStep3" class="boxUserLogin" style="display:none;">
+				<div class="top">
+					<div class="title">My wallet</div>
+					<a href="#" class="history btnUserHistory">결제 내역</a>
+				</div>
+				<div class="keyArea v2">
+					<div class="row">
+						<dl>
+							<dt>
+								<div class="name">KLIP</div>
+								<div class="key"><a href="#" class="btnKey">0xfb33F79915991….7991E70f3</a></div>
+							</dt>
+							<dd class="type--klay">3,123 KLAY</dd>
+						</dl>
+					</div>
+					<div class="row">
+						<a href="#" class="wallet type--meta">메타마스크 연결하기</a>
+						<p>지갑을 연결하시고 서비스를 이용해 주세요!</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="loginStep4" class="boxUserLogin" style="display:none;">
+				<div class="top">
+					<div class="title">My wallet</div>
+					<a href="#" class="history btnUserHistory">결제 내역</a>
+				</div>
+				<div class="keyArea v2">
+					<div class="row">
+						<dl>
+							<dt>
+								<div class="name">KLIP</div>
+								<div class="key"><a href="#" class="btnKey">0xfb33F79915991….7991E70f3</a></div>
+							</dt>
+							<dd class="type--klay">3,123 KLAY</dd>
+						</dl>
+					</div>
+					<div class="row">
+						<dl>
+							<dt>
+								<div class="name">METAMASK</div>
+								<div class="key"><a href="#" class="btnKey">0xfb33F79915991….7991E70f3</a></div>
+							</dt>
+							<dd class="type--eth">2.3545 ETH</dd>
+							<dd class="type--eth">0.4434 WETH</dd>
+							<dd class="type--klay">3,123 KLAY</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabArea is--action">
+				<a href="#" class="active" data-tab="myTab1">참여한 에어드랍</a>
+				<a href="#" data-tab="myTab2">보유 NFT</a>
+			</div>
+			<div id="myTab1" class="tabCont active">
+				<div class="boxList">
+					<ul class="list">
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgAfter_1.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
+							</div>
+							<div class="cont">
+								<div class="title">박보은</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<div class="btnArea">
+									<button type="button">에어드롭 참여하기</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgAfter_2.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
+							</div>
+							<div class="cont">
+								<div class="title">김선유</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<div class="btnArea">
+									<button type="button" class="is--end">에어드롭 종료</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgAfter_3.png" alt="">
+								<div class="timer">19d 14h 14 : 25</div>
+							</div>
+							<div class="cont">
+								<div class="title">미나미</div>
+								<div class="bid">발행자 : 포켓돌스튜디오 / 참여자 : <span>250,000명</span></div>
+								<ul class="info">
+									<li>NFT명 : BANDGHJ</li>
+									<li>TOKEN ID : 2</li>
+									<li class="address">트랜잭션주소 : <span>2345dfkj34ljk34kj353kj543k5j2345dfkj34ljk34kj353kj543k5j</span></li>
+								</ul>
+								<div class="btnArea">
+									<button type="button">에어드롭 참여완료</button>
+								</div>
+							</div>
+						</li>
+						<li class="no-item">참여한 에어드랍이 없습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="myTab2" class="tabCont">
+				<div class="boxList">
+					<ul class="list is--thumb v2">
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgThumb_crypto1.png" alt="">
+							</div>
+							<div class="cont">
+								<div class="title">PMAN01</div>
+								<div class="user">@크립토페인터스</div>
+								<div class="btnArea">
+									<a href="#" class="btn is--white2 size-xs">거래하기</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgThumb_crypto2.png" alt="">
+							</div>
+							<div class="cont">
+								<div class="title">PMAN01</div>
+								<div class="user">@크립토페인터스</div>
+								<div class="btnArea">
+									<a href="#" class="btn is--white2 size-xs">거래하기</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgThumb_crypto3.png" alt="">
+							</div>
+							<div class="cont">
+								<div class="title">PMAN01</div>
+								<div class="user">@크립토페인터스</div>
+								<div class="btnArea">
+									<a href="#" class="btn is--white2 size-xs">거래하기</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="thumb">
+								<img src="../images/main/imgThumb_crypto4.png" alt="">
+							</div>
+							<div class="cont">
+								<div class="title">PMAN01</div>
+								<div class="user">@크립토페인터스</div>
+								<div class="btnArea">
+									<a href="#" class="btn is--white2 size-xs">거래하기</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="popLogout">LOG OUT</button>
+		</div>
+		<button type="button" class="btnUserInfo">홍길동</button>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 로그인 후 팝업 -->
 </body>
 <script type="text/javascript">
 	/* 메인 상단 슬라이드 */

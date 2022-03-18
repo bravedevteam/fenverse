@@ -54,7 +54,18 @@ $(function(){
   // 지갑 등록하기 액션 시작
   $(".boxUserLogin a.wallet").click(function(){
     $("#loginStep1").hide();
-    $("#loginStep2").show();
+    if($(this).parents(".boxUserLogin").attr("id") == 'loginStep1'){
+      if($(this).hasClass("type--meta")){
+        $("#loginStep3").show();
+      }else{
+        $("#loginStep2").show();
+      }
+    }else{
+      $("#loginStep2").hide();
+      $("#loginStep3").hide();
+      $("#loginStep4").show();
+    }
+    
   });
   // 지갑 등록하기 액션 끝
 

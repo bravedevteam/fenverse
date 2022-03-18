@@ -91,7 +91,9 @@ body.bg--white { background:#fff; }
 .btn.is--buy { height:54px; margin-top:20px; background:#5901e6; font-size:15px; color:#fff; }
 .btn.is--buy:before { content:''; width:21px; height:14px; display:inline-block; margin-right:8px; background:url('../images/common/iconBuy.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .btn.is--white { height:56px; border-radius:6px; border:1px solid #717171; background:#fff; font-size:16px; line-height:54px; }
+.btn.is--white2 { height:56px; border-radius:6px; border:1px solid #62668c; background:#fff; color:#62668c; font-size:16px; line-height:54px; }
 .btn.is--black { height:56px; border-radius:6px; background:#000; color:#fff; font-size:16px; line-height:54px; }
+.btn.size-xs { height:34px; font-size:11px; line-height:32px; }
 
 
 /* Main Top */
@@ -203,6 +205,7 @@ body.bg--white { background:#fff; }
 .boxList .list li .count span { font-weight:700; color:#5901e6; }
 .boxList .list li .title { font-size:15px; font-weight:700; color:#131523; }
 .boxList .list li .subject { margin-top:2px; font-size:13px; color:#000; }
+.boxList .list li .user { font-size:13px; color:#adadad; }
 .boxList .list li .priceArea { margin-top:18px; }
 .boxList .list li .priceArea span.title { font-size:11px; color:rgba(0,0,0,.3); }
 .boxList .list li .priceArea span.price { display:block; margin-top:2px; font-size:17px; font-weight:700; color:#000; }
@@ -249,6 +252,10 @@ body.bg--white { background:#fff; }
 .boxList .list.is--thumb li .subject,
 .boxList .list.is--thumb li .priceArea span.title,
 .boxList .list.is--thumb li .btnArea { display:none; }
+.boxList .list.is--thumb li .btnArea.is--visible { display:block; }
+
+.boxList .list.is--thumb.v2 li .cont { padding:6px 10px; }
+.boxList .list.is--thumb.v2 li .btnArea { display:block; margin-left:-4px; margin-right:-4px; }
 
 
 /* Paging */
@@ -537,7 +544,13 @@ body.bg--white { background:#fff; }
 .boxUserLogin .top a.history { font-size:11px; color:#000; }
 .boxUserLogin .top a.history:after { content:''; width:10px; height:10px; margin-left:3px; display:inline-block; background:url('../images/common/iconHistory.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxUserLogin .keyArea { min-height:108px; padding:0 16px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
-.boxUserLogin .keyArea a.wallet { font-size:13px; color:#000; text-decoration:underline; }
+.boxUserLogin .keyArea .row { width:100%; margin-top:0 }
+.boxUserLogin .keyArea .row+.row { padding-top:20px; border-top:1px solid rgba(0,0,0,.13); }
+.boxUserLogin .keyArea a.wallet { width:100%; height:56px; display:flex; align-items:center; justify-content:center; background:#216fea; border-radius:5px; color:#fff; font-size:13px; text-decoration:none; }
+.boxUserLogin .keyArea a.wallet:before { content:''; width:22px; height:12px; margin-right:12px; display:inline-block; background:url('../images/common/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxUserLogin .keyArea a.wallet.type--meta { background:#f4f6f9; font-size:14px; color:#000; }
+.boxUserLogin .keyArea a.wallet.type--meta:before { width:27px; height:25px; background-image:url('../images/common/iconWallet_meta.png'); }
+
 .boxUserLogin .keyArea dl { width:100%; display:flex; flex-direction:column; }
 .boxUserLogin .keyArea dl+dl { border-top:1px solid rgba(0,0,0,0.04); }
 .boxUserLogin .keyArea dt { padding-left:32px; background-size:22px auto; background-position:left center; background-repeat:no-repeat; font-size:20px; font-weight:600; }
@@ -548,13 +561,28 @@ body.bg--white { background:#fff; }
 .boxUserLogin .keyArea a.btnKey:before { content:''; width:1px; height:10px; position:absolute; right:33px; top:50%; background:rgba(0,0,0,.4); transform:translateY(-50%); }
 .boxUserLogin .keyArea a.btnKey:after { content:''; width:12px; height:14px; position:absolute; right:4px; top:50%; background:url('../images/common/iconUserKey.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 
+.boxUserLogin .keyArea.v2 { padding:20px 16px 0; }
+.boxUserLogin .keyArea.v2 dl { margin-bottom:20px; }
+.boxUserLogin .keyArea.v2 dt { margin-bottom:12px; padding-left:0; display:flex; align-items:center; }
+.boxUserLogin .keyArea.v2 dt .name { padding-right:8px; margin-right:8px; position:relative; font-size:11px; font-weight:500; }
+.boxUserLogin .keyArea.v2 dt .name:after { content:''; width:1px; height:10px; position:absolute; right:0; top:50%; background:rgba(0,0,0,.2); transform:translateY(-50%); }
+.boxUserLogin .keyArea.v2 dt .key { flex:1; }
+.boxUserLogin .keyArea.v2 dd { background-size:22px auto; background-position:left center; background-repeat:no-repeat; font-size:20px; font-weight:600; }
+.boxUserLogin .keyArea.v2 dd+dd { margin-top:6px; }
+.boxUserLogin .keyArea.v2 dd.type--klay { background-image:url('../images/common/iconCoin_klay.png'); }
+.boxUserLogin .keyArea.v2 dd.type--eth { background-image:url('../images/common/iconCoin_eth.png'); }
+.boxUserLogin .keyArea.v2 a.wallet { width:calc(100% - 8px); }
+.boxUserLogin .keyArea.v2 a.btnKey { position:relative; padding-right:24px; display:block; font-size:13px; color:#000; font-weight:300; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.boxUserLogin .keyArea.v2 a.btnKey:before { display:none; }
+.boxUserLogin .keyArea.v2 a.btnKey:after { content:''; width:12px; height:14px; position:absolute; right:4px; top:50%; background:url('../images/common/iconUserKey.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
+.boxUserLogin .keyArea.v2 p { height:48px; display:flex; align-items:center; justify-content:center; color:rgba(0,0,0,.5); }
+
 .boxUserLogin.is--before { background:#fff; border:1px solid #dbe0e8; }
 .boxUserLogin.is--before .top { justify-content: flex-end; background:#fff; }
 .boxUserLogin.is--before .top:after { display:none; }
 .boxUserLogin.is--before .keyArea { padding:3px 24px 0; justify-content: flex-start; }
-.boxUserLogin.is--before .keyArea a.wallet { width:100%; height:56px; display:flex; align-items:center; justify-content:center; background:#216fea; border-radius:5px; color:#fff; font-size:13px; text-decoration:none; }
-.boxUserLogin.is--before .keyArea a.wallet:before { content:''; width:22px; height:12px; margin-right:12px; display:inline-block; background:url('../images/common/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxUserLogin.is--before .keyArea p { height:48px; display:flex; align-items:center; justify-content:center; color:rgba(0,0,0,.5); }
+
 
 .boxWalletConnect .top { padding:0 10px; }
 .boxWalletConnect .top h6 { font-size:16px; font-weight:700; }
