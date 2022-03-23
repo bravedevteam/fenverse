@@ -225,7 +225,7 @@
 				
 				<div class="btnArea is--col">
 					<a href="#" class="btn is--white cancel close--popup">취소</a>
-					<a href="#" class="btn is--black submit">결제하기</a>
+					<a href="#" id="btnBooking" class="btn is--black submit">결제하기</a>
 				</div>
 			</div>
 		</div>
@@ -444,6 +444,39 @@
 		</div>
 	</div>
 	<!-- //상품 상세 -->
+
+	<!-- 결제하기 팝업 -->
+	<div id="popSign" class="popBasic type--complete btn--fixed">
+		<div class="inner">
+			<div class="boxFixed">
+				<div class="txtArea">
+					<h5>결제하기</h5>
+					<p>
+						구매하시는 상품과 금액을 확인하시고,<br />
+						결제하시기 바랍니다.
+					</p>
+				</div>
+				<div class="boxBasic sizeA">
+					<ul>
+						<li>결제정보 : 송가인 신규앨범 NFT</li>
+						<li>구매수량 : 1</li>
+						<li>결제금액 : 3,000 KLAY</li>
+					</ul>
+				</div>
+				<div class="inputBasic">
+					<input type="checkbox" id="chk_agree" />
+					<label for="chk_agree">결제동의</label>
+				</div>
+			</div>
+			<div class="btnArea">
+				<a href="#" class="klip">Klip 으로 결제</a>
+				<a href="#" class="metamask">Metamask 결제</a>
+				<a href="#">계좌이체</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 결제하기 팝업 -->
 </body>
 <script type="text/javascript">
 	$(function(){
