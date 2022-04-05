@@ -685,4 +685,5 @@ body.bg--white { background:#fff; }
 	#wrap { max-width:720px; margin:0 auto; }
 	#header { max-width:720px; left:50%; transform:translateX(-50%); }
 	.boxDetailTop { max-width:720px; left:50%; transform:translateX(-50%); }
+	.popBasic { max-width:720px; left:50%; transform:translateX(-50%); }
 }
