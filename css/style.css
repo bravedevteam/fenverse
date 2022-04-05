@@ -74,8 +74,10 @@ input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px
 
 body.bg--white { background:#fff; }
 
+#wrap { max-width:720px; margin:0 auto; }
+
 /* Header */
-#header { width:100%; height:68px; padding:0 16px; display:flex; align-items:center; justify-content:space-between; position:fixed; left:0; top:0; background:rgba(255,255,255,0); overflow:hidden; z-index:20; transition:all .3s; }
+#header { width:100%; max-width:720px; height:68px; padding:0 16px; display:flex; align-items:center; justify-content:space-between; position:fixed; left:50%; top:0; background:rgba(255,255,255,0); overflow:hidden; z-index:20; transition:all .3s; transform:translateX(-50%); }
 #header.is--white { background:#fff; }
 #header.fixed { background:rgba(255,255,255,1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06); }
 #header h1 { width:125px; height:26px; float:left; background:url('../images/common/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
