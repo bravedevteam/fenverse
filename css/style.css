@@ -33,6 +33,13 @@
 	url('../font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'DOSGothic';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* common */
 * {margin:0; padding:0; box-sizing: border-box; list-style:none; text-decoration:none;
 		outline: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; font-family:'Poppins','SpoqaHanSansNeo', sans-serif; }
@@ -100,6 +107,9 @@ body.bg--white { background:#fff; }
 .btn.size-xl { height:68px; font-size:15px; line-height:68px; }
 .btn.icon--opensea:before { content:''; width:20px; height:20px; display:inline-block; margin-right:10px; background:url('../images/common/btn_icon_opensea.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .btn.icon--discode:before { content:''; width:19px; height:15px; display:inline-block; margin-right:9px; background:url('../images/common/btn_icon_discode.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.btn.icon--telegram:before { content:''; width:19px; height:18px; display:inline-block; margin-right:9px; background:url('../images/common/btn_icon_telegram.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.btn.icon--kakao:before { content:''; width:21px; height:19px; display:inline-block; margin-right:9px; background:url('../images/common/btn_icon_kakao.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.btn.icon--medium:before { content:''; width:26px; height:15px; display:inline-block; margin-right:9px; background:url('../images/common/btn_icon_medium.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
 
 /* Main Top */
@@ -580,6 +590,24 @@ body.bg--white { background:#fff; }
 
 .popBasic.type--settle .inner { height:100%; padding:30px 16px; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
 .popBasic.type--settle .inner .boxSettle { padding:45px 10px 25px; position:relative; border-radius:14px; background:#fff; overflow:hidden; }
+
+.popBasic.type--lemon { background:transparent; }
+.popBasic.type--lemon .inner { height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
+.popBasic.type--lemon .cont { width:100%; position:relative; padding:56px 30px 66px; text-align:center; background-image: radial-gradient(circle at 50% 50%, #ffeb00, #ffd700); border-radius:14px; }
+.popBasic.type--lemon .cont.is--ranking p { font-size:16px; color:#000; font-weight:700; }
+.popBasic.type--lemon .cont.is--ranking p:before { content:''; width:35px; height:35px; margin:0 auto 10px; display:block; background:url('../images/content/iconRanking.png') center center no-repeat; background-size:100% auto; }
+
+.popBasic.type--rarity .inner { padding-top:70px; padding-bottom:50px; }
+.popBasic.type--rarity .topArea { margin-bottom:28px; }
+.popBasic.type--rarity .topArea h2 { font-size:21px; }
+
+.rarityTable+.rarityTable { margin-top:50px; }
+.rarityTable dt { width:100%; margin-bottom:4px; display:flex; align-items:center; justify-content:center; padding:7px 30px; background:#ffd800; font-size:13px; font-weight:300; color:#000; }
+.rarityTable dd { display:grid; grid-template-columns:repeat(3, 1fr); grid-gap:4px; }
+.rarityTable dd .item {  }
+.rarityTable dd .item a { display:block; }
+.rarityTable dd .item .name { background:#d3d3d3; font-size:15px; font-weight:500; font-family:"DOSGothic"; text-align:center; }
+.rarityTable dd .item .name span { color:#a8a8a8; }
 
 .boxUserLogin { border-radius:8px; background:#fde500; overflow:hidden; }
 .boxUserLogin .top { height:48px; padding:0 16px; display:flex; position:relative; justify-content:space-between; align-items:center; }
