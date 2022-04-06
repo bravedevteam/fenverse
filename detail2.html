@@ -641,7 +641,7 @@
 							<label for="chkType5" class="icon icon--metamask">Metamask 지갑</label>
 							
 							<!-- 메타마스크 지갑 연결 전 -->
-							<a href="#" class="connect icon icon--metamask">Metamask 연결하기</a>
+							<a href="#" id="wallet_metamask" class="connect icon icon--metamask">Metamask 연결하기</a>
 						</div>
 					</div>
 					<div class="radioGroup">
@@ -662,7 +662,7 @@
 					<input type="checkbox" id="chk_agree">
 					<label for="chk_agree">상품 구매 결제에 동의합니다.</label>
 				</div>
-				<a href="#">결제하기</a>
+				<a href="#" id="wallet_pay">결제하기</a>
 			</div>
 		</div>
 		<button type="button" class="popClose">닫기</button>
@@ -795,6 +795,14 @@
 			}
 		});
 		/* //NFT List 이미지 조정 */
+
+		$("#wallet_metamask").click(function(){
+			alert("메타마스크 연결하기");
+		});
+
+		$("#wallet_pay").click(function(){
+			alert("결제하기");
+		});
 	});
 </script>
 </html>
