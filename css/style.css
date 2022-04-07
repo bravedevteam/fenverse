@@ -497,7 +497,7 @@ body.bg--black { background:#000; }
 
 
 .boxPartners .titleArea .title { width:140px; height:46px; margin:0 auto; float:none; background:url('../images/main/titPartners.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-.boxPartners .btnArea { margin-top:25px; padding:0 16px; }
+.boxPartners .btnArea { padding:0 16px; }
 .boxPartners .btnArea a+a { margin-top:16px; }
 
 /* Footer */
