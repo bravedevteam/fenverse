@@ -157,15 +157,17 @@ $(function(){
   // 헤더 액션 시작
   $(window).on("scroll", function(){
     var _top = $(this).scrollTop();
-    if(0 < _top){
-      $("#header").addClass("fixed");
-      if($("#container").hasClass("main")){
-        $("#header h1").removeClass("is--white");
-      }
-    }else{
-      $("#header").removeClass("fixed");
-      if($("#container").hasClass("main")){
-        $("#header h1").addClass("is--white");
+    if(!$("#header").hasClass("is--absolute")){
+      if(0 < _top){
+        $("#header").addClass("fixed");
+        if($("#container").hasClass("main")){
+          $("#header h1").removeClass("is--white");
+        }
+      }else{
+        $("#header").removeClass("fixed");
+        if($("#container").hasClass("main")){
+          $("#header h1").addClass("is--white");
+        }
       }
     }
   });
