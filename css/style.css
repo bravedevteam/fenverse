@@ -34,6 +34,15 @@
 }
 
 @font-face {
+	font-family: 'Azonix';
+	font-weight: 400;
+	src: local('Azonix'),
+	url('../font/Azonix.woff2') format('woff2'),
+	url('../font/Azonix.woff') format('woff'),
+	url('../font/Azonix.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'DOSGothic';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
 	font-weight: normal;
@@ -96,7 +105,12 @@ body.bg--black { background:#000; }
 #container { padding-top:68px; }
 #container.main { padding-top:0; padding-bottom:25px; }
 #container.b0 { padding-bottom:0; }
-#container.page--lemong { padding-top:0; padding-bottom:50px; }
+#container.page--lemong { padding-top:0; padding-bottom:0px; }
+#container.page--lemong:before { content:''; width:100%; height:100%; position:fixed; left:0; top:0; background:url('../images/main/bgMainTop_lemong.png') center top no-repeat; background-size:100% auto; z-index:1; }
+#container.page--lemong .mainSection { position:relative; background:#000; z-index:10; }
+#container.page--lemong .mainSection.lemong { background:transparent; }
+#container.page--lemong .mainSection+.mainSection { margin-top:0; padding-top:30px; }
+#container.page--lemong+#footer { padding-top:56px; }
 
 
 /* Button */
@@ -460,7 +474,7 @@ body.bg--black { background:#000; }
 .boxLoadMap .btnArea .btn+.btn { margin-top:16px; }
 
 .lemongInfo .titleArea .title { float:none; text-align:center; font-size:19px; font-weight:600; color:#fff; }
-.lemongInfo .contArea { padding:0 16px; }
+.lemongInfo .contArea { width:270px; margin:0 auto; letter-spacing:-.03em; }
 .lemongInfo .contArea .item { min-height:38px; padding:10px 13px; display:flex; align-items:center; justify-content:center; border-radius:5px; border:1px solid #fff720; text-align:center; }
 .lemongInfo .contArea .item.item1 { background:#fff720; color:#000; font-size:15px; font-weight:700; }
 .lemongInfo .contArea .item.item2 { margin-top:6px; }
@@ -480,8 +494,8 @@ body.bg--black { background:#000; }
 .boxLemongStory .thumb-swiper .swiper-slide img { opacity:.5; }
 .boxLemongStory .thumb-swiper .swiper-slide.swiper-slide-thumb-active img { opacity:1; }
 .boxLemongStory .cont { padding:25px 16px; color:#fff; }
-.boxLemongStory .cont .title { margin-bottom:10px; font-size:19px; font-weight:600; }
-.boxLemongStory .cont p { font-size:15px; line-height:23px; }
+.boxLemongStory .cont .title { margin-bottom:10px; font-size:19px; font-family:"Azonix"; }
+.boxLemongStory .cont p { font-size:15px; line-height:23px; word-break: keep-all; }
 .boxLemongStory .swiper-button-next,
 .boxLemongStory .swiper-button-prev { width:36px; height:36px; margin-top:0; top:26%; background-size:100% auto; background-repeat:no-repeat; background-position:center center; }
 .boxLemongStory .swiper-button-prev,
