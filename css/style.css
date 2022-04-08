@@ -34,12 +34,12 @@
 }
 
 @font-face {
-	font-family: 'Azonix';
+	font-family: 'Azonix-Regular';
 	font-weight: 400;
-	src: local('Azonix'),
-	url('../font/Azonix.woff2') format('woff2'),
-	url('../font/Azonix.woff') format('woff'),
-	url('../font/Azonix.ttf') format('truetype');
+	src: local('Azonix-Regular'),
+	url('../font/Azonix-Regular.woff2') format('woff2'),
+	url('../font/Azonix-Regular.woff') format('woff'),
+	url('../font/Azonix-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -105,12 +105,11 @@ body.bg--black { background:#000; }
 #container { padding-top:68px; }
 #container.main { padding-top:0; padding-bottom:25px; }
 #container.b0 { padding-bottom:0; }
-#container.page--lemong { padding-top:0; padding-bottom:0px; }
-#container.page--lemong:before { content:''; width:100%; height:100%; position:fixed; left:0; top:0; background:url('../images/main/bgMainTop_lemong.png') center top no-repeat; background-size:100% auto; z-index:1; }
-#container.page--lemong .mainSection { position:relative; background:#000; z-index:10; }
+#container.page--lemong { padding-top:0; padding-bottom:30px; }
+#container.page--lemong:before { content:''; width:100%; height:100%; position:fixed; left:0; top:0; background:url('../images/main/bgMainTop_lemong.png') center top; background-size:100% auto; z-index:1; }
+#container.page--lemong .mainSection { position:relative; z-index:10; }
 #container.page--lemong .mainSection.lemong { background:transparent; }
 #container.page--lemong .mainSection+.mainSection { margin-top:0; padding-top:30px; }
-#container.page--lemong+#footer { padding-top:56px; }
 
 
 /* Button */
@@ -494,7 +493,7 @@ body.bg--black { background:#000; }
 .boxLemongStory .thumb-swiper .swiper-slide img { opacity:.5; }
 .boxLemongStory .thumb-swiper .swiper-slide.swiper-slide-thumb-active img { opacity:1; }
 .boxLemongStory .cont { padding:25px 16px; color:#fff; }
-.boxLemongStory .cont .title { margin-bottom:10px; font-size:19px; font-family:"Azonix"; }
+.boxLemongStory .cont .title { margin-bottom:10px; font-size:19px; font-family:"Azonix-Regular"; }
 .boxLemongStory .cont p { font-size:15px; line-height:23px; word-break: keep-all; }
 .boxLemongStory .swiper-button-next,
 .boxLemongStory .swiper-button-prev { width:36px; height:36px; margin-top:0; top:26%; background-size:100% auto; background-repeat:no-repeat; background-position:center center; }
@@ -779,6 +778,7 @@ body.bg--black { background:#000; }
 @media screen and (min-width:720px){
 	#wrap { max-width:720px; margin:0 auto; }
 	#header { max-width:720px; left:50%; transform:translateX(-50%); }
+	#container.page--lemong:before { max-width:720px; left:50%; transform:translateX(-50%); }
 	.boxDetailTop { max-width:720px; left:50%; transform:translateX(-50%); }
 	.popBasic { max-width:720px; left:50%; transform:translateX(-50%); }
 }
