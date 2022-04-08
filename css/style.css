@@ -212,6 +212,8 @@ body.bg--black { background:#000; }
 .mainSection.boxYoutube { margin-top:17px; }
 .mainSection.bn { padding:0 16px; }
 
+
+
 .section { position:relative; }
 .section.section--detail { background:#fff; z-index:10; }
 .section.section--detail:before { content:''; width:100%; height:25px; position:absolute; left:0; top:-24px; background:#fff; border-top-left-radius: 20px; border-top-right-radius:20px; }
@@ -471,6 +473,9 @@ body.bg--black { background:#000; }
 .boxLoadMap.is--full { padding:0; }
 .boxLoadMap .btnArea { margin-top:16px; }
 .boxLoadMap .btnArea .btn+.btn { margin-top:16px; }
+
+.boxLemongMov { margin:0 16px; box-shadow: 0 3px 18px 0 rgba(255, 247, 32, 0.41); border: solid 1px #ffeb00; border-radius:10px; overflow:hidden; }
+.boxLemongMov video { width:100%; vertical-align:top; }
 
 .lemongInfo .titleArea .title { float:none; text-align:center; font-size:19px; font-weight:600; color:#fff; }
 .lemongInfo .contArea { width:270px; margin:0 auto; letter-spacing:-.03em; }
