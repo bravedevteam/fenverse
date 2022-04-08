@@ -474,7 +474,7 @@ body.bg--black { background:#000; }
 .boxLoadMap .btnArea { margin-top:16px; }
 .boxLoadMap .btnArea .btn+.btn { margin-top:16px; }
 
-.boxLemongMov { margin:0 16px; box-shadow: 0 3px 18px 0 rgba(255, 247, 32, 0.41); border: solid 1px #ffeb00; border-radius:10px; overflow:hidden; }
+.boxLemongMov { margin:20px 16px; box-shadow: 0 3px 18px 0 rgba(255, 247, 32, 0.41); border: solid 1px #ffeb00; border-radius:10px; overflow:hidden; }
 .boxLemongMov video { width:100%; vertical-align:top; }
 
 .lemongInfo .titleArea .title { float:none; text-align:center; font-size:19px; font-weight:600; color:#fff; }
