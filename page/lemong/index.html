@@ -171,11 +171,61 @@
 			<button type="button" class="popLogout">LOG OUT</button>
 		</div>
 		<div class="opt_btn">
-			<a href="#" class="modify">지갑변경</a>
+			<a href="#" class="modify open--popup" data-pop="popWallet">지갑변경</a>
 		</div>
 		<button type="button" class="popClose">닫기</button>
 	</div>
 	<!-- // 로그인 후 팝업 -->
+
+	<!-- 지갑 연결하기 팝업 -->
+	<div id="popWallet" class="popBasic type--wallet btn--fixed">
+		<div class="inner">
+			<div class="boxWalletConnect">
+				<div class="top">
+					<h6>지갑연결</h6>
+					<p>지갑을 연결하시면 자동으로 회원가입이 완료됩니다.</p>
+				</div>
+				<div class="wallet is--full">
+					<a href="#" class="icon icon--klay open--popup" data-pop="popWalletMod">Kaikas 연결하기</a>
+				</div>
+				
+			</div>
+			<div class="btnJoin">
+				<div class="checkGroup">
+					<div class="check is--view">
+						<input type="checkbox" id="chk_marketing" />
+						<label for="chk_marketing">마케팅 정보 활용에 동의합니다.</label>
+						<a href="#">보기</a>
+					</div>
+				</div>
+				<button type="button">가입하기</button><!-- 활성화 클래스 active 추가 -->
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 지갑 연결하기 팝업 -->
+
+	<!-- 지갑 변경하기 팝업 -->
+	<div id="popWalletMod" class="popBasic type--wallet btn--fixed">
+		<div class="inner">
+			<div class="boxWalletConnect">
+				<div class="top">
+					<h6>지갑변경</h6>
+					<p>지갑을 변경하시려면 지갑을 새로 연결해 주세요!</p>
+				</div>
+				<div class="wallet is--full">
+					<a href="#" class="icon icon--klay">새로운 Kaikas 연결하기</a>
+					<p>0x3qoekvn99281clslei92727xkxosiuw937dhxjszkwdwd</p>
+				</div>
+				
+			</div>
+			<div class="btnJoin">
+				<button type="button" class="active">변경완료</button><!-- 활성화 클래스 active 추가 -->
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</div>
+	<!-- // 지갑 변경하기 팝업 -->
 
 	<!-- 결제하기 팝업 -->
 	<div id="popSign" class="popBasic type--complete btn--fixed">
@@ -190,56 +240,16 @@
 				<div class="boxBasic sizeA">
 					<ul>
 						<li>결제정보 : 레옹 미스테리 박스</li>
-						<li>구매수량 : 2</li>
-						<li>결제금액 : 100,000원</li>
+						<li>구매수량 : 10</li>
+						<li>결제금액 : 4,000 KLAY</li>
 					</ul>
 				</div>
-				<div class="row">
-					<h6>구매수단 선택</h6>
+				<div class="row is--single">
+					<h6>결제 및 NFT를 전송 받을 지갑</h6>
 					<div class="radioGroup">
 						<div>
-							<input type="radio" id="chkType1" name="chkBuyType" />
-							<label for="chkType1">신용카드</label>
-						</div>
-						<div>
-							<input type="radio" id="chkType2" name="chkBuyType" />
-							<label for="chkType2">계좌이체</label>
-						</div>
-					</div>
-					<div class="radioGroup">
-						<div>
-							<input type="radio" id="chkType3" name="chkBuyType" />
-							<label for="chkType3" class="icon icon--metamask">Metamask 지갑으로 결제</label>
-						</div>
-					</div>
-					<div class="radioGroup">
-						<div>
-							<input type="radio" id="chkType4" name="chkBuyType" />
-							<label for="chkType4" class="icon icon--klip">Klip 지갑으로 결제</label>
-						</div>
-					</div>
-				</div>
-				<div class="row is--line">
-					<h6>NFT 전송 받을 지갑 선택</h6>
-					<div class="radioGroup">
-						<div>
-							<!-- 메타마스크 지갑 연결 후 -->
-							<input type="radio" id="chkType5" name="chkWallet" />
-							<label for="chkType5" class="icon icon--metamask">Metamask 지갑</label>
-							
-							<!-- 메타마스크 지갑 연결 전 -->
-							<a href="#" id="wallet_metamask" class="connect icon icon--metamask">Metamask 연결하기</a>
-						</div>
-					</div>
-					<div class="radioGroup">
-						<div>
-							<!-- Klip 지갑 연결 전 -->
-							<a href="#" class="connect icon icon--klip">카카오톡으로 Klip 지갑 연결</a>
-
-							<!-- Klip 지갑 연결 후 -->
-							<input type="radio" id="chkType6" name="chkWallet" disabled /><!-- 비활성화시 disabled 추가 -->
-							<label for="chkType6" class="icon icon--klip">Klip 지갑</label>
-							<div class="imp">주문하시는 NFT는 클립지갑으로 전송 받으실 수 없습니다.</div>
+							<input type="radio" id="chkKlay" name="chkBuyType" />
+							<label for="chkKlay" class="icon icon--klay">0x3qoekvn99281c…37dhxjszkwdwd</label>
 						</div>
 					</div>
 				</div>
