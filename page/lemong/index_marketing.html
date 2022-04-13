@@ -49,12 +49,12 @@
 				<div class="boxLemongStory">
 					<div class="thumb">
 						<div class="left">
-							<a href="#" data-story="0" class="active"><img src="../../images/main/thumbLemongStory1.png"/></a>
-							<a href="#" data-story="1"><img src="../../images/main/thumbLemongStory2.png"/></a>
-							<a href="#" data-story="2"><img src="../../images/main/thumbLemongStory3.png"/></a>
+							<a href="#" data-story="0" class="story_slide0 active"><img src="../../images/main/thumbLemongStory1.png"/></a>
+							<a href="#" data-story="1" class="story_slide1"><img src="../../images/main/thumbLemongStory2.png"/></a>
+							<a href="#" data-story="2" class="story_slide2"><img src="../../images/main/thumbLemongStory3.png"/></a>
 						</div>
 						<div class="right">
-							<a href="#" data-story="3"><img src="../../images/main/thumbLemongStory4.png"/></a>
+							<a href="#" data-story="3" class="story_slide3"><img src="../../images/main/thumbLemongStory4.png"/></a>
 						</div>
 					</div>
 					<div class="swiper-container">
@@ -172,6 +172,7 @@
 </body>
 
 <script type="text/javascript">
+	var target = 0;
 	var storySwiper = new Swiper(".boxLemongStory .swiper-container", {
 		spaceBetween: 0,
 		pagination: {
@@ -186,12 +187,17 @@
 			init : function () {
 				ls_arrow();
 			},
+			slideChange: function () {
+				target = this.realIndex;
+				$(".boxLemongStory .thumb a").removeClass("active");
+				$(".boxLemongStory .story_slide"+target).addClass("active");
+			}
 		}
 	});
 
 	$(".boxLemongStory .thumb a").click(function(e){
 		e.preventDefault();
-		var target = $(this).attr("data-story");
+		target = $(this).attr("data-story");
 		$(".boxLemongStory .thumb a").removeClass("active");
 		$(this).addClass("active");
 
