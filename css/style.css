@@ -297,6 +297,7 @@ body.bg--black { background:#000; }
 .boxList.type--lemong .list li { background:#010c1a; border:1px solid #ffec03; box-shadow: 0 3px 10px 0 rgba(255, 236, 3, 0.45); }
 .boxList.type--lemong .list li .count { color:rgba(255,255,255,.5); }
 .boxList.type--lemong .list li .count span { color:#ffec03; }
+.boxList.type--lemong .list li .thumb video { width:100%; }
 .boxList.type--lemong .list li .title { font-size:21px; color:#fff; }
 .boxList.type--lemong .list li .subject { color:#fff; }
 .boxList.type--lemong .list li .priceArea { display:flex; justify-content: space-between; align-items:center; margin-top:30px; }
@@ -529,11 +530,11 @@ body.bg--black { background:#000; }
 .lemongStory .titleArea .opt { float:right; color:#fff720; font-family:"Azonix-Regular"; font-size:19px; font-weight:400; }
 .boxLemongStory .thumb { padding:0 16px; margin-bottom:16px; display:flex; justify-content:space-between; }
 .boxLemongStory .thumb a.active { border:1px solid #fff720; }
-.boxLemongStory .thumb .left { width:78.472%; display:flex; }
-.boxLemongStory .thumb .left a { width:calc(33.3% - 16px); flex:1; border-radius:5px; overflow:hidden; }
+.boxLemongStory .thumb .left { width:68.9%; display:flex; }
+.boxLemongStory .thumb .left a { border-radius:5px; overflow:hidden; }
 .boxLemongStory .thumb .left a+a { margin-left:8px; }
-.boxLemongStory .thumb .right { width:29.861%; margin-left:16px; display:flex; }
-.boxLemongStory .thumb .right a { display:block; }
+.boxLemongStory .thumb .right { width:26.219%; display:flex; justify-content:flex-end; }
+.boxLemongStory .thumb .right a { display:block; border-radius:5px; overflow:hidden; }
 .boxLemongStory .thumb-swiper { padding:0 16px; margin-bottom:16px; }
 .boxLemongStory .thumb-swiper .swiper-slide { width:calc(33% - 10px); border-radius:5px; overflow:hidden; }
 .boxLemongStory .thumb-swiper .swiper-slide.swiper-slide-thumb-active { border:1px solid #fff720; }
@@ -831,6 +832,8 @@ body.bg--black { background:#000; }
 .popBasic.type--user.is--lemong .tabArea:before { width:calc(100% - 4px); left:1px; }
 
 .popBasic.is--lemong .boxUserLogin { background:#e7eaef; }
+.popBasic.is--lemong .boxUserLogin .top a.history { font-size:12px; }
+.popBasic.is--lemong .boxUserLogin .top a.history:after { width:12px; height:13px; margin-left:6px; }
 .popBasic.is--lemong .boxUserLogin .keyArea { min-height:72px; flex-direction:row; }
 .popBasic.is--lemong .boxUserLogin .keyArea .name { font-size:11px; font-weight:500; color:#000; }
 .popBasic.is--lemong .boxUserLogin .keyArea .key { flex:1; }
