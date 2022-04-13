@@ -370,6 +370,7 @@ body.bg--black { background:#000; }
 .btnJoin { margin-top:35px; }
 .btnJoin button { width:100%; height:62px; background:#bebebe; color:#fff; font-size:14px; font-weight:700; }
 .btnJoin button.active { background:#000; }
+.btnJoin .checkGroup { margin-bottom:24px; }
 
 
 /* Detail */
@@ -642,12 +643,17 @@ body.bg--black { background:#000; }
 
 .boxWalletConnect .top { padding:0 10px; }
 .boxWalletConnect .top h6 { margin:0; font-size:16px; font-weight:700; text-align:left; }
-.boxWalletConnect .top p { margin-top:3px; font-size:13px; }
+.boxWalletConnect .top p { margin-top:3px; font-size:13px; word-break: break-all; }
 .boxWalletConnect .wallet { width:284px; margin:23px auto 0; }
 .boxWalletConnect .wallet .wallet_row { word-break:break-all; }
 .boxWalletConnect .wallet .wallet_row .title { margin-bottom:20px; font-size:13px; font-weight:700; text-align:center; }
-.boxWalletConnect .wallet .wallet_row p { display:block; margin-top:5px; color:#000; font-size:13px; opacity:.5; }
+.boxWalletConnect .wallet p { display:block; margin-top:5px; color:#000; font-size:13px; opacity:.5; }
 .boxWalletConnect .wallet .wallet_row+.wallet_row { margin-top:10px; }
+.boxWalletConnect .wallet.is--full { width:auto; margin-top:52px; }
+.boxWalletConnect .wallet.is--full p { margin-top:16px; padding:0 30px; }
+.boxWalletConnect .wallet a { height:62px; display:flex; align-items:center; justify-content:center; background:#f4f6f9; border-radius:5px; color:#000; font-size:14px; }
+.boxWalletConnect .wallet a.icon:before { content:''; display:inline-block; margin-right:8px; background-size:100% auto; background-repeat:no-repeat; background-position:center center; vertical-align:middle; }
+.boxWalletConnect .wallet a.icon--klay:before { width:15px; height:15px; background-image:url('../images/common/iconKlay.png'); }
 .boxWalletConnect .check { padding:0 10px; margin-top:35px; position:relative; }
 .boxWalletConnect .check+.check { margin-top:13px; }
 .boxWalletConnect .check input[type="checkbox"] { position:absolute; left:-99999px; top:0; opacity:0; }
@@ -662,6 +668,15 @@ body.bg--black { background:#000; }
 .boxWalletConnect.is--info .wallet .wallet_row p { margin-top:15px; }
 .boxWalletConnect.is--info .wallet .wallet_row+.wallet_row { margin-top:50px; }
 .boxWalletConnect.is--info+.btnJoin { margin-top:70px; }
+
+.checkGroup .check { padding:0 10px; margin-top:35px; position:relative; }
+.checkGroup .check+.check { margin-top:13px; }
+.checkGroup .check input[type="checkbox"] { position:absolute; left:-99999px; top:0; opacity:0; }
+.checkGroup .check input[type="checkbox"]+label { margin-left:0; display:block; padding-left:35px; position:relative; line-height:25px; font-size:13px; }
+.checkGroup .check input[type="checkbox"]+label:before { content:''; width:25px; height:25px; position:absolute; left:0; top:0; border:1px solid #585858; }
+.checkGroup .check input[type="checkbox"]:checked+label:before { background:url('../images/common/iconCheck.png') center center no-repeat #000; background-size:14px auto; }
+.checkGroup .check.is--view { display:flex; justify-content: space-between; align-items:center; }
+.checkGroup .check.is--view a { font-size:13px; border-bottom:1px solid #000; color:#000; opacity:.5; }
 
 .listHistory {  }
 .listHistory li { padding-bottom:8px; border-bottom:1px solid #eaeaea; }
@@ -708,15 +723,18 @@ body.bg--black { background:#000; }
 .popBasic .row h6 { padding:0 10px; margin-bottom:10px; font-size:13px; font-weight:400; text-align:left; }
 .popBasic .row+.row.is--line { position:relative; margin-top:40px; padding-top:5px; }
 .popBasic .row+.row.is--line:before { content:''; height:5px; position:absolute; left:-16px; right:-16px; top:-0; background:#f4f6f9;  }
+.popBasic .row.is--single { margin-top:66px; }
 .popBasic .radioGroup { padding:0 4px; display:flex; overflow:hidden; }
 .popBasic .radioGroup>div { flex:1; position:relative; }
 .popBasic .radioGroup>div+div { margin-left:6px; }
 .popBasic .radioGroup input { position:absolute; left:6px; top:6px; }
 .popBasic .radioGroup label { height:58px; display:block; border:1px solid #c0c9d4; border-radius:4px; text-align:center; line-height:56px; font-size:14px; }
 .popBasic .radioGroup input:checked+label { border-color:#3127ff; }
+.popBasic .radioGroup .icon--klay { padding:0 17px 0 36px; display:flex; justify-content:space-between; align-items:center; }
 .popBasic .radioGroup .icon:before { content:''; display:inline-block; margin-right:8px; background-repeat:no-repeat; background-size:100% auto; background-position:center center; vertical-align:middle; }
 .popBasic .radioGroup .icon--metamask:before { width:22px; height:23px; background-image:url('../images/common/iconMetamask.png'); }
 .popBasic .radioGroup .icon--klip:before { width:22px; height:11px; background-image:url('../images/common/iconKlip_black.png'); }
+.popBasic .radioGroup .icon--klay:before { width:22px; height:22px; background-image:url('../images/common/iconKlay.png'); }
 .popBasic .radioGroup input:disabled { display:none; }
 .popBasic .radioGroup input:disabled+label { color:rgba(0,0,0,.3); }
 .popBasic .radioGroup input:disabled+label.icon:before { opacity:.3; }
@@ -772,6 +790,10 @@ body.bg--black { background:#000; }
 .popBasic.type--join .tabArea>a.active { border-bottom:2px solid #000; }
 .popBasic.type--join .tabArea>a+a { margin-left:28px; }
 .popBasic.type--join .tabArea>a+a:before { content:''; width:1px; height:14px; position:absolute; left:-14px; top:50%; background:rgba(0,0,0,0.1); transform:translateY(-50%); }
+
+.popBasic.type--wallet .inner { padding:83px 16px 40px; }
+.popBasic.type--wallet .boxWalletConnect .top h6 { font-size:23px; }
+.popBasic.type--wallet .boxWalletConnect .top p { margin-top:11px; }
 
 .popBasic.type--user .inner { padding-top:74px; }
 .popBasic.type--user .tabArea { display:flex; margin-top:22px; position:relative; border-radius:8px; background:#f4f6f9; overflow:hidden; }
