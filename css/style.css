@@ -303,7 +303,7 @@ body.bg--black { background:#000; }
 .boxList.type--lemong .list li .subject { color:#fff; }
 .boxList.type--lemong .list li .priceArea { display:flex; justify-content: space-between; align-items:center; margin-top:30px; }
 .boxList.type--lemong .list li .priceArea .num {  }
-.boxList.type--lemong .list li .priceArea .num a { border:1px solid #fff; }
+.boxList.type--lemong .list li .priceArea .num a { background-size:12px auto; border:1px solid #fff; }
 .boxList.type--lemong .list li .priceArea .num a.down { background-image:url('../images/common/btnCountDown2.png'); }
 .boxList.type--lemong .list li .priceArea .num a.up { background-image:url('../images/common/btnCountUp2.png'); }
 .boxList.type--lemong .list li .priceArea .num input { background:transparent; border-top:1px solid #fff; border-bottom:1px solid #fff; color:#fff; }
