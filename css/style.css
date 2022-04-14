@@ -115,11 +115,13 @@ body.bg--black { background:#000; }
 
 /* Button */
 .btn { width:100%; height:44px; display:block; border-radius:9px; background:#fde500; font-size:14px; font-weight:700; color:#000; text-align:center; }
+.btn+.btn { margin-top:6px; }
 .btn.is--buy { height:54px; margin-top:20px; background:#5901e6; font-size:15px; color:#fff; }
 .btn.is--buy:before { content:''; width:21px; height:14px; display:inline-block; margin-right:8px; background:url('../images/common/iconBuy.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .btn.is--white { height:56px; border-radius:6px; border:1px solid #717171; background:#fff; font-size:16px; line-height:54px; }
 .btn.is--white2 { height:56px; border-radius:6px; border:1px solid #62668c; background:#fff; color:#62668c; font-size:16px; line-height:54px; }
 .btn.is--black { height:56px; border-radius:6px; background:#000; color:#fff; font-size:16px; line-height:54px; }
+.btn.is--gray { background:#b4b4b4; color:#000; }
 .btn.size-xs { height:34px; font-size:11px; line-height:32px; }
 .btn.size-l { height:54px; font-size:15px; line-height:54px; }
 .btn.size-xl { height:68px; font-size:15px; line-height:68px; }
@@ -213,7 +215,6 @@ body.bg--black { background:#000; }
 .mainSection .titleArea .listType a.typeList.on { background-image:url('../images/common/btnTypeList_on.png'); }
 .mainSection.boxYoutube { margin-top:17px; }
 .mainSection.bn { padding:0 16px; }
-.mainSection.type--lemong { margin-bottom:90px; }
 
 
 .section { position:relative; }
@@ -256,11 +257,11 @@ body.bg--black { background:#000; }
 .boxList .list li .subject { margin-top:2px; font-size:13px; color:#000; }
 .boxList .list li .user { font-size:13px; color:#adadad; }
 .boxList .list li .priceArea { margin-top:18px; }
-.boxList .list li .priceArea .num { overflow:hidden; }
-.boxList .list li .priceArea .num a { width:32px; height:32px; float:left; background-size:7px auto; background-position:center center; background-repeat:no-repeat; border:1px solid #e8e8e8; font-size:0; text-indent:-99999px; }
+.boxList .list li .priceArea .num { display:flex; }
+.boxList .list li .priceArea .num a { width:32px; height:32px; background-size:7px auto; background-position:center center; background-repeat:no-repeat; border:1px solid #e8e8e8; font-size:0; text-indent:-99999px; }
 .boxList .list li .priceArea .num a.down { background-image:url('../images/common/btnCountDown.png'); }
 .boxList .list li .priceArea .num a.up { background-image:url('../images/common/btnCountUp.png'); }
-.boxList .list li .priceArea .num input { width:35px; height:32px; float:left; padding:0; border-radius:0; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; border-left:0; border-right:0; text-align:center; }
+.boxList .list li .priceArea .num input { width:60px; height:32px; padding:0 5px; border-radius:0; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; border-left:0; border-right:0; text-align:center; }
 .boxList .list li .priceArea span.title { font-size:11px; color:rgba(0,0,0,.3); }
 .boxList .list li .priceArea span.price { display:block; margin-top:2px; font-size:17px; font-weight:700; color:#000; }
 .boxList .list li .bid { margin-top:5px; font-size:13px; color:#000; }
@@ -336,6 +337,14 @@ body.bg--black { background:#000; }
 
 .boxList .list.is--thumb.v2 li .cont { padding:6px 10px; }
 .boxList .list.is--thumb.v2 li .btnArea { display:block; margin-left:-4px; margin-right:-4px; }
+
+.boxMinting .title { margin-bottom:16px; font-size:17px; color:#fff; font-weight:700; text-align:center; }
+.boxMinting .itemGroup { display:flex; margin-bottom:60px; }
+.boxMinting .itemGroup .item { flex:1; position:relative; text-align:center; }
+.boxMinting .itemGroup .item+.item:before { content:''; width:1px; height:36px; position:absolute; left:0; top:50%; background:#fff; transform:translateY(-50%); }
+.boxMinting .itemGroup .item .top { font-size:11px; color:#fff; }
+.boxMinting .itemGroup .item .num { margin-top:4px; color:#fff; font-weight:700; font-size:22px; letter-spacing:-0.05em; }
+.boxMinting .itemGroup .item:first-child .num { color:#ffec03; }
 
 
 /* Paging */
@@ -743,6 +752,8 @@ body.bg--black { background:#000; }
 .popBasic .radioGroup .connect.icon--klip:before { background-image:url('../images/common/iconKlip.png'); }
 .popBasic .radioGroup+.radioGroup { margin-top:7px; }
 .popBasic .radioGroup .imp { margin:15px 0; color:#f00; font-size:11px; text-align:center; }
+.popBasic .radioGroup+.subs { margin-top:45px; font-size:13px; text-align:center; }
+.popBasic .radioGroup+.subs span { color:#2277ff; }
 .popBasic .boxYear { height:30px; padding:0 26px; background:#f4f6f9; line-height:30px; font-size:13px; }
 .popBasic .btnUserInfo { position:absolute; left:16px; top:21px; padding:0 8px; font-size:18px; }
 .popBasic .btnUserInfo:after { content:''; width:10px; height:10px; margin-left:8px; display:inline-block; background:url('../images/common/iconUserLink.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
@@ -750,6 +761,7 @@ body.bg--black { background:#000; }
 .popBasic .popLogout:before { content:''; width:13px; height:14px; margin-right:4px; background:url('../images/common/iconLogout.png') center center no-repeat; background-size:100% auto; }
 .popBasic .popPrev { width:12px; height:19px; position:absolute; left:16px; top:28px; background:url('../images/common/popPrev.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .popBasic .popClose { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/popClose.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+.popBasic .popClose.is--white { background-image:url('../images/common/popClose_white.png'); }
 .popBasic .opt_btn { position:absolute; left:20px; top:23px; overflow:hidden; }
 .popBasic .opt_btn a { height:20px; float:left; line-height:20px; }
 .popBasic .opt_btn a+a { margin-left:20px; }
@@ -862,7 +874,13 @@ body.bg--black { background:#000; }
 .popBasic.is--lemong .boxUserLogin .keyArea a.btnKey { padding-left:16px; padding-right:14px; }
 .popBasic.is--lemong .boxUserLogin .keyArea a.btnKey:before { right:auto; left:8px; background:rgba(0,0,0,.2); }
 
-
+.popBasic.type--finish { background:transparent; }
+.popBasic.type--finish .inner { height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
+.popBasic.type--finish .boxFinish { position:relative; padding:36px 20px; border-radius: 14px; border: solid 1px #ffec03; background-image: radial-gradient(circle at 50% 50%, #001229, #000); text-align:center; }
+.popBasic.type--finish .boxFinish .top { width:266px; margin:0 auto 16px; }
+.popBasic.type--finish .boxFinish .cont { color:#fff; text-align:center; font-size:14px; line-height:23px; }
+.popBasic.type--finish .boxFinish .cont strong { display:block; font-weight:700; }
+.popBasic.type--finish .popClose { right:20px; top:20px; }
 
 @media screen and (min-width:720px){
 	#wrap { max-width:720px; margin:0 auto; }
