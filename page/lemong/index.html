@@ -33,22 +33,38 @@
 						</div>
 						<div class="cont">
 							<div class="count"><span>555/555</span> 개 판매완료</div>
-							<div class="title">레몽 미스테리 박스</div>
+							<div class="title">Lemong Mystery Box</div>
 							<div class="subject">By cryptolemon</div>
 							<div class="priceArea">
 								<div class="num">
 									<a href="#" class="down">down</a>
-									<input type="text" value="1">
+									<input type="text" value="1234">
 									<a href="#" class="up">up</a>
 								</div>
 								<span class="price">400 Klay</span>
 							</div>
 							<div class="btnArea">
+								
 								<a href="#" class="btn size-l open--popup" data-pop="popSign"">구매하기</a>
+								
+								<a href="#" class="btn size-l is--gray open--popup" data-pop="popFinish">판매완료</a>
 							</div>
 						</div>
 					</li>
 				</ul>
+			</div>
+			<div class="mainSection boxMinting">
+				<div class="title">Minting Block Number</div>
+				<div class="itemGroup">
+					<div class="item">
+						<div class="top">CURRENT BLOCK</div>
+						<div class="num">#88364041</div>
+					</div>
+					<div class="item">
+						<div class="top">MINTING START AT</div>
+						<div class="num">#88364041</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<footer id="footer">
@@ -252,6 +268,7 @@
 							<label for="chkKlay" class="icon icon--klay">0x3qoekvn99281c…37dhxjszkwdwd</label>
 						</div>
 					</div>
+					<div class="subs">민팅이 완료되면 <span>Opensea.Io</span>에서 확인할 수 있습니다. </div>
 				</div>
 			</div>
 			<div class="btnArea">
@@ -328,5 +345,21 @@
 		<button type="button" class="popClose">닫기</button>
 	</div>
 	<!-- // 결제내역 팝업 -->
+
+	<!-- 판매완료 팝업 -->
+	<div id="popFinish" class="popBasic type--finish">
+		<div class="inner">
+			<div class="boxFinish">
+				<div class="top"><img src="../../images/content/imgFinish.png" alt="" /></div>
+				<div class="cont">
+					<strong>레몽 미스테리박스</strong>
+					1차 커뮤니티 세일이 종료되었습니다.<br />
+					래몽프로젝트에 참여해 주셔서 감사드립니다.
+				</div>
+				<button type="button" class="popClose is--white">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- // 판매완료 팝업 -->
 </body>
 </html>
