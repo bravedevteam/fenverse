@@ -6,6 +6,7 @@
 	<title>LEMONG</title>
   <link rel="stylesheet" href="../../css/swiper.min.css" />
 	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/pc.css" /><!-- pc ver -->
 	<script src="../../js/jquery-3.5.1.min.js"></script>
   <script src="../../js/swiper.min.js"></script>
 	<script src="../../js/common.js"></script>
@@ -13,14 +14,14 @@
 
 <body class="bg--black">
 	<section id="wrap">
-		<!--
-		<header id="header" class="is--absolute is--menu">
-			<a href="#" class="btnMenu is--white open--popup" data-pop="popUser">메뉴</a>
+		<header id="header" class="only-pc">
+			<h1 class="logo_lemong">LEMONG</h1>
+			<a href="#" class="btnLogin">Log in</a>
 		</header>
-		-->
 		<div id="container" class="page--lemong">
 			<div class="mainSection topVisual lemong">
-				<img src="../../images/main/imgMainTop_lemong.png" alt="" />
+				<img src="../../images/main/imgMainTop_lemong.png" alt="" class="mo" />
+				<img src="../../images/main/imgMainTop_lemong_pc.png" alt="" class="pc" />
 			</div>
 			<div class="mainSection">
 				<div class="boxLemongMov">
@@ -33,7 +34,7 @@
 					</video>
 				</div>
 			</div>
-			<div class="mainSection boxPartners">
+			<div class="mainSection boxConnect">
 				<div class="btnArea">
 					<a href="https://twitter.com/buy_to_earn" target="_blank" class="btn size-xl icon--twitter">Twitter 바로가기</a>
 					<a href="https://discord.gg/kqDDGkzrUM" target="_blank" class="btn size-xl icon--discode">디스코드 바로가기</a>
@@ -49,12 +50,12 @@
 				<div class="boxLemongStory">
 					<div class="thumb">
 						<div class="left">
-							<a href="#" data-story="0" class="story_slide0 active"><img src="../../images/main/thumbLemongStory1.png"/></a>
-							<a href="#" data-story="1" class="story_slide1"><img src="../../images/main/thumbLemongStory2.png"/></a>
-							<a href="#" data-story="2" class="story_slide2"><img src="../../images/main/thumbLemongStory3.png"/></a>
+							<a href="#" data-story="0" class="story_slide0 active"><img src="../../images/main/thumbLemongStory1_pc.png" class="pc" /><img src="../../images/main/thumbLemongStory1.png" class="mo" /></a>
+							<a href="#" data-story="1" class="story_slide1"><img src="../../images/main/thumbLemongStory2_pc.png" class="pc" /><img src="../../images/main/thumbLemongStory2.png" class="mo" /></a>
+							<a href="#" data-story="2" class="story_slide2"><img src="../../images/main/thumbLemongStory3_pc.png" class="pc" /><img src="../../images/main/thumbLemongStory3.png" class="mo" /></a>
 						</div>
 						<div class="right">
-							<a href="#" data-story="3" class="story_slide3"><img src="../../images/main/thumbLemongStory4.png"/></a>
+							<a href="#" data-story="3" class="story_slide3"><img src="../../images/main/thumbLemongStory4_pc.png" class="pc" /><img src="../../images/main/thumbLemongStory4.png" class="mo" /></a>
 						</div>
 					</div>
 					<div class="swiper-container">
@@ -119,14 +120,20 @@
 
 			<div class="mainSection">
 				<div class="boxLoadMap is--full">
-					<div class="img"><img src="../../images/main/imgLoadMap_lemong.png" alt="" /></div>
+					<div class="img">
+						<img src="../../images/main/imgLoadMap_lemong_pc.png" class="pc" alt="" />
+						<img src="../../images/main/imgLoadMap_lemong.png" class="mo" alt="" />
+					</div>
 				</div>
 			</div>
 			<div class="mainSection boxPartners">
 				<div class="titleArea">
 					<div class="title">LEMONG PARTNERS</div>
 				</div>
-				<div class="contArea"><img src="../../images/main/imgLemongPartners.png" alt="" /></div>
+				<div class="contArea">
+					<img src="../../images/main/imgLemongPartners_pc.png" class="pc" alt="" />
+					<img src="../../images/main/imgLemongPartners.png" class="mo" alt="" />
+				</div>
 			</div>
 			<div class="mainSection lemongInfo">
 				<div class="titleArea">
@@ -146,9 +153,12 @@
 						<p>3차 커뮤니티 SALE</p>
 						<span class="count">잔여물량</span>
 					</div>
-					<div class="imp">※ NFT 홀더들에게 제공되는 특별한 혜택은<br />&lt;로드맵&gt;을 확인해 보세요!</div>
+					<div class="imp">※ NFT 홀더들에게 제공되는 특별한 혜택은<br class="mo" /> &lt;로드맵&gt;을 확인해 보세요!</div>
 				</div>
-				<div class="bg_img"><img src="../../images/main/imgFooter_lemong.png" /></div>
+				<div class="bg_img">
+					<img src="../../images/main/imgFooter_lemong_pc.png" class="pc" />
+					<img src="../../images/main/imgFooter_lemong.png" class="mo" />
+				</div>
 			</div>
 		</div>
 		<footer id="footer">
@@ -183,6 +193,11 @@
 		pagination: {
 			el: ".boxLemongStory .swiper-pagination",
 			clickable: true,
+		},
+		breakpoints: {
+			1000: {
+				spaceBetween: 232
+			}
 		},
 		navigation: {
 			nextEl: ".boxLemongStory .swiper-button-next",
