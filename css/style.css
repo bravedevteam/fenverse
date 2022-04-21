@@ -107,6 +107,8 @@ body.bg--black { background:#000; }
 #header .btnMenu.is--white {  background-image:url('../images/common/btnMenu_white.png'); }
 #header .btnLogin { width:100px; height:40px; display:flex; align-items:center; justify-content:center; background:#fff; font-size:15px; color:#000; }
 #header .btnLogin:after { content:''; width:13px; height:14px; display:inline-block; margin-left:6px; background:url('../images/common/iconLogin.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .btnMypage { width:100px; height:40px; display:flex; align-items:center; justify-content:center; background:#fff; font-size:15px; color:#000; }
+#header .btnMypage:before { content:''; width:13px; height:17px; display:inline-block; margin-right:7px; background:url('../images/common/iconMypage.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
 #container { padding-top:68px; }
 #container.main { padding-top:0; padding-bottom:25px; }

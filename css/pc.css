@@ -18,6 +18,7 @@
   #header { max-width:none; height:80px; left:0; padding:0 36px; transform:none; border-bottom:1px solid rgba(255,255,255,.4); }
   #header.only-pc { display:flex; }
   #header h1.logo_lemong { width:127px; height:80px; background-image:url('../images/common/logo_lemong_pc.png'); }
+  #header.is--white h1.logo_lemong,
   #header.fixed h1.logo_lemong { background-image:url('../images/common/logo_lemong_pc_black.png'); }
 
   #container.page--lemong:before { background-image:url('../images/main/bgMainTop_lemong_pc.png'); }
