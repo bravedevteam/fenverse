@@ -1,0 +1,68 @@
+@media screen and (min-width:720px) and (max-width:1000px){
+	#wrap { max-width:720px; margin:0 auto; }
+	#header { max-width:720px; left:50%; transform:translateX(-50%); }
+	#container.page--lemong:before { max-width:720px; left:50%; transform:translateX(-50%); }
+	.boxDetailTop { max-width:720px; left:50%; transform:translateX(-50%); }
+	.popBasic { max-width:720px; left:50%; transform:translateX(-50%); }
+}
+
+@media screen and (min-width:1001px){
+	.pc { display:block !important; }
+	.mo { display:none !important; }
+
+  .btn.size-xl { font-size:18px; }
+
+	#wrap { max-width:none; }
+  #container { max-width:1000px; margin:0 auto; }
+  
+  #header { max-width:none; height:80px; left:0; padding:0 36px; transform:none; border-bottom:1px solid rgba(255,255,255,.4); }
+  #header.only-pc { display:flex; }
+  #header h1.logo_lemong { width:127px; height:80px; background-image:url('../images/common/logo_lemong_pc.png'); }
+  #header.fixed h1.logo_lemong { background-image:url('../images/common/logo_lemong_pc_black.png'); }
+
+  #container.page--lemong:before { background-image:url('../images/main/bgMainTop_lemong_pc.png'); }
+  
+  #container.page--lemong .mainSection.lemong { width:1250px; margin-left:-125px; }
+  #container.page--lemong .mainSection+.mainSection.boxPartners { padding-top:124px; }
+  #container.page--lemong .mainSection+.mainSection.lemongStory { padding-top:130px; }
+  #container.page--lemong .mainSection+.mainSection.lemongInfo { padding-top:100px; }
+
+  .boxLemongMov { height:580px; margin:44px 0 0; }
+  .boxLemongMov video { height:100%; }
+
+  .boxConnect .btnArea { display:flex; padding:0; }
+  .boxConnect .btnArea a+a { margin-top:0; margin-left:8px; }
+
+  .lemongStory .titleArea { padding:0; margin-bottom:35px; }
+  .lemongStory .titleArea .title { font-size:36px; }
+  .lemongStory .titleArea .opt { font-size:36px; }
+
+  .boxLemongStory .thumb { padding:0; margin-bottom:60px; }
+  .boxLemongStory .thumb .left a,
+  .boxLemongStory .thumb .right a { width:162px; }
+  .boxLemongStory .cont { padding:45px 0 0; display:flex; }
+  .boxLemongStory .cont .title { width:205px; margin-bottom:0; font-size:28px; }
+  .boxLemongStory .cont p { flex:1; padding:6px 0; font-size:20px; line-height:29px; }
+  .boxLemongStory .swiper-container { padding:0 116px; margin:0 -116px; }
+  .boxLemongStory .swiper-pagination { display:none; }
+
+  .boxLoadMap.is--full { margin:0 -25px; }
+
+  .mainSection .titleArea { margin-bottom:4px; }
+  .boxPartners .titleArea .title { width:502px; height:65px; background-image:url('../images/main/titPartners_pc.png'); }
+  .boxPartners .contArea { margin:0 -25px; }
+
+  .lemongInfo .titleArea { margin-bottom:50px; }
+  .lemongInfo .titleArea .title { font-size:36px; font-weight:600; }
+  .lemongInfo .contArea { width:732px; padding-left:230px; position:relative; }
+  .lemongInfo .contArea .item.item1 { width:220px; height:208px; display:flex; align-items:center; justify-content:center; position:absolute; left:0; top:0; font-size:24px; }
+  .lemongInfo .contArea .item.item2 { height:66px; margin-top:5px; padding:0 30px; font-size:20px; }
+  .lemongInfo .contArea .item p { font-size:20px; }
+  .lemongInfo .contArea .item span.count { min-width:90px; }
+  .lemongInfo .contArea .imp { margin-left:-230px; font-size:18px; }
+
+  .lemongInfo .bg_img { margin-top:-185px }
+
+  #footer { padding:54px 20px; }
+  #footer .copyright { max-width:1280px; margin:0 auto; }
+}
