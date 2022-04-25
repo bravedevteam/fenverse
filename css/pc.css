@@ -27,6 +27,9 @@
   #container.page--lemong .mainSection+.mainSection.boxPartners { padding-top:124px; }
   #container.page--lemong .mainSection+.mainSection.lemongStory { padding-top:130px; }
   #container.page--lemong .mainSection+.mainSection.lemongInfo { padding-top:100px; }
+  #container.page--lemong .mainSection+.mainSection.boxCounter { padding-top:10px; }
+  #container.page--lemong .mainSection+.mainSection.boxWhiteMinting { padding-top:52px; }
+  #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; padding-bottom:146px; }
 
   .boxLemongMov { height:580px; margin:44px 0 0; }
   .boxLemongMov video { height:100%; }
@@ -64,6 +67,63 @@
 
   .lemongInfo .bg_img { margin-top:-185px }
 
-  #footer { padding:54px 20px; }
-  #footer .copyright { max-width:1000px; margin:0 auto; }
+  .txt--community img { width:456px; margin:0 auto; }
+
+  .boxCounter { margin-bottom:0; }
+  .boxCounter .time { font-size:26px; }
+  .boxCounter .block { width:770px; margin:0 auto; justify-content:unset; }
+  .boxCounter .block>div,
+  .boxCounter .block>div:last-child { flex:1; text-align:center; }
+  .boxCounter .block .title { font-size:16px; }
+  .boxCounter .block .num { font-size:28px; }
+
+  .boxList.type--lemong .list li { background:#000; }
+  .boxList.type--lemong .list li .thumb { width:550px; float:left; }
+  .boxList.type--lemong .list li .cont { margin-left:550px; padding:64px 60px;  }
+  .boxList.type--lemong .list li .count { margin-bottom:12px; font-size:18px; }
+  .boxList.type--lemong .list li .title { font-size:28px; }
+  .boxList.type--lemong .list li .subject { margin-top:10px; font-size:16px; }
+  .boxList.type--lemong .list li .priceArea { margin-top:156px; }
+  .boxList.type--lemong .list li .priceArea .num input { border-color:#e8e8e8; }
+  .boxList.type--lemong .list li .priceArea .num a { border-color:#e8e8e8; }
+  .boxList.type--lemong .list li .priceArea span.price { font-size:28px; }
+
+  .boxWhiteMinting .title { width:576px; height:46px; background-image:url('../images/main/txtWhiteMinting_pc.png'); }
+  .boxWhiteMinting .time { margin-top:10px; font-size:26px; }
+  .boxWhiteMinting .listCount { margin-top:12px; }
+  .boxWhiteMinting .listCount dt { font-size:18px; }
+  .boxWhiteMinting .listCount dd { font-size:18px; }
+  .boxWhiteMinting .btnArea { width:296px; margin:20px auto 0; }
+  
+  .boxMainNotice { padding:0; }
+  .boxMainNotice .cont { padding:55px 110px 65px; }
+  .boxMainNotice h4 { margin-bottom:50px; font-size:20px; }  
+  .boxMainNotice .rowGroup { display:flex; }
+  .boxMainNotice .rowGroup .row { flex:1; }
+  .boxMainNotice .row+.row.is--line { margin-top:0; padding-top:0; padding-left:20px; }
+  .boxMainNotice .row+.row.is--line:before { display:none; }
+  .boxMainNotice p { font-size:14px; }
+  .boxMainNotice p.imp { margin-top:22px; font-size:14px; }
+  .boxMainNotice .process { margin-top:22px; font-size:14px; }
+  .boxMainNotice .rowGroup { margin-top:25px; }
+  .boxMainNotice dl { margin-top:0; }
+  .boxMainNotice dl dt { font-size:14px; }
+  .boxMainNotice dl dd { font-size:14px; }
+  .boxMainNotice .inTable th { width:72px; }
+  .boxMainNotice span.is--underline { margin-bottom:32px; display:block; }
+
+  #footer { padding:54px 20px; font-size:14px; }
+  #footer .copyright { max-width:1000px; margin:0 auto; display:flex; }
+  #footer .copyright .row:first-child { padding-right:100px; }
+  #footer .copyright .row+.row { padding-top:0; margin-top:0; border-top:0; }
+  #footer .copyright .row .title { font-size:14px; }
+  #footer .copyright .row p { font-size:14px; }
+  #footer .copyright .linkArea a { font-size:14px; }
+
+  .popBasic.type--finish { max-width:100%; }
+  .popBasic.type--finish .boxFinish { min-width:600px; }
+  .popBasic.type--finish .boxFinish.typeA { padding-top:65px; padding-bottom:68px; }
+  .popBasic.type--finish .boxFinish.typeB { padding-top:104px; padding-bottom:104px; }
+  .popBasic.type--finish .boxFinish .cont { font-size:16px; }
+  .popBasic.type--finish .boxFinish .cont .f-small { font-size:14px; margin-top:10px; display:block; }
 }
