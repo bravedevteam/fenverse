@@ -30,6 +30,9 @@
   #container.page--lemong .mainSection+.mainSection.boxCounter { padding-top:10px; }
   #container.page--lemong .mainSection+.mainSection.boxWhiteMinting { padding-top:52px; }
   #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; padding-bottom:146px; }
+  #container.page--lemong .mainSection+.mainSection.boxMinting { padding-top:100px; }
+  
+  .mainSection+.mainSection.txt--community.typeA { padding-top:100px !important; padding-bottom:20px; }
 
   .boxLemongMov { height:580px; margin:44px 0 0; }
   .boxLemongMov video { height:100%; }
@@ -68,6 +71,8 @@
   .lemongInfo .bg_img { margin-top:-185px }
 
   .txt--community img { width:456px; margin:0 auto; }
+  
+  .txt--community.typeA img { width:486px; }
 
   .boxCounter { margin-bottom:0; }
   .boxCounter .time { font-size:26px; }
@@ -77,8 +82,8 @@
   .boxCounter .block .title { font-size:16px; }
   .boxCounter .block .num { font-size:28px; }
 
-  .boxList.type--lemong .list li { background:#000; }
-  .boxList.type--lemong .list li .thumb { width:550px; float:left; }
+  .boxList.type--lemong .list li { position:relative; background:#000; }
+  .boxList.type--lemong .list li .thumb { width:550px; height:100%; position:absolute; left:0; top:0; }
   .boxList.type--lemong .list li .cont { margin-left:550px; padding:64px 60px;  }
   .boxList.type--lemong .list li .count { margin-bottom:12px; font-size:18px; }
   .boxList.type--lemong .list li .title { font-size:28px; }
@@ -94,6 +99,12 @@
   .boxWhiteMinting .listCount dt { font-size:18px; }
   .boxWhiteMinting .listCount dd { font-size:18px; }
   .boxWhiteMinting .btnArea { width:296px; margin:20px auto 0; }
+
+  .boxMinting .title { margin-bottom:40px; font-size:36px; }
+  .boxMinting .itemGroup { width:750px; margin:0 auto 84px; }
+  .boxMinting .itemGroup .item+.item:before { width:2px; height:110px; left:-1px; opacity:.5; }
+  .boxMinting .itemGroup .item .top { font-size:24px; }
+  .boxMinting .itemGroup .item .num { margin-top:10px; font-size:36px; }
   
   .boxMainNotice { padding:0; }
   .boxMainNotice .cont { padding:55px 110px 65px; }
@@ -113,12 +124,36 @@
   .boxMainNotice span.is--underline { margin-bottom:32px; display:block; }
 
   #footer { padding:54px 20px; font-size:14px; }
+  #footer .agreement { max-width:1000px; margin:0 auto 50px; }
+  #footer .agreement a:first-child { padding-left:0; }
+
+  #footer .sns { position:absolute; right:50%; top:50px; margin-right:-500px; }
+  #footer .sns a { opacity:.4; }
+
   #footer .copyright { max-width:1000px; margin:0 auto; display:flex; }
   #footer .copyright .row:first-child { padding-right:100px; }
   #footer .copyright .row+.row { padding-top:0; margin-top:0; border-top:0; }
   #footer .copyright .row .title { font-size:14px; }
   #footer .copyright .row p { font-size:14px; }
   #footer .copyright .linkArea a { font-size:14px; }
+
+  .btnJoin { min-width:226px; margin:0 auto; }  
+  
+  .checkGroup .check input[type="checkbox"]+label { margin-right:50px; }
+
+  .boxBasic { font-size:16px; }
+  
+
+  .popBasic.pc--full { max-width:100%; }
+  .popBasic.pc--full .inner { max-width:600px; margin:0 auto; }
+
+  .popBasic .txtArea h5 { font-size:24px; }
+  .popBasic .txtArea p { font-size:14px; }
+  .popBasic .row h6 { font-weight:700; }
+
+  .popBasic .radioGroup .icon--klay { justify-content:center; font-size:13px; color:rgba(0,0,0,.5); }
+
+  .popBasic.btn--fixed .btnArea { width:226px; margin:0 auto; }
 
   .popBasic.type--finish { max-width:100%; }
   .popBasic.type--finish .boxFinish { min-width:600px; }
