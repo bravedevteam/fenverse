@@ -6,6 +6,7 @@
 	<title>LEMONG</title>
   <link rel="stylesheet" href="../../css/swiper.min.css" />
 	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/pc.css" /><!-- pc ver -->
 	<script src="../../js/jquery-3.5.1.min.js"></script>
   <script src="../../js/swiper.min.js"></script>
 	<script src="../../js/common.js"></script>
@@ -18,10 +19,14 @@
 		</header>
 		<div id="container" class="page--lemong">
 			<div class="mainSection topVisual lemong">
-				<img src="../../images/main/imgMainTop_lemong.png" alt="" />
+				<img src="../../images/main/imgMainTop_lemong.png" class="mo" />
+				<img src="../../images/main/imgMainTop_lemong_pc.png" class="pc" />
 			</div>
 			
-			<div class="mainSection txt--community"><img src="../../images/main/txtCommunity.png" /></div>
+			<div class="mainSection txt--community typeA">
+				<img src="../../images/main/txtCommunity.png" class="mo" />
+				<img src="../../images/main/txtCommunity_pc.png" class="pc" />
+			</div>
 			<div class="mainSection boxList type--lemong">
 				<ul class="list">
 					<li>
@@ -33,7 +38,7 @@
 						</div>
 						<div class="cont">
 							<div class="count"><span>555/555</span> 개 판매완료</div>
-							<div class="title">Lemong Mystery Box</div>
+							<div class="title">레몽 미스테리 박스</div>
 							<div class="subject">By cryptolemon</div>
 							<div class="priceArea">
 								<div class="num">
@@ -79,7 +84,6 @@
 				<a href="https://www.instagram.com/pentasquarenft/" target="_blank" class="instagram">instagram</a>
 				<a href="https://discord.gg/6NZV4nenz5" target="_blank" class="discode">discode</a>
 			</div>
-			-->
 			<div class="copyright">
 				<div class="row">
 					<div class="title">콘텐츠 제공 사업자</div>
@@ -222,7 +226,7 @@
 	<!-- // 지갑 연결하기 팝업 -->
 
 	<!-- 지갑 변경하기 팝업 -->
-	<div id="popWalletMod" class="popBasic type--wallet btn--fixed">
+	<div id="popWalletMod" class="popBasic pc--full type--wallet btn--fixed">
 		<div class="inner">
 			<div class="boxWalletConnect">
 				<div class="top">
@@ -244,13 +248,13 @@
 	<!-- // 지갑 변경하기 팝업 -->
 
 	<!-- 결제하기 팝업 -->
-	<div id="popSign" class="popBasic type--complete btn--fixed">
+	<div id="popSign" class="popBasic pc--full type--complete btn--fixed">
 		<div class="inner">
 			<div class="boxFixed">
 				<div class="txtArea">
 					<h5>결제하기</h5>
 					<p>
-						구매하시는 상품과 금액을 확인하시고,<br />결제하시기 바랍니다.
+						구매하시는 상품과 금액을 확인하시고,<br class="mo" /> 결제하시기 바랍니다.
 					</p>
 				</div>
 				<div class="boxBasic sizeA">
