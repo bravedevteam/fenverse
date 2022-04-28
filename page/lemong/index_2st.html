@@ -79,7 +79,7 @@
 					<dd><span>00</span>개</dd>
 				</dl>
 				<div class="btnArea">
-					<a href="#" class="btn size-l is--deepGray">민팅 대기중</a>
+					<a href="#" class="btn size-l is--deepGray open--popup" data-pop="popCount">민팅 대기중</a>
 					<a href="#" class="btn size-l open--popup" data-pop="popMinting">민팅 시작하기</a>
 				</div>
 			</div>
@@ -461,5 +461,23 @@
 		</div>
 	</div>
 	<!-- // 민팅완료 팝업 -->
+
+	<!-- 카운트다운 팝업 -->
+	<div id="popCount" class="popBasic type--finish">
+		<div class="inner">
+			<div class="boxFinish typeB">
+				<div class="cont">
+					<strong>판매가 완료되었습니다.</strong>
+					<span class="c--yellow">잠시후 3차 세일이 시작됩니다.</span>
+					<div class="countBox">
+						<div id="countdown" class="count">00:00</div>
+						<div class="progress"><div class="pos"></div></div>
+					</div>
+				</div>
+				<button type="button" class="popClose is--white">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- // 카운트다운 팝업 -->
 </body>
 </html>
