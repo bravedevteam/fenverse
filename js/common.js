@@ -127,6 +127,10 @@ $(function(){
     var target = $(this).attr("data-pop");
     $("html, body").css("overflow", "hidden");
     $("#"+target).fadeIn(300);
+
+    if(target == "popCount"){
+      startTimer(300, $("#countdown")); // timer = 60 * 5
+    }
     
   });
   // 팝업 오픈 끝
@@ -172,4 +176,34 @@ $(function(){
     }
   });
   // 헤더 액션 끝
+
+  // 카운트다운
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    var target = display.siblings(".progress");
+    var target_w = target.outerWidth();
+    var target_pos = target.find(".pos");
+    
+    var count = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        pos_w = target_pos.outerWidth();
+        pos_size = pos_w - (pos_w / (timer+1));
+
+        console.log(pos_w + "," + pos_size);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(minutes + ":" + seconds);
+        target_pos.css("width", pos_size);
+
+        if (--timer < 0) {
+            timer = 0;
+            display.text("00:00");
+            clearInterval(count);
+        }
+    }, 1000);
+}
+
 });
