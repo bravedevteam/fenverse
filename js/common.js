@@ -129,7 +129,7 @@ $(function(){
     $("#"+target).fadeIn(300);
 
     if(target == "popCount"){
-      startTimer(300, $("#countdown")); // timer = 60 * 5
+      startTimer(180, $("#countdown")); // timer = 60 * 3
     }
     
   });
@@ -195,7 +195,7 @@ $(function(){
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.text(minutes + ":" + seconds);
+        display.text(minutes + "m : " + seconds + "s");
         target_pos.css("width", pos_size);
 
         if (--timer < 0) {
