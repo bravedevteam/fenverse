@@ -24,15 +24,23 @@
   #container.page--lemong:before { background-image:url('../images/main/bgMainTop_lemong_pc.png'); }
   
   #container.page--lemong .mainSection.lemong { width:1250px; margin-left:-125px; }
+  #container.page--lemong .mainSection.lemong.type--text { width:1000px; margin:0; padding-top:108px; }
   #container.page--lemong .mainSection+.mainSection.boxPartners { padding-top:124px; }
   #container.page--lemong .mainSection+.mainSection.lemongStory { padding-top:130px; }
   #container.page--lemong .mainSection+.mainSection.lemongInfo { padding-top:100px; }
   #container.page--lemong .mainSection+.mainSection.boxCounter { padding-top:10px; }
   #container.page--lemong .mainSection+.mainSection.boxWhiteMinting { padding-top:52px; }
-  #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; padding-bottom:146px; }
+  #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; }
   #container.page--lemong .mainSection+.mainSection.boxMinting { padding-top:100px; }
+  #container.page--lemong .mainSection+.mainSection.txt--public { padding-top:80px; }
+
+  #container.page--lemong .mainSection+.mainSection.boxMainNotice:last-child { padding-bottom:146px; }
+  #container.page--lemong .mainSection+.mainSection.boxCounter:last-child { padding-top:70px; padding-bottom:100px; }
+
+  #container.page--lemong .mainSection.type--lemong+.mainSection.boxCounter:last-child { padding-top:110px; }
   
   .mainSection+.mainSection.txt--community.typeA { padding-top:100px !important; padding-bottom:20px; }
+  .mainSection.type--text+.mainSection.txt--community { padding-top:98px !important; }
 
   .boxLemongMov { height:580px; margin:44px 0 0; }
   .boxLemongMov video { height:100%; }
@@ -71,8 +79,9 @@
   .lemongInfo .bg_img { margin-top:-185px }
 
   .txt--community img { width:456px; margin:0 auto; }
-  
   .txt--community.typeA img { width:486px; }
+
+  .txt--public img { width:374px; margin:0 auto; }
 
   .boxCounter { margin-bottom:0; }
   .boxCounter .time { font-size:26px; }
@@ -81,6 +90,14 @@
   .boxCounter .block>div:last-child { flex:1; text-align:center; }
   .boxCounter .block .title { font-size:16px; }
   .boxCounter .block .num { font-size:28px; }
+
+  .boxCounter.is--end .block { width:auto; max-width:550px; justify-content:space-between; }
+  .boxCounter.is--end .block:after { content:''; width:1px; height:52px; position:absolute; left:50%; top:50%; transform:translateY(-50%); background:rgba(112,112,112,0.7); }
+  .boxCounter.is--end .block>div { text-align:left; }
+  .boxCounter.is--end .block>div:last-child { text-align:right; }
+
+  .boxList .list li .listCount dt { font-size:18px; }
+  .boxList .list li .listCount dd { font-size:18px; }
 
   .boxList.type--lemong .list li { position:relative; background:#000; }
   .boxList.type--lemong .list li .thumb { width:550px; height:100%; position:absolute; left:0; top:0; }
@@ -92,6 +109,10 @@
   .boxList.type--lemong .list li .priceArea .num input { border-color:#e8e8e8; }
   .boxList.type--lemong .list li .priceArea .num a { border-color:#e8e8e8; }
   .boxList.type--lemong .list li .priceArea span.price { font-size:28px; }
+
+  .boxList.type--lemong.is--end .list li .cont_txt { width:550px; height:100%; position:absolute; left:0; top:0; margin:0; padding:0 0 0 60px; display:flex; justify-content:center; flex-direction:column; text-align:left; }
+  .boxList.type--lemong.is--end .list li .cont_txt .txt1 { font-size:28px; }
+  .boxList.type--lemong.is--end .list li .cont { padding:40px 60px 32px; }
 
   .boxWhiteMinting .title { width:576px; height:46px; background-image:url('../images/main/txtWhiteMinting_pc.png'); }
   .boxWhiteMinting .time { margin-top:10px; font-size:26px; }
