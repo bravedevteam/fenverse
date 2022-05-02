@@ -52,6 +52,8 @@
 							</div>
 							<div class="btnArea">
 								<a href="#" class="btn size-l open--popup" data-pop="popFinish1">민팅하기</a>
+								<a href="#" class="btn size-l open--popup" data-pop="popRanking">Ranking</a>
+								<a href="#" class="btn size-l open--popup" data-pop="popRankAlready">랭킹 준비</a>
 							</div>
 						</div>
 					</li>
@@ -434,5 +436,57 @@
 		</div>
 	</div>
 	<!-- // 카운트다운 팝업 -->
+
+	<!-- 랭킹 팝업 -->
+	<div id="popRanking" class="popBasic type--ranking">
+		<div class="inner">
+			<div class="boxRanking">
+				<h5>Check Your<br />Crypto Lemon Rank</h5>
+				<div class="thumb"><img src="../../images/content/imgBasicRanking.png" alt="" /></div>
+				<div class="inputGroup">
+					<div class="input_row">
+						<label for="input_schNo">My crypto lemon no.</label>
+						<div class="input_search">
+							<input type="text" id="input_schNo" placeholder="Please enter a number." class="search" />
+							<button type="button" class="btnSearch">검색</button>
+						</div>
+					</div>
+					<div class="input_row">
+						<label for="input_ranking">Ranking</label>
+						<input type="text" id="input_ranking" value="-" disabled class="disabled" />
+					</div>
+					<div class="input_row">
+						<label for="input_score">Score</label>
+						<input type="text" id="input_score" value="-" disabled class="disabled" />
+					</div>
+				</div>
+				<button type="button" class="popClose">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- // 랭킹 팝업 -->
+
+	<script>
+		$(function(){
+			$("#popRanking .btnSearch").click(function(){
+				$("#popRanking .thumb img").attr("src", "../../images/content/imgRanking.png");
+				$("#input_ranking").removeClass("disabled").val("241");
+				$("#input_score").removeClass("disabled").val("3434");
+			});
+		});
+	</script>
+
+	<!-- 랭킹 준비중 -->
+	<div id="popRankAlready" class="popBasic type--lemon">
+		<div class="inner">
+			<div class="cont is--ranking">
+				<p>
+					랭킹 준비중입니다.
+				</p>
+				<a href="#" class="popClose">닫기</a>
+			</div>
+		</div>
+	</div>
+	<!-- //랭킹 준비중 -->
 </body>
 </html>
