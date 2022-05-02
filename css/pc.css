@@ -176,10 +176,17 @@
 
   .popBasic.btn--fixed .btnArea { width:226px; margin:0 auto; }
 
+  .popBasic.type--lemon .cont.is--ranking { width:600px; padding:96px 30px; }
+  .popBasic.type--lemon .cont.is--ranking p { font-size:18px; }
+  .popBasic.type--lemon .cont.is--ranking p:before { width:40px; height:40px; margin-bottom:15px; }
+
   .popBasic.type--finish { max-width:100%; }
   .popBasic.type--finish .boxFinish { min-width:600px; }
   .popBasic.type--finish .boxFinish.typeA { padding-top:65px; padding-bottom:68px; }
   .popBasic.type--finish .boxFinish.typeB { padding-top:104px; padding-bottom:104px; }
   .popBasic.type--finish .boxFinish .cont { font-size:16px; }
   .popBasic.type--finish .boxFinish .cont .f-small { font-size:14px; margin-top:10px; display:block; }
+
+  .popBasic.type--ranking .boxRanking { width:600px; }
+  
 }

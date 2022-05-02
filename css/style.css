@@ -934,7 +934,7 @@ span.c--gray { color:#696969; }
 .popBasic.type--settle .inner { height:100%; padding:30px 16px; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
 .popBasic.type--settle .inner .boxSettle { padding:45px 10px 25px; position:relative; border-radius:14px; background:#fff; overflow:hidden; }
 
-.popBasic.type--lemon { background:transparent; }
+.popBasic.type--lemon { max-width:100%; background:transparent; }
 .popBasic.type--lemon .inner { height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
 .popBasic.type--lemon .cont { width:100%; position:relative; padding:56px 30px 66px; text-align:center; background-image: radial-gradient(circle at 50% 50%, #ffeb00, #ffd700); border-radius:14px; }
 .popBasic.type--lemon .cont.is--ranking p { font-size:16px; color:#000; font-weight:700; }
@@ -966,6 +966,21 @@ span.c--gray { color:#696969; }
 .popBasic.type--finish .boxFinish .cont strong { display:block; font-weight:700; }
 .popBasic.type--finish .boxFinish .cont .f-small { font-size:11px; line-height:1.6; }
 .popBasic.type--finish .popClose { right:20px; top:20px; }
+
+.popBasic.type--ranking { max-width:100%; background:transparent; }
+.popBasic.type--ranking .inner { height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
+.popBasic.type--ranking .boxRanking { position:relative; padding:55px 25px 60px; border-radius: 14px; background-image: radial-gradient(circle at 50% 50%, #ffeb00, #ffd700); text-align:center; }
+.popBasic.type--ranking .boxRanking h5 { margin-bottom:20px; font-size:20px; font-weight:700; }
+.popBasic.type--ranking .boxRanking .thumb { width:216px; margin:0 auto 30px; border:1px solid #000; background:#fff; }
+.popBasic.type--ranking .boxRanking .inputGroup { max-width:278px; margin:0 auto; }
+.popBasic.type--ranking .boxRanking .inputGroup .input_row+.input_row { margin-top:10px; }
+.popBasic.type--ranking .boxRanking .inputGroup label { display:block; margin-bottom:5px; text-align:left; font-size:14px; font-family:'Poppins'; }
+.popBasic.type--ranking .boxRanking .inputGroup input { height:46px; border:1px solid #000; border-radius:5px; background:#fff; text-align:center; font-size:14px; font-weight:700; }
+.popBasic.type--ranking .boxRanking .inputGroup input.disabled { background-color: rgba(255, 255, 255, 0.5); }
+.popBasic.type--ranking .boxRanking .input_search { position:relative; }
+.popBasic.type--ranking .boxRanking .input_search input { position:relative; z-index:1; }
+.popBasic.type--ranking .boxRanking .input_search .btnSearch { width:46px; height:100%; position:absolute; right:0; top:0; background:url('../images/common/iconSearch.png') center center transparent no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; z-index:5; }
+.popBasic.type--ranking .popClose { right:16px; top:26px; }
 
 @media screen and (min-width:720px){
 	#wrap { max-width:720px; margin:0 auto; }
