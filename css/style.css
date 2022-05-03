@@ -976,7 +976,7 @@ span.c--gray { color:#696969; }
 .popBasic.type--ranking .boxRanking .inputGroup .input_row+.input_row { margin-top:10px; }
 .popBasic.type--ranking .boxRanking .inputGroup label { display:block; margin-bottom:5px; text-align:left; font-size:14px; font-family:'Poppins'; }
 .popBasic.type--ranking .boxRanking .inputGroup input { height:46px; border:1px solid #000; border-radius:5px; background:#fff; text-align:center; font-size:14px; font-weight:700; }
-.popBasic.type--ranking .boxRanking .inputGroup input.disabled { background-color: rgba(255, 255, 255, 0.5); }
+.popBasic.type--ranking .boxRanking .inputGroup input.disabled { background-color: rgba(255, 255, 255, 0.5); opacity:1; }
 .popBasic.type--ranking .boxRanking .input_search { position:relative; }
 .popBasic.type--ranking .boxRanking .input_search input { position:relative; z-index:1; }
 .popBasic.type--ranking .boxRanking .input_search .btnSearch { width:46px; height:100%; position:absolute; right:0; top:0; background:url('../images/common/iconSearch.png') center center transparent no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; z-index:5; }
