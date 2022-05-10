@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>LEMONG</title>
+  <link rel="stylesheet" href="../../css/swiper.min.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/pc.css" /><!-- pc ver -->
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/swiper.min.js"></script>
+	<script src="../../js/common.js"></script>
+</head>
+
+<body class="bg--black">
+	<section id="wrap">
+		<div id="container" class="page--lemong">
+			<div class="mainSection topVisual reveal type--text">
+				<img src="../../images/main/imgTopText_lemong_pc.png" />
+			</div>
+			
+			<div class="mainSection txt--reveal">
+				<img src="../../images/main/txtReveal.png" />
+			</div>
+			<div class="mainSection txt--reveal-p">※ 지갑을 연결 하시고 리빌을 진행할 <#에디션>을 모두 선택 후 리빌버튼을 클릭하세요!
+				<button type="button" id="btnConnect" class="btn is--deepGray">CONNECT WALLET</button>
+
+				<div class="boxReveal" style="display:none;">
+					<button type="button" class="btn open--popup" data-pop="popSuccess">REVEAL START</button>
+					<button type="button" class="btn open--popup" data-pop="popFail">REVEAL START</button>
+					<ul class="check">
+						<li>
+							<input type="checkbox" id="reveal_1" />
+							<label for="reveal_1">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_2" />
+							<label for="reveal_2">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_3" />
+							<label for="reveal_3">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_4" />
+							<label for="reveal_4">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_5" />
+							<label for="reveal_5">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_6" />
+							<label for="reveal_6">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_7" />
+							<label for="reveal_7">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_8" />
+							<label for="reveal_8">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_9" />
+							<label for="reveal_9">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_10" />
+							<label for="reveal_10">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_11" />
+							<label for="reveal_11">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_12" />
+							<label for="reveal_12">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_13" />
+							<label for="reveal_13">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_14" />
+							<label for="reveal_14">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_15" />
+							<label for="reveal_15">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_16" />
+							<label for="reveal_16">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_17" />
+							<label for="reveal_17">#345</label>
+						</li>
+						<li>
+							<input type="checkbox" id="reveal_18" />
+							<label for="reveal_18">#345</label>
+						</li>
+					</ul>
+					<a href="#" target="_blank">리빌 후 오픈씨 바로가기 ></a>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="agreement">
+				<a href="https://pentasquare.notion.site/Fanverse-d94f219f92c7420eac8e226fd6f76f70" target="_blank">이용약관</a>
+				<a href="https://pentasquare.notion.site/Fanverse-ffbebe81649c40a68aaf6ab606b70756" target="_blank">개인정보처리방침</a>
+				<a href="https://docs.google.com/presentation/d/1VG25TwYR-1Y2UlomOSp3bMUnYoYnTTNC/edit#slide=id.p2" target="_blank">이용안내</a>
+			</div>
+			<div class="sns">
+				<a href="https://pf.kakao.com/_BxhSlb" target="_blank" class="kakao">kakao</a>
+				<a href="https://medium.com/@pentasquare" class="polymath">polymath</a>
+				<a href="https://www.instagram.com/pentasquarenft/" target="_blank" class="instagram">instagram</a>
+				<a href="https://discord.gg/6NZV4nenz5" target="_blank" class="discode">discode</a>
+			</div>
+			<div class="copyright">
+				<div class="row">
+					<div class="title">콘텐츠 제공 사업자</div>
+					<p>CRYPTOLEMON.io</p>
+					<p>Copyright © 2022 CRYPTO LEMON. All rights reserved.</p>
+				</div>
+				<div class="row">
+					<div class="title">서비스 제공 사업자</div>
+					<p>
+						주식회사 펜타스퀘어<br />
+						주소 : 경기도 성남시 분당구 매화로 54, 2층 205호 에이 166.<br />
+						사업자등록번호 : 120-88-03236<br />
+						Pentasquare Inc. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</section>
+
+	<!-- 성공 팝업 -->
+	<div id="popSuccess" class="popBasic type--finish">
+		<div class="inner">
+			<div class="boxFinish typeA">
+				<div class="top is--tender"><img src="../../images/content/imgTender.png" alt="" /></div>
+				<div class="cont">
+					<span class="c--yellow">"축하드립니다."</span><br />
+					<strong>REVEAL에 성공하셨습니다.</strong>
+					<span class="f-small c--gray">리빌 후 opensea에서 확인하실수 있습니다.</span>
+				</div>
+				<button type="button" class="popClose is--white">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- // 성공 팝업 -->
+
+	<!-- 실패 팝업 -->
+	<div id="popFail" class="popBasic type--finish">
+		<div class="inner">
+			<div class="boxFinish typeA">
+				<div class="top is--tender_bg"><img src="../../images/content/imgTender_bg.png" alt="" /></div>
+				<div class="cont">
+					<strong>REVEAL에 실패하였습니다.</strong>
+					<span class="c--yellow">다시 한번 진행해보세요!</span>
+				</div>
+				<button type="button" class="popClose is--white">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- // 실패 팝업 -->
+
+	<script type="text/javascript">
+	$("#btnConnect").click(function(){
+		$(this).hide();
+		$(".boxReveal").show();
+	});
+	</script>
+</body>
+</html>
