@@ -117,7 +117,7 @@ body.bg--black { background:#000; }
 #container.page--lemong:before { content:''; width:100%; height:100%; position:fixed; left:0; top:0; background:url('../images/main/bgMainTop_lemong.png') center top; background-size:100% auto; z-index:1; }
 #container.page--lemong .mainSection { position:relative; z-index:10; }
 #container.page--lemong .mainSection.lemong { background:transparent; }
-#container.page--lemong .mainSection.reveal.type--text { padding-top:130px; }
+#container.page--lemong .mainSection.reveal.type--text { padding-top:130px; padding-left:16px; padding-right:16px; }
 #container.page--lemong .mainSection+.mainSection { margin-top:0; padding-top:30px; }
 #container.page--lemong .mainSection+.mainSection.boxCounter { padding-top:14px; }
 #container.page--lemong .mainSection+.mainSection.boxWhiteMinting { padding-top:45px; }
@@ -130,7 +130,7 @@ body.bg--black { background:#000; }
 
 #container.page--lemong .mainSection+.mainSection.txt--reveal { padding-top:60px; text-align:center; }
 #container.page--lemong .mainSection+.mainSection.txt--reveal img { width:176px; }
-#container.page--lemong .mainSection+.mainSection.txt--reveal-p { font-size:20px;  text-align:center; color:#22ffd5; }
+#container.page--lemong .mainSection+.mainSection.txt--reveal-p { padding-left:16px; padding-right:16px; font-size:20px;  text-align:center; color:#22ffd5; }
 #container.page--lemong .mainSection+.mainSection.txt--reveal-p .btn { width:296px; height:63px; margin:180px auto 330px; font-size:18px; }
 
 /* Button */
@@ -802,11 +802,11 @@ span.c--gray { color:#696969; }
 
 .boxReveal { text-align:center; }
 .boxReveal .btn { margin-top:95px !important; margin-bottom:35px !important; }
-.boxReveal .check { width:688px; margin:0 auto 105px; display:grid; grid-template-columns: repeat(6, 1fr); }
+.boxReveal .check { width:auto; margin:0 auto 105px; display:grid; grid-template-columns: repeat(3, 1fr); }
 .boxReveal .check li { position:relative; overflow:hidden; margin-top:30px; text-align:left; }
 .boxReveal .check li input { position:absolute; left:-99999px; top:0; opacity:0; }
-.boxReveal .check li label { margin:0; color:#fff; font-size:16px; }
-.boxReveal .check li label:before { content:''; width:25px; height:25px; margin-right:10px; display:inline-block; background:#22ffd5; vertical-align:middle; box-sizing:border-box; }
+.boxReveal .check li label { height:25px; display:block; margin:0; color:#fff; font-size:16px; line-height:25px; }
+.boxReveal .check li label:before { content:''; width:25px; height:25px; margin-right:10px; display:inline-block; background:#22ffd5; vertical-align:top; box-sizing:border-box; }
 .boxReveal .check li input:checked+label { color:#22ffd5; }
 .boxReveal .check li input:checked+label:before { background:#000; border:4px solid #22ffd5; }
 .boxReveal a { display:inline-block; margin-bottom:70px; color:#fff; font-size:20px; font-weight:400; }

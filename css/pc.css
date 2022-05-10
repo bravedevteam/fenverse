@@ -34,6 +34,8 @@
   #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; }
   #container.page--lemong .mainSection+.mainSection.boxMinting { padding-top:100px; }
   #container.page--lemong .mainSection+.mainSection.txt--public { padding-top:80px; }
+  #container.page--lemong .mainSection.reveal.type--text { padding-left:0; padding-right:0; }
+  
   
 
   #container.page--lemong .mainSection+.mainSection.boxMainNotice:last-child { padding-bottom:146px; }
@@ -165,6 +167,8 @@
   .checkGroup .check input[type="checkbox"]+label { margin-right:50px; }
 
   .boxBasic { font-size:16px; }
+
+  .boxReveal .check { width:688px; grid-template-columns: repeat(6, 1fr); }
   
 
   .popBasic.pc--full { max-width:100%; }
