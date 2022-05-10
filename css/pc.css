@@ -25,6 +25,7 @@
   
   #container.page--lemong .mainSection.lemong { width:1250px; margin-left:-125px; }
   #container.page--lemong .mainSection.lemong.type--text { width:1000px; margin:0; padding-top:108px; }
+  #container.page--lemong .mainSection.reveal.type--text { width:1000px; margin:0; }
   #container.page--lemong .mainSection+.mainSection.boxPartners { padding-top:124px; }
   #container.page--lemong .mainSection+.mainSection.lemongStory { padding-top:130px; }
   #container.page--lemong .mainSection+.mainSection.lemongInfo { padding-top:100px; }
@@ -33,6 +34,7 @@
   #container.page--lemong .mainSection+.mainSection.boxMainNotice { padding-top:63px; }
   #container.page--lemong .mainSection+.mainSection.boxMinting { padding-top:100px; }
   #container.page--lemong .mainSection+.mainSection.txt--public { padding-top:80px; }
+  
 
   #container.page--lemong .mainSection+.mainSection.boxMainNotice:last-child { padding-bottom:146px; }
   #container.page--lemong .mainSection+.mainSection.boxCounter:last-child { padding-top:70px; padding-bottom:100px; }
