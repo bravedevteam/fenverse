@@ -204,6 +204,17 @@ $(function(){
             clearInterval(count);
         }
     }, 1000);
-}
+  }
 
+  //푸터
+  $(window).resize(function(){
+    footerSize();
+  });
+  footerSize();
+
+  function footerSize(){
+    var f_size = $("#footer").outerHeight();
+
+    $("#container").css("padding-bottom", f_size+"px");
+  }
 });
