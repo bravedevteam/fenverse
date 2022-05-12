@@ -168,7 +168,8 @@
 
   .boxBasic { font-size:16px; }
 
-  .boxReveal .check { width:688px; grid-template-columns: repeat(6, 1fr); }
+  .boxReveal .check { width:688px; }
+  .boxReveal .check ul { grid-template-columns: repeat(6, 1fr); }
   
 
   .popBasic.pc--full { max-width:100%; }
