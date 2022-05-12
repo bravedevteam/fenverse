@@ -28,80 +28,84 @@
 				<div class="boxReveal" style="display:none;">
 					<button type="button" class="btn open--popup" data-pop="popSuccess">REVEAL START</button>
 					<button type="button" class="btn open--popup" data-pop="popFail">REVEAL START</button>
-					<ul class="check">
-						<li>
-							<input type="checkbox" id="reveal_1" />
-							<label for="reveal_1">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_2" />
-							<label for="reveal_2">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_3" />
-							<label for="reveal_3">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_4" />
-							<label for="reveal_4">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_5" />
-							<label for="reveal_5">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_6" />
-							<label for="reveal_6">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_7" />
-							<label for="reveal_7">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_8" />
-							<label for="reveal_8">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_9" />
-							<label for="reveal_9">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_10" />
-							<label for="reveal_10">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_11" />
-							<label for="reveal_11">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_12" />
-							<label for="reveal_12">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_13" />
-							<label for="reveal_13">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_14" />
-							<label for="reveal_14">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_15" />
-							<label for="reveal_15">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_16" />
-							<label for="reveal_16">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_17" />
-							<label for="reveal_17">#345</label>
-						</li>
-						<li>
-							<input type="checkbox" id="reveal_18" />
-							<label for="reveal_18">#345</label>
-						</li>
-					</ul>
+					<div class="check">
+						<input type="checkbox" id="reveal_all" />
+						<label for="reveal_all">전체선택</label>
+						<ul>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_1" />
+								<label for="reveal_1">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_2" />
+								<label for="reveal_2">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_3" />
+								<label for="reveal_3">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_4" />
+								<label for="reveal_4">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_5" />
+								<label for="reveal_5">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_6" />
+								<label for="reveal_6">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_7" />
+								<label for="reveal_7">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_8" />
+								<label for="reveal_8">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_9" />
+								<label for="reveal_9">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_10" />
+								<label for="reveal_10">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_11" />
+								<label for="reveal_11">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_12" />
+								<label for="reveal_12">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_13" />
+								<label for="reveal_13">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_14" />
+								<label for="reveal_14">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_15" />
+								<label for="reveal_15">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_16" />
+								<label for="reveal_16">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_17" />
+								<label for="reveal_17">#345</label>
+							</li>
+							<li>
+								<input type="checkbox" name="revealGroup" id="reveal_18" />
+								<label for="reveal_18">#345</label>
+							</li>
+						</ul>
+					</div>
 					<a href="#" target="_blank">리빌 후 오픈씨 바로가기 ></a>
 				</div>
 			</div>
@@ -186,6 +190,19 @@
 	$("#btnConnect").click(function(){
 		$(this).hide();
 		$(".boxReveal").show();
+	});
+
+	$("#reveal_all").click(function(){
+		if($("#reveal_all").is(":checked")) $("input[name='revealGroup']").prop("checked", true);
+		else $("input[name='revealGroup']").prop("checked", false);
+	});
+
+	$("input[name='revealGroup']").click(function() {
+		var total = $("input[name='revealGroup']").length;
+		var checked = $("input[name='revealGroup']:checked").length;
+
+		if(total != checked) $("#reveal_all").prop("checked", false);
+		else $("#reveal_all").prop("checked", true); 
 	});
 	</script>
 </body>
