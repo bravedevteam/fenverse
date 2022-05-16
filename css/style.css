@@ -989,7 +989,7 @@ span.c--gray { color:#696969; }
 .popBasic.type--finish .popClose { right:20px; top:20px; }
 
 .popBasic.type--ranking { max-width:100%; background:transparent; }
-.popBasic.type--ranking .inner { height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
+.popBasic.type--ranking .inner { min-height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.7); }
 .popBasic.type--ranking .boxRanking { position:relative; padding:55px 25px 60px; border-radius: 14px; background-image: radial-gradient(circle at 50% 50%, #ffeb00, #ffd700); text-align:center; }
 .popBasic.type--ranking .boxRanking h5 { margin-bottom:20px; font-size:20px; font-weight:700; }
 .popBasic.type--ranking .boxRanking .thumb { width:216px; margin:0 auto 30px; border:1px solid #000; background:#fff; }
