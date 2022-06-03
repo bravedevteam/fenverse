@@ -171,7 +171,7 @@
   .boxReveal .check { width:688px; }
   .boxReveal .check ul { grid-template-columns: repeat(6, 1fr); }
   
-  .page--staking #container:before { min-width:1920px; left:50%; transform:translateX(-50%); }
+  .page--staking #container { max-width:1280px; }
 
   .boxChannel h3 { margin-bottom:110px; font-size:42px; }
   .boxChannel .btn { width:296px; height:63px; font-size:18px; }
@@ -199,6 +199,8 @@
   .popBasic.type--finish .boxFinish.typeB { padding-top:104px; padding-bottom:104px; }
   .popBasic.type--finish .boxFinish .cont { font-size:16px; }
   .popBasic.type--finish .boxFinish .cont .f-small { font-size:14px; margin-top:10px; display:block; }
+
+  .popBasic.type--finish .boxFinish.typeC .cont { font-size:20px; line-height:35px; }
 
   .popBasic.type--ranking .boxRanking { width:600px; }
   
