@@ -113,9 +113,9 @@ body.bg--black { background:#000; }
 #header .btnMypage:before { content:''; width:13px; height:17px; display:inline-block; margin-right:7px; background:url('../images/common/iconMypage.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
 #header .infoStaking { display:flex; color:#fff; }
-#header .infoStaking .val { margin-left:38px; font-size:18px; font-family:"Montserrat"; }
+#header .infoStaking .val { margin-left:12px; font-size:14px; font-family:"Montserrat"; }
 #header .infoStaking .val span { font-weight:700; }
-#header .btnMyStaking { width:186px; height:48px; display:block; margin-left:30px; border:1px solid #fff; border-radius:48px; text-align:center; line-height:46px; color:#fff; font-size:18px; font-weight:700; font-family:"Montserrat"; }
+#header .btnMyStaking { width:186px; height:48px; display:block; margin-left:30px; border:1px solid #fff; border-radius:48px; text-align:center; line-height:46px; color:#fff; font-size:14px; font-weight:700; font-family:"Montserrat"; }
 
 
 #container { padding-top:68px; }
@@ -822,7 +822,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxReveal .check input:checked+label:before { background:#22ffd5; }
 .boxReveal a { display:inline-block; margin-bottom:70px; color:#fff; font-size:20px; font-weight:400; }
 
-.page--staking #wrap { background:url('../images/main/bgMainTop_staking_pc.jpg') center top no-repeat; background-size:1920px auto; }
+.page--staking #wrap { background:url('../images/main/bgMainTop_staking_pc.jpg') center top no-repeat; }
 .page--staking #header { background:#000; border-bottom:0; }
 .page--staking #header.fixed { background:#000; box-shadow:none; }
 .page--staking #header h1.logo--staking { width:270px; height:80px; background:url('../images/common/logo_staking.png') center center no-repeat; background-size:100% auto; }
@@ -839,7 +839,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxChannel .btnDiscode:before { content:''; width:19px; height:15px; margin-right:10px; display:inline-block; background:url('../images/common/btn_icon_discode.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
 .stakingTop { padding:165px 0 200px; text-align:center; color:#fff; }
-.stakingTop h3 { margin-bottom:40px; font-family:"Montserrat"; font-size:90px; font-weight:700; }
+.stakingTop h3 { margin-bottom:40px; font-family:"Montserrat"; font-size:80px; font-weight:700; }
 .stakingTop p { font-family:"Montserrat"; font-size:20px; color:rgba(255,255,255,0.8); }
 .stakingTop .linkWallet { margin-top:75px; position:relative; }
 .stakingTop .linkWallet .btnArea {  }
@@ -853,18 +853,18 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .stakingTop .linkWallet .key { width:680px; height:46px; display:none; position:absolute; left:50%; top:116px; background:rgba(0,0,0,.5); text-align:center; line-height:46px; font-size:18px; color:rgba(255,255,255,.5); transform:translateX(-50%); }
 .stakingTop .linkWallet .key.on { display:block; }
 
-.stakingCont h4 { margin-bottom:55px; text-align:center; color:#fff; font-size:35px; font-weight:700; font-family:"Montserrat"; }
-.stakingCont h5 { margin-bottom:55px; text-align:center; color:#fff; font-size:25px; font-weight:700; font-family:"Montserrat"; }
+.stakingCont h4 { margin-bottom:55px; text-align:center; color:#fff; font-size:27px; font-weight:700; font-family:"Montserrat"; }
+.stakingCont h5 { margin-bottom:55px; text-align:center; color:#fff; font-size:20px; font-weight:700; font-family:"Montserrat"; }
 .boxStakingTab { text-align:center; color:#fff; }
 .boxStakingTab .tabArea { width:882px; height:76px; margin:0 auto; position:relative; display:flex; align-items:center; justify-content:center; background:#000; border-radius:38px; }
 .boxStakingTab .tabArea:before { content:''; width:33.3%; height:76px; position:absolute; top:0; border-radius:38px; transition:all .5s; }
 .boxStakingTab .tabArea.is--bronz:before { left:0; background-image: linear-gradient(to bottom, #794c29, #bf875c 47%, #552e26); }
 .boxStakingTab .tabArea.is--silver:before { left:33.3%; background-image: linear-gradient(to bottom, #4d4d4d, #8d8d8d 47%, #4a4a4a); }
 .boxStakingTab .tabArea.is--gold:before { left:66.6%; background-image: linear-gradient(to bottom, #987500, #d9a723 47%, #9d7900); }
-.boxStakingTab .tabArea a { width:33.3%; position:relative; color:rgba(255,255,255,.3); font-family:"Montserrat"; font-size:25px; font-weight:700; z-index:5; }
+.boxStakingTab .tabArea a { width:33.3%; position:relative; color:rgba(255,255,255,.3); font-family:"Montserrat"; font-size:20px; font-weight:700; z-index:5; }
 .boxStakingTab .tabArea a.active { color:#fff; }
 .boxStakingTab .tabCont { padding-top:45px; }
-.boxStakingTab p { color:rgba(255,255,255,.5); font-size:25px; font-family:"Montserrat"; }
+.boxStakingTab p { color:rgba(255,255,255,.5); font-size:18px; line-height:30px; font-family:"Montserrat"; }
 .boxStakingTab .tabCont.is--bronz p { color:#c9834d; }
 .boxStakingTab .tabCont.is--bronz p span { color:#fcb681; }
 .boxStakingTab .tabCont.is--silver p { color:#afafaf; }
@@ -875,12 +875,12 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingCal { width:1098px; height:166px; margin:30px auto 115px; padding:0 58px 0 46px; display:flex; align-items:center; justify-content:space-between; background:rgba(0,0,0,.39); }
 .boxStakingCal .itemGroup { display:flex; }
 .boxStakingCal .item+.item { margin-left:10px; }
-.boxStakingCal .item .title { margin-bottom:8px; font-size:20px; color:#5d5d5d; font-family:"Montserrat"; text-align:left; font-weight:700; }
+.boxStakingCal .item .title { margin-bottom:8px; font-size:18px; color:#5d5d5d; font-family:"Montserrat"; text-align:left; font-weight:700; }
 .boxStakingCal .item .cont { width:198px; height:62px; padding:0 28px; display:flex; align-items:center; justify-content:center; border:1px solid #4e4e4e; }
 .boxStakingCal .item .cont input { width:104px; background:transparent; border:0; font-size:20px; font-weight:700; font-family:"Montserrat"; color:#fff; text-align:center; }
-.boxStakingCal .item .cont label { white-space:nowrap; font-size:20px; color:#5d5d5d; font-family:"Montserrat"; }
-.boxStakingCal .item.is--btn { padding-top:36px; }
-.boxStakingCal .item.is--btn button { width:198px; height:62px; background:#4d5462; color:#fff; font-family:"Montserrat"; font-size:20px; }
+.boxStakingCal .item .cont label { white-space:nowrap; font-size:18px; color:#5d5d5d; font-family:"Montserrat"; line-height:1; }
+.boxStakingCal .item.is--btn { padding-top:33px; }
+.boxStakingCal .item.is--btn button { width:198px; height:62px; background:#4d5462; color:#fff; font-family:"Montserrat"; font-size:18px; }
 .boxStakingCal .item.total .title { color:#fff; }
 .boxStakingCal .item.total .cont { width:310px; }
 .boxStakingCal .item.total .cont input { width:180px; padding:0 15px; text-align:left; }
@@ -908,13 +908,13 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingTab .tabCont.is--gold .boxStakePick li a .title { background:linear-gradient(102deg, #a7851b 10%, #e4ba48 40%, #a7851b 77%); }
 
 .boxStakingDeposit { width:1098px; padding:40px 0 50px; margin:0 auto 60px; background:rgba(0,0,0,.39); }
-.boxStakingDeposit .title { margin-bottom:40px; font-size:20px; font-weight:700; color:#fff; font-family:"Montserrat"; }
+.boxStakingDeposit .title { margin-bottom:40px; font-size:18px; font-weight:700; color:#fff; font-family:"Montserrat"; }
 .boxStakingDeposit ul { width:944px; margin:0 auto 45px; display:flex; flex-wrap:wrap; }
 .boxStakingDeposit ul li { width:152px; position:relative; }
 .boxStakingDeposit ul li:nth-child(1n+7) { padding-top:8px; }
 .boxStakingDeposit input[type='checkbox'] { position:absolute; left:-99999px; top:0; opacity:0; }
 .boxStakingDeposit input[type='checkbox']+label { height:52px; position:relative; padding-left:42px; margin:0; line-height:52px; font-size:20px; font-family:"Montserrat"; font-weight:700; color:#ffff; }
-.boxStakingDeposit input[type='checkbox']+label:before { content:''; width:30px; height:30px; position:absolute; left:0; top:50%; border:1px solid #6e6e6e; transform:translateY(-50%); }
+.boxStakingDeposit input[type='checkbox']+label:before { content:''; width:30px; height:30px; position:absolute; left:0; top:50%; border:1px solid #6e6e6e; transform:translateY(-50%); box-sizing:border-box; }
 .boxStakingDeposit input[type='checkbox']:checked+label:after { content:''; width:18px; height:18px; position:absolute; left:7px; top:50%; transform:translateY(-50%); background:#15ffe4; }
 .boxStakingDeposit .chkAgree { position:relative; }
 .boxStakingDeposit .chkAgree input[type='checkbox']+label { color:rgba(255,255,255,.5); font-size:18px; font-weight:400; }
@@ -922,13 +922,13 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .btnGoStake { width:465px; height:100px; display:block; margin:65px auto 0; border:1px solid #fff; border-radius:50px; box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.72); font-size:30px; font-family:"Montserrat"; color:#15ffe4; text-align:center; line-height:98px; font-weight:700; }
 .btnGoStake:hover { border:0; background-image: linear-gradient(to bottom, #4e1eaf, #2b0b68); }
 
-.boxStakingGuide { margin-top:100px; padding:96px 140px 92px 160px; background:#000; box-shadow: 0 0 80px 0 rgba(105, 29, 248, 0.2);  }
-.boxStakingGuide h5 { margin-bottom:24px; color:#fff; font-weight:500; font-family:"Montserrat"; font-size:25px; text-align:left; }
+.boxStakingGuide { margin-top:100px; padding:100px 180px 92px 160px; background:#000; box-shadow: 0 0 80px 0 rgba(105, 29, 248, 0.2);  }
+.boxStakingGuide h5 { margin-bottom:24px; color:#fff; font-weight:500; font-family:"Montserrat"; font-size:20px; text-align:left; }
 .boxStakingGuide .guideGroup { display:flex; justify-content:space-between; }
-.boxStakingGuide .guideGroup .item { padding-left:12px; position:relative; color:#7c7c7c; font-size:18px; }
+.boxStakingGuide .guideGroup .item { padding-left:12px; position:relative; color:#7c7c7c; font-size:16px; }
 .boxStakingGuide .guideGroup .item:before { content:''; width:4px; height:4px; position:absolute; left:0; top:10px; background:#808080; }
-.boxStakingGuide .guideGroup .item+.item { margin-top:24px; }
-.boxStakingGuide .guideGroup .item ul { margin-top:15px; }
+.boxStakingGuide .guideGroup .item+.item { margin-top:14px; }
+.boxStakingGuide .guideGroup .item ul { margin-top:14px; }
 .boxStakingGuide .guideGroup .item ul li { padding-left:10px; position:relative; }
 .boxStakingGuide .guideGroup .item ul li:before { content:'-'; position:absolute; left:0; top:0; }
 .boxStakingGuide .guideGroup .item ul li+li { margin-top:10px; }
@@ -936,11 +936,11 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 
 .boxStakingInfo { width:1280px; height:150px; position:absolute; left:50%; bottom:-75px; transform:translateX(-50%); box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-image: linear-gradient(to bottom, #5d1cb7, #1c0042); }
 .boxStakingInfo .swiper-slide { height:150px; display:flex; align-items:center; justify-content:center; }
-.boxStakingInfo .swiper-slide .title { width:590px; padding-left:50px; text-align:left; font-size:27px; color:#fff; font-weight:500; font-family:"Montserrat"; }
+.boxStakingInfo .swiper-slide .title { width:590px; padding-left:50px; text-align:left; font-size:24px; color:#fff; font-weight:500; font-family:"Montserrat"; }
 .boxStakingInfo .swiper-slide .title:before { content:''; width:45px; height:41px; display:inline-block; margin-right:25px; vertical-align:middle; background:url('../images/main/iconStakingInfo.png') center center no-repeat; background-size:100% auto; }
-.boxStakingInfo .swiper-slide .value { width:474px; height:85px; padding:0 54px 0 50px; display:flex; align-items:center; justify-content:center; box-shadow: inset 3px 3px 6px 0 #000; background-image: linear-gradient(to bottom, #080634, #000); line-height:85px; border-radius:9px; color:#ffff15; font-size:35px; font-weight:700; font-family:"Montserrat"; }
+.boxStakingInfo .swiper-slide .value { width:474px; height:85px; padding:0 54px 0 50px; display:flex; align-items:center; justify-content:center; box-shadow: inset 3px 3px 6px 0 #000; background-image: linear-gradient(to bottom, #080634, #000); line-height:85px; border-radius:9px; color:#ffff15; font-size:27px; font-weight:700; font-family:"Montserrat"; }
 .boxStakingInfo .swiper-slide .value.is--total { justify-content:space-between; }
-.boxStakingInfo .swiper-slide .value .pre { margin-left:6px; font-size:30px; font-weight:400; }
+.boxStakingInfo .swiper-slide .value .pre { margin-left:6px; font-size:27px; font-weight:400; }
 .boxStakingInfo .swiper-button-next,
 .boxStakingInfo .swiper-button-prev	{ width:11px; height:20px; background:url('../images/main/btnStakingArrow.png') center center no-repeat; background-size:100% auto; }
 .boxStakingInfo .swiper-button-prev,
