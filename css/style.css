@@ -1210,6 +1210,9 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .popBasic.type--finish .boxFinish .cont .f-small { font-size:11px; line-height:1.6; }
 .popBasic.type--finish .popClose { right:20px; top:20px; }
 
+.popBasic.type--finish.bg--black .inner { background:#000; }
+.popBasic.type--finish.bg--black .popClose { top:47px; right:102px; }
+
 .popBasic.type--finish.is--staking .boxFinish .cont { font-size:20px; line-height:28px; }
 .popBasic.type--finish.is--staking .boxFinish .cont .f-small { display:block; margin-top:10px; }
 
