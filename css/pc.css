@@ -204,4 +204,83 @@
 
   .popBasic.type--ranking .boxRanking { width:600px; }
   
+
+  .stakingTop { padding-top:134px; background:none; }
+	.stakingTop h3 { margin-bottom:35px; font-size:65px; }
+	.stakingTop p { padding:0; font-size:20px; }
+
+	.stakingTop .linkWallet { margin-top:55px; }
+	.stakingTop .linkWallet .btnArea a { min-width:332px; height:90px; display:inline-block; font-size:20px; line-height:88px; }
+	.stakingTop .linkWallet .btnArea a+a { margin-top:0; margin-left:16px; }
+	.stakingTop .linkWallet .btnArea a.btnWallet:before { width:28px; height:26px; }
+	.stakingTop .linkWallet .btnArea a.btnOpensea:before { width:24px; height:24px; }
+
+	.boxStakingInfo { width:1280px; height:120px; left:50%; bottom:-45px; transform:translateX(-50%); }
+	.boxStakingInfo .swiper-slide { height:120px; flex-direction:row; }
+	.boxStakingInfo .swiper-slide .title { width:590px; margin-bottom:0; padding-left:24px; font-size:20px; text-align:left; }
+	.boxStakingInfo .swiper-slide .value { width:468px; height:80px; padding:0 54px 0 50px; font-size:25px; }
+	.boxStakingInfo .swiper-button-next,
+	.boxStakingInfo .swiper-button-prev { margin-top:0; transform:translateY(-50%); }
+	.boxStakingInfo .swiper-button-prev,
+	.boxStakingInfo .swiper-container-rtl .swiper-button-next { left:52px; transform:rotate(180deg) translateY(50%); }
+	.boxStakingInfo .swiper-button-next,
+	.boxStakingInfo .swiper-container-rtl .swiper-button-prev { right:52px; }
+	
+
+	.mainSection+.mainSection.stakingCont { padding-top:150px; margin-bottom:100px; background:none; }
+
+	.page--staking #wrap { background:url('../images/main/bgMainTop_staking_pc.jpg') center top no-repeat; }
+	.page--staking #header { background:#000; }
+	.page--staking #header h1.logo--staking { width:245px; height:80px; }
+	.page--staking #container { padding-top:80px; }
+	.page--staking #container .mainSection { padding-left:0; padding-right:0; }
+
+	.stakingCont h4 { margin-bottom:55px; font-size:27px; }
+	.stakingCont h5 { margin-bottom:55px; }
+
+	.boxStakingTab .tabArea { width:882px; height:76px; margin:0 auto; }
+	.boxStakingTab .tabArea:before { height:76px; }
+	.boxStakingTab .tabArea a { font-size:20px; }
+	.boxStakingTab .tabCont { margin-top:45px; }
+	.boxStakingTab p { font-size:18px; line-height:1.7; }
+
+  .boxStakingTab .tabCont.is--silver .boxStakePick { width:728px; }
+
+	.boxStakingCal { width:1098px; height:166px; display:flex; align-items:center; justify-content:space-between; margin:30px auto 115px; padding:0 70px; }
+	.boxStakingCal .itemGroup { display:flex; }
+	.boxStakingCal .item+.item { margin-left:10px; margin-top:0; }
+	.boxStakingCal .item .title { font-size:18px; text-align:left; }
+	.boxStakingCal .item .cont { width:300px; height:62px; padding:0 28px; justify-content:center; }
+	.boxStakingCal .item .cont input { width:150px; }
+	.boxStakingCal .item.is--btn { padding-top:33px; }
+	.boxStakingCal .item.is--btn button { width:198px; height:62px; font-size:18px; }
+	.boxStakingCal .item.total { margin-top:0; }
+	.boxStakingCal .item.total .cont { width:400px; padding:0 28px; }
+	.boxStakingCal .item.total .cont label { font-weight:400; }
+	
+
+	.boxStakePick { width:1098px; margin-bottom:87px; }
+	.boxStakePick li { width:359px; height:432px; margin-left:10px; }
+  .boxStakePick li:nth-child(1n+3) { margin-top:10px; }
+  .boxStakePick li:nth-child(3) { margin-top:0; margin-left:10px; }
+  .boxStakePick li:nth-child(3n+4) { margin-left:0; }
+  .boxStakePick li:nth-child(3n+3),
+  .boxStakePick li:nth-child(3n+5) { margin-left:10px; }
+	.boxStakePick li a .title { font-size:26px; }
+	.boxStakePick li a span.txtBack { padding-top:60px; background-size:49px auto; font-size:26px; }
+
+  .boxStakingTab .tabCont.is--silver .boxStakePick li:nth-child(2n+3) { margin-left:0; margin-top:10px; }
+  .boxStakingTab .tabCont.is--silver .boxStakePick li:nth-child(2n+2) { margin-left:10px; }
+
+	.btnGoStake { width:465px; height:100px; margin-top:48px; line-height:98px; font-size:30px; }
+
+	.boxStakingGuide { margin-top:80px; padding:84px 100px 64px 172px; }
+	.boxStakingGuide h5 { margin-bottom:24px; font-size:20px; text-align:left; }
+	.boxStakingGuide .guideGroup { display:flex; justify-content:space-between; }
+	.boxStakingGuide .guideGroup .col+.col { margin-top:0; }
+	.boxStakingGuide .guideGroup .item { padding-left:0; color:#7c7c7c; line-height:37px; }
+	.boxStakingGuide .guideGroup .item:before { display:none; }
+	.boxStakingGuide .guideGroup .item+.item { margin-top:6px; }
+	.boxStakingGuide .guideGroup .item ul { margin-top:0; }
+	.boxStakingGuide .guideGroup .item ul li { line-height:29px; }
 }
