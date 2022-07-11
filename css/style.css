@@ -1257,5 +1257,5 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 	.popBasic.type--finish .boxFinish.typeC { padding:96px 105px 110px; }
 
 	.page--staking #wrap { max-width:none; }
-	.page--staking #header { max-width:none; }
+	.page--staking #header { max-width:none; border-bottom:0; }
 }
