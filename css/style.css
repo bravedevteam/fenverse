@@ -850,7 +850,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .stakingTop .linkWallet .btnArea a.btnWallet:hover:before { background-image:url('../images/main/iconWalletStaking_on.png'); }
 .stakingTop .linkWallet .btnArea a.btnOpensea:before { content:''; width:18px; height:18px; display:inline-block; margin-right:16px; vertical-align:middle; background:url('../images/main/iconOpensea.png') center center no-repeat; background-size:100% auto; }
 .stakingTop .linkWallet .btnArea a.btnOpensea:hover:before { background-image:url('../images/main/iconOpensea_on.png'); }
-.stakingTop .linkWallet .key { width:680px; height:46px; display:none; position:absolute; left:50%; top:116px; background:rgba(0,0,0,.5); text-align:center; line-height:46px; font-size:18px; color:rgba(255,255,255,.5); transform:translateX(-50%); }
+.stakingTop .linkWallet .key { display:none; padding:10px; margin-top:20px; background:rgba(0,0,0,.5); text-align:center; font-size:14px; color:rgba(255,255,255,.5); word-break: break-all; }
 .stakingTop .linkWallet .key.on { display:block; }
 
 .stakingCont h4 { margin-bottom:30px; text-align:center; color:#fff; font-size:20px; font-weight:700; font-family:"Montserrat"; }
