@@ -27,6 +27,14 @@
 				<img src="../../images/main/imgMainTop_lemong_pc.png" alt="" class="pc" />
 			</div>
 			<div class="mainSection">
+				<div class="boxRankingGroup">
+					<a href="#" class="btn1 open--popup" data-pop="popRanking1">LEMONG RARITY</a>
+					<a href="#" class="btn1 open--popup" data-pop="popRanking2">LEMONG RANKING</a>
+					<a href="#" class="btn2 open--popup" data-pop="popRanking1">LEO RARITY</a>
+					<a href="#" class="btn2 open--popup" data-pop="popRanking2">LEO RARITY</a>
+				</div>
+			</div>
+			<div class="mainSection">
 				<div class="boxLemongMov">
 					<video autoplay muted loop playsinline>
 					<!-- 
@@ -187,6 +195,62 @@
 			</div>
 		</footer>
 	</section>
+
+	<!-- 랭킹 팝업 -->
+	<div id="popRanking1" class="popBasic type--ranking">
+		<div class="inner">
+			<div class="boxRanking">
+				<h5>Check Your<br>Leo Rank</h5>
+				<div class="thumb"><img src="../../images/content/imgLeoRanking.png" alt=""></div>
+				<div class="inputGroup">
+					<div class="input_row">
+						<label for="input_schNo">My Leo no.</label>
+						<div class="input_search">
+							<input type="text" id="input_schNo" placeholder="Please enter a number." class="search">
+							<button type="button" class="btnSearch">검색</button>
+						</div>
+					</div>
+					<div class="input_row">
+						<label for="input_ranking">Ranking</label>
+						<input type="text" id="input_ranking" value="-" readonly="" class="disabled">
+					</div>
+					<div class="input_row">
+						<label for="input_score">Score</label>
+						<input type="text" id="input_score" value="-" readonly="" class="disabled">
+					</div>
+				</div>
+				<button type="button" class="popClose">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="popRanking2" class="popBasic type--ranking">
+		<div class="inner">
+			<div class="boxRanking">
+				<h5>Check Your<br>Leo Rank</h5>
+				<div class="thumb"><img src="../../images/content/imgLeoRanking_on.png" alt=""></div>
+				<div class="inputGroup">
+					<div class="input_row">
+						<label for="input_schNo">My Leo no.</label>
+						<div class="input_search">
+							<input type="text" id="input_schNo" placeholder="Please enter a number." class="search" value="77">
+							<button type="button" class="btnSearch">검색</button>
+						</div>
+					</div>
+					<div class="input_row">
+						<label for="input_ranking">Ranking</label>
+						<input type="text" id="input_ranking" value="241">
+					</div>
+					<div class="input_row">
+						<label for="input_score">Score</label>
+						<input type="text" id="input_score" value="3434">
+					</div>
+				</div>
+				<button type="button" class="popClose">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- //랭킹 팝업 -->
 </body>
 
 <script type="text/javascript">
