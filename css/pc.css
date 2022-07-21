@@ -46,6 +46,12 @@
   .mainSection+.mainSection.txt--community.typeA { padding-top:100px !important; padding-bottom:20px; }
   .mainSection.type--text+.mainSection.txt--community { padding-top:98px !important; }
 
+  .boxRankingGroup { padding:40px 0 18px; }
+  .boxRankingGroup a { width:calc(50% - 10px); float:left; font-size:18px; }
+  .boxRankingGroup a+a { margin-top:20px; margin-left:20px; }
+  .boxRankingGroup a:nth-child(2) { margin-top:0; }
+  .boxRankingGroup a:nth-child(3) { margin-left:0; }
+
   .boxLemongMov { height:580px; margin:44px 0 0; }
   .boxLemongMov video { height:100%; }
 

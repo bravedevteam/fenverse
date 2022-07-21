@@ -594,12 +594,18 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxLoadMap .btnArea { margin-top:16px; }
 .boxLoadMap .btnArea .btn+.btn { margin-top:16px; }
 
+.boxRankingGroup { padding:0 16px; overflow:hidden; }
+.boxRankingGroup a { height:68px; display:block; border-radius:9px; font-size:16px; font-weight:700; color:#000; text-align:center; line-height:68px; }
+.boxRankingGroup a+a { margin-top:16px; }
+.boxRankingGroup a.btn1 { background-image: radial-gradient(circle at 50% 50%, #ffec03, #ffd800); }
+.boxRankingGroup a.btn2 { background-image: radial-gradient(circle at 50% 50%, #ffcf03, #ff9d00); }
+
 .boxLemongMov { margin:20px 16px 0; background:#000; box-shadow: 0 3px 18px 0 rgba(255, 247, 32, 0.41); border: solid 1px #ffeb00; border-radius:10px; overflow:hidden; }
 .boxLemongMov video { width:100%; vertical-align:top; }
 
 .lemongInfo .titleArea .title { float:none; text-align:center; font-size:19px; font-weight:600; color:#fff; }
 .lemongInfo .contArea { width:270px; margin:0 auto; letter-spacing:-.03em; }
-.lemongInfo .contArea .item { min-height:38px; padding:10px 13px; display:flex; align-items:center; justify-content:center; border-radius:5px; border:1px solid #fff720; text-align:center; font-size:15px; }
+.lemongInfo .contArea .item { min-height:38px; padding:10px 13px; display:flex; align-items:center; justify-content:center; border-radius:5px; background:#000; border:1px solid #fff720; text-align:center; font-size:15px; }
 .lemongInfo .contArea .item.item1 { background:#fff720; color:#000; font-size:15px; font-weight:700; }
 .lemongInfo .contArea .item.item2 { margin-top:6px; }
 .lemongInfo .contArea .item.item3 { margin-top:4px; }
@@ -950,6 +956,9 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingNFT {  }
 .boxStakingNFT .btnArea { margin-top:0; }
 .boxStakingNFT .btnArea .btn { width:180px; height:70px; margin:0 auto; border:1px solid #fff; background:transparent; border-radius:0; color:#fff; line-height:68px; font-size:20px; font-weight:700; font-family:"Montserrat"; }
+.boxStakingNFT .loading { margin-top:63px; text-align:center; }
+.boxStakingNFT .loading img { width:66px; }
+.boxStakingNFT .loading p { display:block; margin-top:22px; font-family:"Montserrat"; font-size:16px; font-weight:700; }
 
 .listStekingPick { width:1050px; margin:0 auto; display:flex; flex-wrap:wrap; margin-bottom:70px; }
 .listStekingPick li { width:140px; display:flex; margin:15px 5px; }
@@ -1007,8 +1016,11 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxMyStaking .infoStaking dl { padding-left:80px; overflow:hidden; font-size:18px; color:#fff; font-family:"Montserrat"; }
 .boxMyStaking .infoStaking dt { float:left; padding:8px 0; }
 .boxMyStaking .infoStaking dd { margin-left:240px; padding:8px 0; font-weight:700; }
+.boxMyStaking .infoStaking .btnRefresh { margin-left:10px; }
 .boxMyStaking .infoStaking .btnStakingStatus { width:162px; height:50px; position:absolute; right:60px; bottom:-12px; border-radius:12px; background:#3b3846; text-align:center; line-height:50px; font-size:16px; color:#fff; font-family:"Montserrat"; }
 .boxMyStaking .infoStaking .btnStakingStatus:hover { background:#00c9a2; }
+
+.btnRefresh { width:23px; height:23px; display:inline-block; background:url('../images/content/btnRefresh.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; vertical-align:middle; }
 
 
 .boxMyStaking .listMyStaking { width:1067px; margin-top:55px; overflow:hidden; }
