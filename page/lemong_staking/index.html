@@ -112,7 +112,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#"><span class="txtBack">Rookie</span></a>
+								<a href="#" class="open--popup" data-pop="popRankingLoad"><span class="txtBack">Rookie</span></a>
 							</li>
 							<li>
 								<a href="#"><span class="txtBack">Rookie</span></a>
@@ -334,7 +334,7 @@
 									<dt>스테이킹 기간</dt>
 									<dd>34 DAY / 11:34:21</dd>
 									<dt>수령가능한 예치 리워드</dt>
-									<dd>34 LEMN</dd>
+									<dd>34 LEMN <a href="#" class="btnRefresh">새로고침</a></dd>
 								</dl>
 								<a href="#" class="btnStakingStatus open--popup" data-pop="popStakingCancel">스테이킹 해지하기</a>
 							</div>
@@ -367,7 +367,7 @@
 									<dt>스테이킹 기간</dt>
 									<dd>72 DAY / 05:29:11</dd>
 									<dt>수령가능한 예치 리워드</dt>
-									<dd>144 LEMN</dd>
+									<dd>144 LEMN <a href="#" class="btnRefresh">새로고침</a></dd>
 								</dl>
 								<a href="#" class="btnStakingStatus">스테이킹 해지하기</a>
 							</div>
@@ -400,7 +400,7 @@
 									<dt>스테이킹 기간</dt>
 									<dd>58 DAY / 18:44:23</dd>
 									<dt>수령가능한 예치 리워드</dt>
-									<dd>174 LEMN</dd>
+									<dd>174 LEMN <a href="#" class="btnRefresh">새로고침</a></dd>
 								</dl>
 								<a href="#" class="btnStakingStatus">스테이킹 해지하기</a>
 							</div>
@@ -441,6 +441,24 @@
 		</div>
 	</div>
 	<!-- //마이 스테이킹 -->
+
+	<!-- 스테이킹 로딩 -->
+	<div id="popRankingLoad" class="popBasic type--staking">
+		<div class="inner">
+			<div class="boxStakingNFT">
+				<div class="top">MY NFT</div>
+				<div class="cont">
+					<p>C-500 스테이킹은 <strong>루키 레몽 3마리</strong>를 필수로 선택하셔야합니다.</p>
+					<div class="loading">
+						<img src="../../images/common/loading.gif" alt="" />
+						<p>LOADING...</p>
+					</div>
+				</div>
+				<button type="button" class="popClose is--white">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- //스테이킹 로딩 -->
 
 	<!-- 스테이킹 선택 _ 브론즈 -->
 	<div id="popStakingNFT_1" class="popBasic type--staking">
