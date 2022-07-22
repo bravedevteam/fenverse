@@ -225,7 +225,7 @@
 	.boxStakingInfo { width:1280px; height:120px; left:50%; bottom:-45px; transform:translateX(-50%); }
 	.boxStakingInfo .swiper-slide { height:120px; flex-direction:row; }
 	.boxStakingInfo .swiper-slide .title { width:590px; margin-bottom:0; padding-left:24px; font-size:20px; text-align:left; }
-	.boxStakingInfo .swiper-slide .value { width:468px; height:80px; padding:0 54px 0 50px; font-size:25px; }
+	.boxStakingInfo .swiper-slide .value { width:468px; height:80px; font-size:25px; }
 	.boxStakingInfo .swiper-button-next,
 	.boxStakingInfo .swiper-button-prev { margin-top:0; transform:translateY(-50%); }
 	.boxStakingInfo .swiper-button-prev,

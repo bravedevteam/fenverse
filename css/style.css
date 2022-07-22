@@ -942,7 +942,8 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 */
 .boxStakingInfo .swiper-slide .value { width:calc(100% - 112px); height:65px; display:flex; align-items:center; justify-content:center; box-shadow: inset 3px 3px 6px 0 #000; background-image: linear-gradient(to bottom, #080634, #000); border-radius:9px; color:#ffff15; font-size:20px; font-weight:700; font-family:"Montserrat"; }
 .boxStakingInfo .swiper-slide .value.is--total { justify-content:space-between; }
-.boxStakingInfo .swiper-slide .value .num { font-family:"Montserrat"; }
+.boxStakingInfo .swiper-slide .value .txt { flex:1; font-size:14px; color:#fff; font-family:"Montserrat"; }
+.boxStakingInfo .swiper-slide .value .num { flex:1; font-family:"Montserrat"; }
 .boxStakingInfo .swiper-slide .value .pre { margin-left:6px; font-size:27px; font-weight:400; }
 .boxStakingInfo .swiper-button-next,
 .boxStakingInfo .swiper-button-prev	{ width:11px; height:20px; margin-top:8px; background:url('../images/main/btnStakingArrow.png') center center no-repeat; background-size:100% auto; }
