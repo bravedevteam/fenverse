@@ -283,11 +283,11 @@
 
 	.boxStakingGuide { margin-top:80px; padding:84px 100px 64px 172px; }
 	.boxStakingGuide h5 { margin-bottom:24px; font-size:20px; text-align:left; }
-	.boxStakingGuide .guideGroup { display:flex; justify-content:space-between; }
+	.boxStakingGuide .guideGroup { display:flex; justify-content:space-between; align-items:center; }
 	.boxStakingGuide .guideGroup .col+.col { margin-top:0; }
 	.boxStakingGuide .guideGroup .item { padding-left:0; color:#7c7c7c; line-height:37px; }
 	.boxStakingGuide .guideGroup .item:before { display:none; }
 	.boxStakingGuide .guideGroup .item+.item { margin-top:6px; }
-	.boxStakingGuide .guideGroup .item ul { margin-top:0; }
+	.boxStakingGuide .guideGroup .item ul { margin-top:10px; }
 	.boxStakingGuide .guideGroup .item ul li { line-height:29px; }
 }

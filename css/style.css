@@ -89,6 +89,8 @@ input[type="password"]::placeholder { color:rgba(0,0,0,0.5); }
 input[type="checkbox"] { width:25px; height:25px; border:1px solid #c0c9d4; }
 input[type="checkbox"]+label { margin-left:6px; font-size:14px; line-height:25px; cursor:pointer; }
 
+::selection { background:#19FFF2; color:#000; }
+
 body.bg--white { background:#fff; }
 body.bg--black { background:#000; }
 
