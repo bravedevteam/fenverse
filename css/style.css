@@ -963,10 +963,12 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingInfo .swiper-slide .value .txt { flex:1; font-size:14px; color:#fff; font-family:"Montserrat"; text-transform: uppercase; }
 .boxStakingInfo .swiper-slide .value .num { flex:1; font-family:"Montserrat"; }
 .boxStakingInfo .swiper-slide .value .pre { margin-left:6px; font-size:27px; font-weight:400; }
-.boxStakingInfo .swiper-slide .value .pool { display:flex; }
-.boxStakingInfo .swiper-slide .value .pool li { padding:0 16px; display:flex; align-items:center; position:relative; font-size:12px; color:#fff; }
+.boxStakingInfo .swiper-slide .value .pool { display:flex; justify-content:center; }
+.boxStakingInfo .swiper-slide .value .pool li { padding:0 16px; position:relative; font-size:12px; color:#fff; }
 .boxStakingInfo .swiper-slide .value .pool li+li:after { content:''; width:1px; height:16px; position:absolute; left:0; top:50%; margin-top:-8px; background:rgba(255,255,255,.5); }
-.boxStakingInfo .swiper-slide .value .pool li span { margin:0 5px; color:#ffff15; font-size:20px; }
+.boxStakingInfo .swiper-slide .value .pool li span { display:block; color:#fff; }
+.boxStakingInfo .swiper-slide .value .pool li span strong { margin:0 5px 0 0; font-size:14px; color:#ffff15; }
+
 .boxStakingInfo .swiper-button-next,
 .boxStakingInfo .swiper-button-prev	{ width:11px; height:20px; margin-top:8px; background:url('../images/main/btnStakingArrow.png') center center no-repeat; background-size:100% auto; }
 .boxStakingInfo .swiper-button-prev,
@@ -977,9 +979,9 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingInfo .swiper-button-prev:after { display:none; }
 
 .boxStakingInfo .swiper-slide.type--basic { background-image: linear-gradient(to bottom, #b71c93, #42003d); }
-.boxStakingInfo .swiper-slide.type--basic .txt { flex:none; padding:0 20px; }
+.boxStakingInfo .swiper-slide.type--basic .txt { flex:none; padding:5px 20px; font-size:12px; }
+.boxStakingInfo .swiper-slide.type--basic .value { display:block; }
 
-.boxStakingNFT {  }
 .boxStakingNFT .btnArea { margin-top:0; }
 .boxStakingNFT .btnArea .btn { width:180px; height:70px; margin:0 auto; border:1px solid #fff; background:transparent; border-radius:0; color:#fff; line-height:68px; font-size:20px; font-weight:700; font-family:"Montserrat"; }
 .boxStakingNFT .loading { margin-top:63px; text-align:center; }
