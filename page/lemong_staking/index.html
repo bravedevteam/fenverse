@@ -47,6 +47,17 @@
 				<div class="boxStakingInfo">
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
+							<div class="swiper-slide type--basic">
+								<div class="title">C- basic planet staking pool</div>
+								<div class="value">
+									<div class="txt">스테이킹 현황</div>
+									<ul class="pool">
+										<li>루키<span>00</span>개</li>
+										<li>스타<span>00</span>개</li>
+										<li>슈퍼스타<span>00</span>개</li>
+									</ul>
+								</div>
+							</div>
 							<div class="swiper-slide">
 								<div class="title">C- 500 planet staking pool</div>
 								<div class="value">
@@ -77,12 +88,41 @@
 			<div class="mainSection stakingCont">
 				<h4>STAKING</h4>
 				<div class="boxStakingTab">
-					<div class="tabArea is--bronz">
-						<a href="#" class="tabBronz active" data-tab="tabBronz">C-500<br class="mo" /> PLANET</a>
+					<div class="tabArea is--basic">
+						<a href="#" class="tabBasic active" data-tab="tabBasic">C-BASIC<br class="mo" /> PLANET</a>
+						<a href="#" class="tabBronz" data-tab="tabBronz">C-500<br class="mo" /> PLANET</a>
 						<a href="#" class="tabSilver" data-tab="tabSilver">C-1000<br class="mo" /> PLANET</a>
 						<a href="#" class="tabGold" data-tab="tabGold">C-2000<br class="mo" /> PLANET</a>
 					</div>
-					<div id="tabBronz" class="tabCont is--bronz active">
+					<div id="tabBasic" class="tabCont is--basic active">
+						<p><span>C-BASIC PLANET</span> 스테이킹 풀에 참여하시게 되면 아래 리워드가 지급됩니다.</p>
+						<div class="boxStakingReward">
+							<div class="title">리워드(일)</div>
+							<div class="itemGroup">
+								<div class="item">루키 <strong>1</strong> <em>LEMN</em></div>
+								<div class="item">스타 <strong>1.5</strong> <em>LEMN</em></div>
+								<div class="item">슈퍼스타 <strong>3</strong> <em>LEMN</em></div>
+							</div>
+						</div>
+
+						<h5>PLEASE PICK<br class="mo" /> A LEMONG TO STAKE</h5>
+						<ul class="boxStakePick">
+							<li>
+								<a href="#" class="is--active">
+									<div class="thumb"><img src="../../images/content/imgStakeBronz.jpg" alt="" /></div>
+									<div class="title">Rookie #0034</div>
+								</a>
+							</li>
+							<li>
+								<a href="#"><span class="txtBack">Lemong</span></a>
+							</li>
+						</ul>
+						<p class="ps">
+							루키,스타,슈퍼스타 레몽 중 하나를 선택하여 스테이킹 할 수 있습니다.<br />
+							스테이킹 참여 시 스테이킹 수수료(LEMN)가 발행되며, 신청완료와 동시에 소각됩니다.
+						</p>
+					</div>
+					<div id="tabBronz" class="tabCont is--bronz">
 						<p>C-500 planet 스테이킹 풀에 참여하기 위해서는 <span><루키등급 레몽 3마리></span> 를 보유하고 있어야 합니다.<br class="pc" /> C-500 planet 스테이킹 풀 참여시 받게될 리워드를 확인해 보세요!</p>
 						<div class="boxStakingCal">
 							<div class="itemGroup">
@@ -121,6 +161,7 @@
 								<a href="#"><span class="txtBack">Rookie</span></a>
 							</li>
 						</ul>
+						<p class="ps">스테이킹 참여 시 구매 수수료가 발생합니다.</p>
 					</div>
 					<div id="tabSilver" class="tabCont is--silver">
 						<p>C-1000 PLANET 스테이킹 풀에 참여하기 위해서는 <span><스타등급 레몽 2마리> + <루키등급 레몽 2마리></span> 를 보유하고 있어야 합니다.<br class="pc" /> C-1000 planet 스테이킹 풀 참여시 받게될 리워드를 확인해 보세요!</p>
@@ -164,6 +205,7 @@
 								<a href="#"><span class="txtBack">Star</span></a>
 							</li>
 						</ul>
+						<p class="ps">스테이킹 참여 시 구매 수수료가 발생합니다.</p>
 					</div>
 					<div id="tabGold" class="tabCont is--gold">
 						<p>C-2000 planet 스테이킹 풀에 참여하기 위해서는<br /><span><슈퍼스타 등급 레몽 1마리> + <스타등급 레몽 1마리> + <루키등급 레몽 4마리></span> 를 보유하고 있어야 합니다.<br class="pc" /> C-2000 planet 스테이킹 풀 참여시 받게될 리워드를 확인해 보세요!</p>
@@ -213,68 +255,8 @@
 								<a href="#"><span class="txtBack">Rookie</span></a>
 							</li>
 						</ul>
+						<p class="ps">스테이킹 참여 시 구매 수수료가 발생합니다.</p>
 					</div>
-
-					<!--
-					<div class="boxStakingDeposit">
-						<div class="title">예치기간 선택</div>
-						<ul>
-							<li>
-								<input type="checkbox" id="chkDeposit_1" />
-								<label for="chkDeposit_1">1개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_2" />
-								<label for="chkDeposit_2">2개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_3" />
-								<label for="chkDeposit_3">3개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_4" />
-								<label for="chkDeposit_4">4개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_5" />
-								<label for="chkDeposit_5">5개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_6" />
-								<label for="chkDeposit_6">6개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_7" />
-								<label for="chkDeposit_7">7개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_8" />
-								<label for="chkDeposit_8">8개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_9" />
-								<label for="chkDeposit_9">9개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_10" />
-								<label for="chkDeposit_10">10개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_11" />
-								<label for="chkDeposit_11">11개월</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chkDeposit_12" />
-								<label for="chkDeposit_12">12개월</label>
-							</li>
-						</ul>
-						<div class="chkAgree">
-							<input type="checkbox" id="chkAgree" />
-							<label for="chkAgree">선택된 예치기간으로 스테이킹 진행에 동의하십니까?</label>
-						</div>
-					</div>
-					-->
-					<p>스테이킹 참여 시 구매 수수료가 발생합니다.</p>
 					<a href="#" class="btnGoStake">GO STAKE</a>
 				</div>
 
@@ -283,19 +265,22 @@
 					<div class="guideGroup">
 						<div class="col">
 							<div class="item">
-								스테이킹 참여 시 구매 수수료(lemn)가 발생합니다.
+								스테이킹 신청 시 수수료 (LEMN)가 발생하며,<br />
+								사용된 수수료는 신청완료와 동시에 소각 됩니다.
 								<ul>
-									<li>C-500 planet / 15 lemn</li>
-									<li>C-1000 planet / 30 lemn</li>
-									<li>C-2000 planet / 45 lemn</li>
+									<li>C-500 planet / 36 lemn</li>
+									<li>C-1000 planet / 72 lemn</li>
+									<li>C-2000 planet / 136 lemn</li>
+									<li>C-basic planet / 15 lemn</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col">
-							<div class="item">스테이킹 신청/해지 시 가스비(klay)가 발생합니다.</div>
+							<div class="item">스테이킹 신청/해지시 가스비(klay)가 발생합니다.</div>
 							<div class="item">스테이킹은 30일 이내에 해지가 불가하며 30일 이후 해지가 가능합니다.</div>
 							<div class="item">스테이킹 진행중 상품 변경은 불가능하며 기존 스테이킹을 해지 후 신규로 스테이킹 해야합니다.</div>
 							<div class="item">최대거치기간 365일(1년)  최소거치기간 30일(1개월)</div>
+							<div class="item ps">사이트 최소 유지기간은 2년입니다.</div>
 						</div>
 					</div>
 				</div>
@@ -902,14 +887,17 @@
 
 			console.log(target);
 
-			if(target == 'tabBronz'){
-				$(".boxStakingTab .tabArea").removeClass("is--silver is--gold");
+			if(target == 'tabBasic'){
+				$(".boxStakingTab .tabArea").removeClass("is--bronz is--silver is--gold");
+				$(".boxStakingTab .tabArea").addClass("is--basic");
+			}else if(target == 'tabBronz'){
+				$(".boxStakingTab .tabArea").removeClass("is--basic is--silver is--gold");
 				$(".boxStakingTab .tabArea").addClass("is--bronz");
 			}else if(target == 'tabSilver'){
-				$(".boxStakingTab .tabArea").removeClass("is--bronz is--gold");
+				$(".boxStakingTab .tabArea").removeClass("is--basic is--bronz is--gold");
 				$(".boxStakingTab .tabArea").addClass("is--silver");
 			}else if(target == 'tabGold'){
-				$(".boxStakingTab .tabArea").removeClass("is--bronz is--silver");
+				$(".boxStakingTab .tabArea").removeClass("is--basic is--bronz is--silver");
 				$(".boxStakingTab .tabArea").addClass("is--gold");
 			}
 		});
