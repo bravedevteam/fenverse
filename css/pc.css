@@ -226,6 +226,8 @@
 	.boxStakingInfo .swiper-slide { height:120px; flex-direction:row; }
 	.boxStakingInfo .swiper-slide .title { width:590px; margin-bottom:0; padding-left:24px; font-size:20px; text-align:left; }
 	.boxStakingInfo .swiper-slide .value { width:468px; height:80px; font-size:25px; }
+  .boxStakingInfo .swiper-slide .value .pool li { padding:0 22px; font-size:14px; }
+  .boxStakingInfo .swiper-slide .value .pool li span { font-size:25px; }
 	.boxStakingInfo .swiper-button-next,
 	.boxStakingInfo .swiper-button-prev { margin-top:0; transform:translateY(-50%); }
 	.boxStakingInfo .swiper-button-prev,
@@ -233,6 +235,9 @@
 	.boxStakingInfo .swiper-button-next,
 	.boxStakingInfo .swiper-container-rtl .swiper-button-prev { right:52px; }
 	
+  .boxStakingInfo .swiper-slide.type--basic .title { width:509px; }
+  .boxStakingInfo .swiper-slide.type--basic .value { width:550px; }
+  .boxStakingInfo .swiper-slide.type--basic .txt { padding:0 28px; }
 
 	.mainSection+.mainSection.stakingCont { padding-top:150px; margin-bottom:100px; background:none; }
 
@@ -245,13 +250,19 @@
 	.stakingCont h4 { margin-bottom:55px; font-size:27px; }
 	.stakingCont h5 { margin-bottom:55px; }
 
-	.boxStakingTab .tabArea { width:882px; height:76px; margin:0 auto; }
+	.boxStakingTab .tabArea { width:1168px; height:76px; margin:0 auto; }
 	.boxStakingTab .tabArea:before { height:76px; }
 	.boxStakingTab .tabArea a { font-size:20px; }
 	.boxStakingTab .tabCont { margin-top:45px; }
 	.boxStakingTab p { font-size:18px; line-height:1.7; }
 
   .boxStakingTab .tabCont.is--silver .boxStakePick { width:728px; }
+
+  .boxStakingReward { width:1098px; margin:74px auto 86px; padding:32px 36px; }
+  .boxStakingReward .title { margin-bottom:36px; font-size:18px; }
+  .boxStakingReward .itemGroup .item { font-size:18px; }
+  .boxStakingReward .itemGroup .item+.item:before { width:2px; height:30px; margin-top:-15px; }
+  .boxStakingReward .itemGroup .item strong { padding:0 16px; font-size:20px; }
 
 	.boxStakingCal { width:1098px; height:166px; display:flex; align-items:center; justify-content:space-between; margin:30px auto 115px; padding:0 70px; }
 	.boxStakingCal .itemGroup { display:flex; }
