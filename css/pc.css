@@ -226,9 +226,9 @@
 	.boxStakingInfo .swiper-slide { height:120px; flex-direction:row; }
 	.boxStakingInfo .swiper-slide .title { width:590px; margin-bottom:0; padding-left:24px; font-size:20px; text-align:left; }
 	.boxStakingInfo .swiper-slide .value { width:468px; height:80px; font-size:25px; }
-  .boxStakingInfo .swiper-slide .value .pool li { display:flex; align-items:center; padding:0 22px; font-size:14px; }  
-  .boxStakingInfo .swiper-slide .value .pool li span { display:flex; align-items:center; }
-  .boxStakingInfo .swiper-slide .value .pool li span strong { margin:0 5px; font-size:25px; }
+  .boxStakingInfo .swiper-slide .value .pool li { padding:0 22px; font-size:14px; }  
+  .boxStakingInfo .swiper-slide .value .pool li+li:after { content:''; width:1px; height:16px; position:absolute; left:0; top:50%; margin-top:-8px; background:rgba(255,255,255,.5); }
+  .boxStakingInfo .swiper-slide .value .pool li span { margin:0 5px; font-size:25px; display:flex; align-items:center; }
 	.boxStakingInfo .swiper-button-next,
 	.boxStakingInfo .swiper-button-prev { margin-top:0; transform:translateY(-50%); }
 	.boxStakingInfo .swiper-button-prev,
@@ -238,7 +238,7 @@
 	
   .boxStakingInfo .swiper-slide.type--basic .title { width:509px; }
   .boxStakingInfo .swiper-slide.type--basic .value { width:550px; display:flex; }
-  .boxStakingInfo .swiper-slide.type--basic .txt { padding:0 28px; }
+  .boxStakingInfo .swiper-slide.type--basic .txt { display:flex; padding:0 28px; }
 
 	.mainSection+.mainSection.stakingCont { padding-top:150px; margin-bottom:100px; background:none; }
 
