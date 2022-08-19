@@ -946,7 +946,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingGuide .guideGroup .item:before { content:''; width:4px; height:4px; position:absolute; left:0; top:8px; background:rgba(255,255,255,.5); }
 .boxStakingGuide .guideGroup .item+.item { margin-top:15px; }
 .boxStakingGuide .guideGroup .item ul { margin-top:15px; }
-.boxStakingGuide .guideGroup .item ul li { font-size:14px; color:#7c7c7c; line-height:20px; }
+.boxStakingGuide .guideGroup .item ul li { font-size:14px; color:#7c7c7c; line-height:20px; text-transform:uppercase; }
 .boxStakingGuide .guideGroup .item.ps { color:rgba(124,124,124,0.56); font-size:12px; }
 
 
@@ -1035,6 +1035,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxMyStaking.is--bronze h4:before { background-image: linear-gradient(135deg, #7c573a 26%, #ad8565 52%, #654022 79%); }
 .boxMyStaking.is--silver h4:before { background-image: linear-gradient(135deg, #a2a2a2 26%, #d6d6d6 52%, #9f9f9f 79%); }
 .boxMyStaking.is--gold h4:before { background-image: linear-gradient(135deg, #d9a616 26%, #ffdc7b 52%, #c99404 79%); }
+.boxMyStaking.is--basic h4:before { background-image: linear-gradient(135deg, #177f83 26%, #76dade 52%, #20878b 79%); }
 .boxMyStaking.is--none .txt { margin-bottom:60px; font-size:16px; text-align:center; font-family:'Montserrat'; color:#fff; }
 .boxMyStaking.is--none .txt strong { margin-bottom:15px; display:block; font-size:22px; font-weight:700; }
 
@@ -1058,6 +1059,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxMyStaking.is--bronze .listMyStaking li .name { background-image: linear-gradient(102deg, #7c573a 10%, #b28a69 40%, #654022 77%); }
 .boxMyStaking.is--silver .listMyStaking li .name { background:linear-gradient(102deg, #585858 10%, #989898 40%, #575757 77%); }
 .boxMyStaking.is--gold .listMyStaking li .name { background:linear-gradient(102deg, #a7851b 10%, #e4ba48 40%, #a7851b 77%); }
+.boxMyStaking.is--basic .listMyStaking li .name { background:linear-gradient(101deg, #0c5f62 10%, #48c7cc 45%, #08585c 87%); }
 
 .boxStakingCancel { width:600px; padding:80px 55px 58px; position:relative; border:1px solid #fff720; border-radius:20px; background-image: radial-gradient(circle at 50% 50%, #05072b, #000312); text-align:center; }
 .boxStakingCancel h4 { margin-bottom:45px; font-size:25px; color:#ff3100; font-weight:700; font-family:"Montserrat"; }
