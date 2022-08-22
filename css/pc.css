@@ -168,6 +168,8 @@
   #footer .copyright .row p { font-size:14px; }
   #footer .copyright .linkArea a { font-size:14px; }
 
+  #footer .copyright .row+.row .btnReproof { margin-top:40px; margin-left:160px; }
+
   .btnJoin { min-width:226px; margin:0 auto; }  
   
   .checkGroup .check input[type="checkbox"]+label { margin-right:50px; }
