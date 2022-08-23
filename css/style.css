@@ -945,12 +945,11 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .boxStakingGuide { margin-top:70px; padding:30px 10px 52px; background:#000; box-shadow: 0 0 80px 0 rgba(105, 29, 248, 0.2);  }
 .boxStakingGuide h5 { margin-bottom:18px; color:#fff; font-weight:500; font-family:"Montserrat"; font-size:18px; text-align:center; }
 .boxStakingGuide .guideGroup .col+.col { margin-top:17px; }
-.boxStakingGuide .guideGroup .item { padding-left:14px; position:relative; color:#fff; font-size:16px; line-height:21px; }
-.boxStakingGuide .guideGroup .item:before { content:''; width:4px; height:4px; position:absolute; left:0; top:8px; background:rgba(255,255,255,.5); }
-.boxStakingGuide .guideGroup .item+.item { margin-top:15px; }
+.boxStakingGuide .guideGroup .item { padding-left:14px; position:relative; color:#fff; font-size:16px; line-height:31px; }
 .boxStakingGuide .guideGroup .item ul { margin-top:15px; }
 .boxStakingGuide .guideGroup .item ul li { font-size:14px; color:#7c7c7c; line-height:20px; text-transform:uppercase; }
-.boxStakingGuide .guideGroup .item.ps { color:rgba(124,124,124,0.56); font-size:12px; }
+.boxStakingGuide .guideGroup .item.desc { color:rgba(255,255,21,.5); font-size:13px; line-height:27px; }
+.boxStakingGuide .guideGroup .item.ps { margin-top:12px; color:rgba(124,124,124,0.56); font-size:12px; line-height:24px; }
 
 
 
