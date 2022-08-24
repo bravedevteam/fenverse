@@ -1015,7 +1015,7 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 
 .infoSelectStaking { width:530px; margin:20px auto; overflow:hidden; font-family:"Montserrat"; font-size:20px; color:#fff; }
 .infoSelectStaking dt { float:left; padding:10px 5px; }
-.infoSelectStaking dd { padding:10px 5px; margin-left:150px; font-weight:700; }
+.infoSelectStaking dd { padding:10px 5px; margin-left:170px; font-weight:700; }
 .infoSelectStaking dd span { display:inline-block; vertical-align:middle; color:#fff720; }
 
 .popMyStaking .swiper-slide { width:1150px; }
