@@ -1012,6 +1012,8 @@ span.c--gray.size-s { display:block; margin-top:10px; font-size:14px; }
 .listSelectStaking.is--bronze li .name { background-image: linear-gradient(102deg, #7c573a 10%, #b28a69 40%, #654022 77%); }
 .listSelectStaking.is--silver li .name { background:linear-gradient(102deg, #585858 10%, #989898 40%, #575757 77%); }
 .listSelectStaking.is--gold li .name { background:linear-gradient(102deg, #a7851b 10%, #e4ba48 40%, #a7851b 77%); }
+/* 추가수정 */
+.listSelectStaking.is--basic li .name { background:linear-gradient(102deg, #0c5f62 10%, #48c7cc 45%, #08585c 77%); }
 
 .infoSelectStaking { width:530px; margin:20px auto; overflow:hidden; font-family:"Montserrat"; font-size:20px; color:#fff; }
 .infoSelectStaking dt { float:left; padding:10px 5px; }
